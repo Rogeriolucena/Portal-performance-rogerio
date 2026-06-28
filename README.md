@@ -1,27 +1,20 @@
-# Sheipados — v6
+# Sheipados — v9 estável
 
-Correção estrutural de rolagem no iPhone/Safari:
-- body/html travados sem scroll.
-- rolagem acontece somente dentro de `.content`.
-- menu inferior fica fixo fora da área rolável.
-- elimina espaço extra no fim do app.
+Correções:
+- Refeito a partir de uma base limpa.
+- Ícone do halter aplicado no cabeçalho, manifest, apple-touch-icon e raiz do projeto.
+- Navegação refeita para não abrir tela vazia.
+- Cada aba renderiza isoladamente para um erro não quebrar o app inteiro.
+- Calendário de progresso na aba Evolução:
+  - halter = treino completo;
+  - comida = dieta completa;
+  - os dois ícones = treino + dieta no mesmo dia.
+- Mantida rolagem interna para evitar espaço infinito no fim no iPhone.
 
-Mantém:
-- Treino e Dieta separados.
-- Calendário com vídeos.
-- Quantidades na dieta.
-- Perfis Rogério/Fernanda.
+Critérios:
+- Treino completo: todos os exercícios do dia marcados.
+- Dieta completa: todas as refeições marcadas.
 
-
-## Ícone
-- Ícone oficial atualizado para o halter minimalista.
-- Incluídos `apple-touch-icon.png`, `icon-180.png`, `icon-192.png` e `icon-512.png`.
-- Para o iPhone refletir a troca, remova o atalho antigo da tela inicial e adicione novamente.
-
-
-## v8 — Calendário de progresso
-- Aba Evolução agora mostra um calendário mensal.
-- Dias com treino completo exibem ícone de halter.
-- Dias com dieta registrada exibem ícone de comida.
-- Dias com treino + dieta exibem os dois ícones.
-- Navegação por mês anterior/próximo.
+Atualização:
+Substitua todos os arquivos no GitHub.
+Depois, no iPhone, remova o atalho antigo e adicione de novo à Tela de Início.
