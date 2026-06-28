@@ -52,7 +52,7 @@ function shell(content){
     <header class="topbar">
       <div class="title-row">
         <div class="brand">
-          <img class="logo" src="./icons/icon-180.png" alt="Sheipados">
+          <div class="logo" aria-label="Sheipados"></div>
           <div><h1>${PLAN.project.name}</h1><div class="sub">${p.name} • ${p.goal||"Plano"}</div></div>
         </div>
         <select class="profile-select" onchange="switchProfile(this.value)">
@@ -215,7 +215,7 @@ function render(){
     console.error(e);
   }
   document.getElementById("app").innerHTML=shell(content);
-  setTimeout(()=>{const c=document.querySelector(".content");if(c)c.scrollTop=0},0);
+  
 }
 if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
 render();scheduleReminders();
