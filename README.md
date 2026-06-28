@@ -1,41 +1,24 @@
-# Portal Performance — Rogério Lucena
+# Portal Performance — versão simplificada
 
-MVP PWA do plano **80 kg seco**.
+Alterações principais:
 
-## O que tem nesta versão
+- Reduzido para 4 abas: Hoje, Treino, Evolução e Mais.
+- Aba Hoje vira o preenchimento diário principal.
+- Dieta em cards grandes, adequada para iPhone 14 Pro.
+- Registro detalhado de treino fica opcional.
+- Suplementos/medicamentos ficam recolhidos dentro do check-in diário.
+- Mantido backup JSON e exportação CSV.
 
-- Dashboard mobile-first
-- Calendário de treino 12 semanas
-- Registro de treino com carga, reps, RPE e observações
-- Registro de peso, cintura, braço, coxa, sono, apetite e digestão
-- Checklist de dieta
-- Registro de suplementos
-- Registro de medicamentos apenas para adesão/tolerância
-- Exames sugeridos
-- Backup JSON
-- Exportação CSV
-- Funcionamento offline após primeira abertura quando hospedado em HTTPS
+## Atualizar no GitHub
 
-## Como testar no computador
+Substitua no repositório estes arquivos:
 
-Abra `index.html` no navegador.
+- index.html
+- styles.css
+- app.js
+- data.js
+- manifest.webmanifest
+- sw.js
+- icons/
 
-## Como usar no iPhone corretamente
-
-Para funcionar como app instalado, hospede em HTTPS.
-
-Opções simples:
-- GitHub Pages
-- Vercel
-- Netlify
-- Cloudflare Pages
-
-Depois:
-1. Abra o link no Safari.
-2. Toque em compartilhar.
-3. Escolha "Adicionar à Tela de Início".
-
-## Importante
-
-Os dados ficam salvos no navegador/dispositivo pelo `localStorage`.
-Faça backup JSON periodicamente.
+Depois faça commit. O GitHub Pages atualizará automaticamente.
