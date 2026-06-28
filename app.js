@@ -1,7 +1,7 @@
 
 const PLAN = window.PLAN_DATA;
-const KEY = "sheipados_v9";
-const OLD_KEYS = ["sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5","sheipados_v4"];
+const KEY = "sheipados_v11";
+const OLD_KEYS = ["sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5","sheipados_v4"];
 const tabs = [
   ["train","Treino","✅"],
   ["diet","Dieta","🍽️"],
@@ -60,8 +60,8 @@ function shell(content){
         </select>
       </div>
     </header>
-    <main class="content">${content}</main>
     <nav class="nav">${tabs.map(t=>`<button class="${activeTab===t[0]?"active":""}" onclick="setTab('${t[0]}')"><span class="ico">${t[2]}</span><span>${t[1]}</span></button>`).join("")}</nav>
+    <main class="content">${content}</main>
   </div>`;
 }
 
