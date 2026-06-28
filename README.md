@@ -11,3 +11,9 @@ Mantém:
 - Calendário com vídeos.
 - Quantidades na dieta.
 - Perfis Rogério/Fernanda.
+
+
+## Ícone
+- Ícone oficial atualizado para o halter minimalista.
+- Incluídos `apple-touch-icon.png`, `icon-180.png`, `icon-192.png` e `icon-512.png`.
+- Para o iPhone refletir a troca, remova o atalho antigo da tela inicial e adicione novamente.
