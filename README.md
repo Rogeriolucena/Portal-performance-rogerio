@@ -17,3 +17,11 @@ Mantém:
 - Ícone oficial atualizado para o halter minimalista.
 - Incluídos `apple-touch-icon.png`, `icon-180.png`, `icon-192.png` e `icon-512.png`.
 - Para o iPhone refletir a troca, remova o atalho antigo da tela inicial e adicione novamente.
+
+
+## v8 — Calendário de progresso
+- Aba Evolução agora mostra um calendário mensal.
+- Dias com treino completo exibem ícone de halter.
+- Dias com dieta registrada exibem ícone de comida.
+- Dias com treino + dieta exibem os dois ícones.
+- Navegação por mês anterior/próximo.

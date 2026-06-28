@@ -174,3 +174,122 @@ details summary{cursor:pointer;color:#d6e6ff;font-weight:800;padding:10px 0}
   h2{font-size:21px}
   .content{padding-bottom:calc(122px + env(safe-area-inset-bottom))}
 }
+
+
+/* v8 - Calendário de progresso */
+.calendar-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.035);
+  border-radius:22px;
+  padding:14px;
+}
+.calendar-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:10px;
+}
+.calendar-top h2{
+  margin:0;
+  text-align:center;
+  text-transform:lowercase;
+}
+.calendar-top p{
+  margin:3px 0 0;
+  text-align:center;
+  font-size:12px;
+}
+.calendar-top button{
+  min-width:46px;
+  padding:10px 12px;
+  font-size:22px;
+  line-height:1;
+}
+.calendar-legend{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:12px;
+  margin:8px 0 12px;
+}
+.legend-dot{
+  width:10px;
+  height:10px;
+  display:inline-block;
+  border-radius:999px;
+  margin-right:5px;
+}
+.legend-dot.train{background:#70a7ff}
+.legend-dot.diet{background:#facc15}
+.week-labels{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:4px;
+  margin-bottom:7px;
+}
+.week-labels span{
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:800;
+}
+.month-grid{
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  gap:6px;
+}
+.cal-cell{
+  min-height:58px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,.06);
+  background:rgba(255,255,255,.035);
+  padding:6px 4px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+}
+.cal-cell.empty{
+  background:transparent;
+  border-color:transparent;
+}
+.cal-cell.today{
+  border-color:rgba(112,167,255,.65);
+  box-shadow:0 0 0 1px rgba(112,167,255,.2) inset;
+}
+.cal-day{
+  font-size:13px;
+  font-weight:850;
+  color:var(--text);
+  line-height:1;
+}
+.cal-icons{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:3px;
+  min-height:28px;
+}
+.cal-icon{
+  width:25px;
+  height:25px;
+  border-radius:999px;
+  display:inline-grid;
+  place-items:center;
+  font-size:13px;
+  line-height:1;
+  box-shadow:0 4px 10px rgba(0,0,0,.22);
+}
+.cal-icon.train{background:#234d88}
+.cal-icon.diet{background:#7b5b12}
+@media(max-width:420px){
+  .calendar-card{padding:12px}
+  .month-grid{gap:4px}
+  .cal-cell{min-height:52px;border-radius:14px;padding:5px 2px}
+  .cal-icon{width:22px;height:22px;font-size:12px}
+  .cal-day{font-size:12px}
+  .week-labels span{font-size:12px}
+}
