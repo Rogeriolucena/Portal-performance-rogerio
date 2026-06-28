@@ -1,7 +1,7 @@
 {
-  "name": "Portal Performance — 80 kg seco",
-  "short_name": "80 kg seco",
-  "description": "Portal pessoal de treino, dieta e acompanhamento de performance.",
+  "name": "Sheipados",
+  "short_name": "Sheipados",
+  "description": "Portal familiar de treino, dieta e performance.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#080d18",
