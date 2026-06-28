@@ -11,7 +11,8 @@ window.PLAN_DATA = {
     "trainingDays": "Segunda a sexta + cardio/funcional no fim de semana",
     "caloriesTrainingDay": 3115,
     "caloriesWeekend": 2860,
-    "proteinTarget": 172
+    "proteinTarget": 172,
+    "waterTarget": 3.5
   },
   "weeks": [
     {
@@ -343,121 +344,203 @@ window.PLAN_DATA = {
       ]
     }
   },
-  "diet": [
+  "meals": [
     {
-      "meal": "Pré-treino",
+      "id": "pre",
+      "name": "Pré-treino",
       "time": "05:30",
-      "base": "Jejum se performance estiver boa. Se cair rendimento: banana ou carboidrato simples.",
+      "short": "Jejum ou banana se rendimento cair",
+      "protein": 0,
       "kcal": 100,
-      "protein": 0
+      "alternatives": [
+        "Banana + café",
+        "Banana + mel",
+        "Suco de uva pequeno",
+        "Manter jejum se performance estiver boa"
+      ]
     },
     {
-      "meal": "Pós-treino/café",
+      "id": "breakfast",
+      "name": "Pós-treino/café",
       "time": "07:15",
-      "base": "Whey + aveia + banana + pasta de amendoim.",
+      "short": "Whey + aveia + banana + pasta de amendoim",
+      "protein": 45,
       "kcal": 720,
-      "protein": 45
+      "alternatives": [
+        "Whey + aveia + banana",
+        "Ovos + pão + fruta",
+        "Iogurte proteico + granola + banana",
+        "Shake com whey, leite, aveia e pasta de amendoim"
+      ]
     },
     {
-      "meal": "Lanche manhã",
+      "id": "snack1",
+      "name": "Lanche manhã",
       "time": "10:00",
-      "base": "Sanduíche integral com proteína + fruta.",
+      "short": "Sanduíche integral + fruta",
+      "protein": 30,
       "kcal": 430,
-      "protein": 30
+      "alternatives": [
+        "Sanduíche com queijo/peito de peru",
+        "Iogurte + fruta + castanhas",
+        "Tapioca com ovos",
+        "Pão + atum/frango desfiado"
+      ]
     },
     {
-      "meal": "Almoço",
+      "id": "lunch",
+      "name": "Almoço",
       "time": "12:30",
-      "base": "Arroz + feijão + carne + legumes/salada.",
+      "short": "Arroz + feijão + carne + legumes",
+      "protein": 55,
       "kcal": 820,
-      "protein": 55
+      "alternatives": [
+        "Arroz + feijão + carne bovina",
+        "Macarrão + carne moída",
+        "Batata/mandioca + frango/carne",
+        "PF em restaurante: priorizar arroz, feijão, carne e legumes"
+      ]
     },
     {
-      "meal": "Lanche tarde",
+      "id": "snack2",
+      "name": "Lanche tarde",
       "time": "16:00",
-      "base": "Iogurte/banana/granola ou shake denso se apetite baixo.",
+      "short": "Iogurte/banana/granola ou shake",
+      "protein": 25,
       "kcal": 460,
-      "protein": 25
+      "alternatives": [
+        "Shake denso: whey + banana + aveia",
+        "Iogurte + granola",
+        "Sanduíche proteico",
+        "Vitamina com leite, banana, aveia e pasta de amendoim"
+      ]
     },
     {
-      "meal": "Jantar",
+      "id": "dinner",
+      "name": "Jantar",
       "time": "19:30",
-      "base": "Arroz + feijão + carne/ovos + legumes.",
+      "short": "Arroz + feijão + carne/ovos + legumes",
+      "protein": 45,
       "kcal": 680,
-      "protein": 45
+      "alternatives": [
+        "Arroz + feijão + filé",
+        "Omelete + arroz",
+        "Carne moída + batata",
+        "Jantar em restaurante: prato com carboidrato + proteína + legumes"
+      ]
+    }
+  ],
+  "schedule": [
+    {
+      "time": "05:30",
+      "item": "Cafeína opcional",
+      "note": "Somente se tolerar bem e não atrapalhar sono/pressão."
+    },
+    {
+      "time": "07:15",
+      "item": "Whey + creatina",
+      "note": "Creatina pode ser em qualquer horário; aqui fica junto do pós-treino para facilitar adesão."
+    },
+    {
+      "time": "Manhã",
+      "item": "Água 1,0 L",
+      "note": "Meta diária aproximada: 3,5 L."
+    },
+    {
+      "time": "12:30",
+      "item": "Vitamina D/Ômega-3 se prescritos",
+      "note": "Tomar junto de refeição costuma facilitar adesão e tolerância."
+    },
+    {
+      "time": "Tarde",
+      "item": "Água 1,0 L",
+      "note": "Completar antes do fim do expediente."
+    },
+    {
+      "time": "Noite",
+      "item": "Magnésio se utilizado",
+      "note": "Preferir à noite se objetivo for sono/relaxamento; conforme tolerância."
+    },
+    {
+      "time": "21:30 aprox.",
+      "item": "Ipamorelin",
+      "note": "À noite, cerca de 2h após a última refeição, conforme rotina informada e prescrição médica."
+    },
+    {
+      "time": "Domingo manhã",
+      "item": "Retatrutida",
+      "note": "Registro semanal de uso/tolerância; ajustes somente com o médico."
+    },
+    {
+      "time": "Até dormir",
+      "item": "Água restante",
+      "note": "Fechar meta diária sem exagerar perto de deitar."
     }
   ],
   "supplements": [
     {
       "name": "Creatina",
       "priority": "Base",
-      "decision": "Manter diariamente",
-      "monitor": "Adesão, hidratação e tolerância."
+      "decision": "Diária; sugerido pós-treino/café para adesão."
     },
     {
       "name": "Whey",
       "priority": "Base",
-      "decision": "Usar para bater proteína",
-      "monitor": "Digestão e praticidade no trabalho."
+      "decision": "Pós-treino ou lanche para bater proteína."
     },
     {
       "name": "Vitamina D",
       "priority": "Condicional",
-      "decision": "Usar se exame/conduta médica indicar",
-      "monitor": "25-OH vitamina D, cálcio, PTH e orientação médica."
+      "decision": "Com almoço/jantar se exame/conduta médica indicar."
     },
     {
       "name": "Ômega-3",
       "priority": "Condicional",
-      "decision": "Considerar se baixo consumo de peixe",
-      "monitor": "Tolerância gastrointestinal."
+      "decision": "Com refeição principal se baixo consumo de peixe."
     },
     {
       "name": "Magnésio",
       "priority": "Condicional",
-      "decision": "Considerar se sono/cãibras/intestino justificarem",
-      "monitor": "Evitar megadose; observar intestino."
+      "decision": "À noite se sono/cãibras/intestino justificarem."
     },
     {
       "name": "Cafeína",
       "priority": "Performance",
-      "decision": "Pré-treino se tolerar",
-      "monitor": "Sono, ansiedade, palpitação, pressão."
+      "decision": "05:30, antes do treino, se tolerar."
     },
     {
       "name": "Beta-alanina",
       "priority": "Opcional",
-      "decision": "Mais útil para funcional/cardio intenso",
-      "monitor": "Formigamento e tolerância."
+      "decision": "Diária se for usar; não depende do horário do treino."
     },
     {
       "name": "Citrulina",
       "priority": "Opcional",
-      "decision": "Pump e tolerância ao volume",
-      "monitor": "Não é prioridade."
+      "decision": "Pré-treino se usar para pump/tolerância ao volume."
     },
     {
       "name": "Multivitamínico",
       "priority": "Baixa",
-      "decision": "Só se dieta/exames indicarem",
-      "monitor": "Evitar megadoses."
+      "decision": "Com refeição, só se dieta/exames indicarem."
+    }
+  ],
+  "medications": [
+    {
+      "name": "Ipamorelin",
+      "time": "Noite",
+      "use": "Registrar adesão/tolerância. Rotina: à noite, cerca de 2h após última refeição. Dose conforme prescrição médica."
+    },
+    {
+      "name": "Retatrutida",
+      "time": "Domingo de manhã",
+      "use": "Registrar adesão, apetite e sintomas gastrointestinais. Ajuste apenas com médico."
     }
   ],
   "exams": [
     {
       "group": "Metabólico",
-      "name": "Glicemia de jejum",
+      "name": "Glicemia, insulina, HbA1c",
       "frequency": "3 meses"
-    },
-    {
-      "group": "Metabólico",
-      "name": "Insulina de jejum",
-      "frequency": "3 meses"
-    },
-    {
-      "group": "Metabólico",
-      "name": "Hemoglobina glicada",
-      "frequency": "3–6 meses"
     },
     {
       "group": "Renal/hepático",
@@ -491,18 +574,8 @@ window.PLAN_DATA = {
     },
     {
       "group": "Composição",
-      "name": "Bioimpedância ou dobras + fotos",
+      "name": "Bioimpedância/dobras + fotos",
       "frequency": "8–12 semanas"
-    }
-  ],
-  "medications": [
-    {
-      "name": "Ipamorelin",
-      "use": "Registrar uso, tolerância e sintomas. Não alterar dose pelo app."
-    },
-    {
-      "name": "Retatrutida",
-      "use": "Registrar uso, apetite, náusea/refluxo e impacto na ingestão calórica. Ajustes somente com médico."
     }
   ]
 };

@@ -1,24 +1,14 @@
-# Portal Performance — versão simplificada
+# Portal Performance — v3
 
-Alterações principais:
+Alterações:
+- Calendário de treinos voltou como aba própria.
+- Aba Hoje com checklist dos exercícios executados.
+- Medições corporais agora são quinzenais.
+- Dieta em cards clicáveis com alternativas.
+- Horários de suplementos, água e medicamentos incluídos.
+- Ipamorelin: noite, cerca de 2h após última refeição, conforme rotina/prescrição.
+- Retatrutida: domingo pela manhã, conforme rotina/prescrição.
+- Água com meta diária e checkpoints.
 
-- Reduzido para 4 abas: Hoje, Treino, Evolução e Mais.
-- Aba Hoje vira o preenchimento diário principal.
-- Dieta em cards grandes, adequada para iPhone 14 Pro.
-- Registro detalhado de treino fica opcional.
-- Suplementos/medicamentos ficam recolhidos dentro do check-in diário.
-- Mantido backup JSON e exportação CSV.
-
-## Atualizar no GitHub
-
-Substitua no repositório estes arquivos:
-
-- index.html
-- styles.css
-- app.js
-- data.js
-- manifest.webmanifest
-- sw.js
-- icons/
-
-Depois faça commit. O GitHub Pages atualizará automaticamente.
+Atualização no GitHub:
+Substitua index.html, styles.css, app.js, data.js, manifest.webmanifest, sw.js e icons/.
