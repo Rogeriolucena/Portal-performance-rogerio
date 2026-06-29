@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v14";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v15";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} function workouts(){return prof().workouts}
 function activeDay(){return u().dayOverrideDate===today()&&u().dayOverride?u().dayOverride:dayName()}
 function workout(){return workouts()[activeDay()]||workouts().Segunda}
@@ -27,8 +27,74 @@ function head(t,s){return`<div class="page-head"><h2>${t}</h2><p>${s||""}</p></d
 function renderTrain(){let w=workout(), wk=week(), p=prof();$("train").innerHTML=`${head("Hoje • Treino",`Detectado automaticamente: ${activeDay()}.`)}<div class="grid three"><div class="card kpi"><div class="label">Treino</div><div class="value" style="font-size:20px">${w.title}</div><div class="hint">${activeDay()}</div></div><div class="card kpi"><div class="label">Semana</div><div class="value">S${u().week}</div><div class="hint">${wk.phase}</div></div><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">meta ${p.targetWeight||"—"} kg</div></div></div><div class="card"><p class="notice"><b>Regra:</b> ${wk.rule}</p><details><summary>Trocar treino só hoje</summary><div class="form-grid"><div><label>Semana</label><select onchange="u().week=Number(this.value);save()">${PLAN.weeks.map(x=>`<option value="${x.week}" ${x.week===u().week?"selected":""}>Semana ${x.week}</option>`).join("")}</select></div><div><label>Dia</label><select onchange="u().dayOverrideDate='${today()}';u().dayOverride=this.value;save()">${Object.keys(workouts()).map(d=>`<option ${d===activeDay()?"selected":""}>${d}</option>`).join("")}</select></div></div></details><h3>Exercícios executados</h3><div class="list">${w.exercises.map((e,i)=>`<label class="check"><input type="checkbox" id="ex-${i}"><div><strong>${e.name}</strong><span>${e.sets}x${e.reps} • RPE ${e.rpe} ${e.link&&e.link!=="#"?`• <a href="${e.link}" target="_blank">vídeo</a>`:""}</span></div></label>`).join("")}</div><div style="margin-top:12px"><label>Nota do treino</label><textarea id="tr-note" placeholder="Ex.: completo, energia baixa, adaptação..."></textarea></div><div class="actions"><button class="primary" onclick="saveTrain()">Salvar treino</button></div></div>`}
 function saveTrain(){let w=workout(), ex=w.exercises.map((e,i)=>({name:e.name,done:$(`ex-${i}`).checked}));u().workoutLogs.push({id:uid(),date:today(),week:u().week,day:activeDay(),title:w.title,exercises:ex,note:$("tr-note").value});upsertDaily({exercises:ex,day:activeDay(),week:u().week,workoutTitle:w.title});save()}
 function upsertDaily(part){let d=today(), log=u().dailyLogs.find(x=>x.date===d);if(!log){log={id:uid(),date:d,day:activeDay(),week:u().week,exercises:[],meals:[],water:[],schedule:[]};u().dailyLogs.push(log)}Object.assign(log,part)}
-function renderDiet(){let p=prof(), last=lastBody(), due=daysSince(last)>=15;$("diet").innerHTML=`${head("Hoje • Dieta","Refeições, quantidades, água e rotina.")}<div class="grid three"><div class="card kpi"><div class="label">Proteína</div><div class="value">${p.proteinTarget||"—"}g</div><div class="hint">meta</div></div><div class="card kpi"><div class="label">Calorias</div><div class="value">${p.caloriesTrainingDay||"—"}</div><div class="hint">dia treino</div></div><div class="card kpi"><div class="label">Água</div><div class="value">${p.waterTarget||"—"}L</div><div class="hint">meta</div></div></div><div class="card"><h2>Refeições</h2><div class="list">${PLAN.meals.map((m,i)=>`<label class="check"><input type="checkbox" id="meal-${i}"><div><strong>${m.time} • ${m.name}</strong><span><b>Quantidade:</b> ${m.qty}</span><span>${m.protein}g proteína • ${m.kcal} kcal</span></div></label>`).join("")}</div></div><div class="card"><h2>Água</h2><div class="list">${["Manhã — 1,0 L","Tarde — 1,0 L","Treino/noite — 1,0 L","Completar — 0,5 L"].map((x,i)=>`<label class="check"><input type="checkbox" id="water-${i}"><div><strong>${x}</strong><span>Meta: ${p.waterTarget||"—"} L/dia</span></div></label>`).join("")}</div></div><div class="card"><h2>Rotina e suplementos</h2><div class="list">${PLAN.schedule.map((s,i)=>`<label class="check"><input type="checkbox" id="sched-${i}"><div><strong>${s.time} • ${s.item}</strong><span>${s.note}</span></div></label>`).join("")}</div><div class="actions"><button class="ghost" onclick="enableReminders()">Ativar lembretes</button></div></div><div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><details ${due?"open":""}><summary>Registrar peso/cintura</summary><div class="form-grid">${input("weight","Peso kg","number","76.4")}${input("waist","Cintura cm","number","82")}${input("arm","Braço cm","number","opcional")}${input("thigh","Coxa cm","number","opcional")}</div></details><div class="form-grid" style="margin-top:12px">${input("date","Data","date","",today())}${input("sleep","Sono h","number","7.5")}${select("appetite","Apetite",["Bom","Normal","Baixo","Muito baixo"],"Normal")}${select("gi","Digestão/GI",["Normal","Constipado","Náusea","Refluxo","Diarreia"],"Normal")}</div><div style="margin-top:12px"><label>Nota rápida</label><textarea id="diet-note"></textarea></div><div class="actions"><button class="primary" onclick="saveDiet()">Salvar dieta</button></div></div><div class="card"><h2>Alternativas</h2><div class="list">${PLAN.meals.map(m=>`<details class="item"><summary><strong>${m.time} • ${m.name}</strong> <span class="pill">${m.protein}g prot.</span></summary><div class="muted"><b>Base:</b> ${m.qty}</div><ul class="alts">${m.alts.map(a=>`<li>${a}</li>`).join("")}</ul></details>`).join("")}</div></div>`}
-function saveDiet(){let date=$("date").value||today(), meals=PLAN.meals.map((m,i)=>({id:m.id,name:m.name,qty:m.qty,done:$(`meal-${i}`).checked})), water=[0,1,2,3].map(i=>({done:$(`water-${i}`).checked})), schedule=PLAN.schedule.map((s,i)=>({item:s.item,time:s.time,done:$(`sched-${i}`).checked}));u().dietLogs.push({id:uid(),date,meals,water,schedule,note:$("diet-note").value});upsertDaily({date,meals,water,schedule,appetite:$("appetite").value,gi:$("gi").value});if($("weight").value||$("waist").value||$("arm").value||$("thigh").value)u().bodyLogs.push({id:uid(),date,weight:$("weight").value,waist:$("waist").value,arm:$("arm").value,thigh:$("thigh").value,sleep:$("sleep").value,appetite:$("appetite").value,digestion:$("gi").value,note:$("diet-note").value});save()}
+
+function dietExtras(i){
+  const groups=[
+    [
+      {item:"Água — 500 ml até o treino", type:"water"},
+      {item:"Cafeína opcional, se usar", type:"supplement"}
+    ],
+    [
+      {item:"Whey + creatina", type:"supplement"},
+      {item:"Água — 500 ml pós-treino/manhã", type:"water"}
+    ],
+    [
+      {item:"Água — 500 ml manhã", type:"water"}
+    ],
+    [
+      {item:"Água — 500 ml almoço/tarde", type:"water"},
+      {item:"Vitamina D/ômega-3 se prescritos", type:"supplement"}
+    ],
+    [
+      {item:"Água — 500 ml tarde", type:"water"}
+    ],
+    [
+      {item:"Água — completar meta do dia", type:"water"},
+      {item:"Magnésio se usado", type:"supplement"},
+      {item:"Medicação noturna conforme prescrição", type:"medical"}
+    ]
+  ];
+  return groups[i] || [];
+}
+function markDietAll(){
+  document.querySelectorAll(".diet-flag").forEach(x=>x.checked=true);
+}
+function dietChoiceOptions(m){
+  const opts=[`Base recomendada: ${m.qty}`,...(m.alts||[])];
+  return opts.map((o,idx)=>`<option value="${idx}">${o}</option>`).join("");
+}
+function chosenDietText(m,i){
+  const sel=$(`meal-choice-${i}`);
+  if(!sel) return `Base recomendada: ${m.qty}`;
+  const idx=Number(sel.value||0);
+  return [`Base recomendada: ${m.qty}`,...(m.alts||[])][idx] || `Base recomendada: ${m.qty}`;
+}
+function collectDietFlags(){
+  const meals=PLAN.meals.map((m,i)=>({
+    id:m.id,
+    name:m.name,
+    qty:m.qty,
+    selected:chosenDietText(m,i),
+    done:!!$(`meal-${i}`)?.checked
+  }));
+  const extras=PLAN.meals.flatMap((m,i)=>dietExtras(i).map((x,j)=>({
+    mealId:m.id,
+    mealName:m.name,
+    item:x.item,
+    type:x.type,
+    done:!!$(`extra-${i}-${j}`)?.checked
+  })));
+  const allFlags=[...meals.map(m=>({type:"meal",done:m.done})),...extras.map(e=>({type:e.type,done:e.done}))];
+  const total=allFlags.length;
+  const count=allFlags.filter(x=>x.done).length;
+  const complete=total>0 && count===total;
+  const water=extras.filter(x=>x.type==="water");
+  const schedule=extras.filter(x=>x.type!=="water");
+  return {meals,extras,water,schedule,count,total,complete};
+}
+
+function renderDiet(){let p=prof(), last=lastBody(), due=daysSince(last)>=15;$("diet").innerHTML=`${head("Hoje • Dieta","Refeições, água e suplementos agrupados em um só checklist.")}<div class="grid three"><div class="card kpi"><div class="label">Proteína</div><div class="value">${p.proteinTarget||"—"}g</div><div class="hint">meta</div></div><div class="card kpi"><div class="label">Calorias</div><div class="value">${p.caloriesTrainingDay||"—"}</div><div class="hint">dia treino</div></div><div class="card kpi"><div class="label">Água</div><div class="value">${p.waterTarget||"—"}L</div><div class="hint">meta</div></div></div><div class="card"><h2>Checklist da dieta</h2><p class="muted" style="font-size:13px;margin-top:-4px">Marque a refeição realizada, escolha a opção consumida e confirme água/suplementos associados.</p><div class="actions"><button class="ghost" onclick="markDietAll()">Marcar tudo</button><button class="ghost" onclick="enableReminders()">Ativar lembretes</button></div><div class="list">${PLAN.meals.map((m,i)=>`<div class="check diet-card"><input type="checkbox" class="diet-flag" id="meal-${i}"><div class="diet-body"><strong>${m.time} • ${m.name}</strong><span><b>Base:</b> ${m.qty}</span><span>${m.protein}g proteína • ${m.kcal} kcal</span><div class="choice-row"><label>Opção realizada</label><select id="meal-choice-${i}">${dietChoiceOptions(m)}</select></div>${dietExtras(i).length?`<div class="mini-flags">${dietExtras(i).map((x,j)=>`<label class="mini-check ${x.type}"><input type="checkbox" class="diet-flag" id="extra-${i}-${j}"><span>${x.item}</span></label>`).join("")}</div>`:""}</div></div>`).join("")}</div><p class="muted" style="font-size:12px">O ícone de comida no progresso aparece quando todos os flags da dieta do dia forem marcados: refeições, água e suplementos/rotina prescrita.</p></div><div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><details ${due?"open":""}><summary>Registrar peso/cintura</summary><div class="form-grid">${input("weight","Peso kg","number","76.4")}${input("waist","Cintura cm","number","82")}${input("arm","Braço cm","number","opcional")}${input("thigh","Coxa cm","number","opcional")}</div></details><div class="form-grid" style="margin-top:12px">${input("date","Data","date","",today())}${input("sleep","Sono h","number","7.5")}${select("appetite","Apetite",["Bom","Normal","Baixo","Muito baixo"],"Normal")}${select("gi","Digestão/GI",["Normal","Constipado","Náusea","Refluxo","Diarreia"],"Normal")}</div><div style="margin-top:12px"><label>Nota rápida</label><textarea id="diet-note" placeholder="Ex.: almocei fora, bati água, apetite baixo..."></textarea></div><div class="actions"><button class="primary" onclick="saveDiet()">Salvar dieta</button></div></div>`}
+function saveDiet(){let date=$("date").value||today(), flags=collectDietFlags();u().dietLogs.push({id:uid(),date,complete:flags.complete,meals:flags.meals,extras:flags.extras,water:flags.water,schedule:flags.schedule,note:$("diet-note").value});upsertDaily({date,meals:flags.meals,extras:flags.extras,water:flags.water,schedule:flags.schedule,diet:{complete:flags.complete,count:flags.count,total:flags.total},appetite:$("appetite").value,gi:$("gi").value});if($("weight").value||$("waist").value||$("arm").value||$("thigh").value)u().bodyLogs.push({id:uid(),date,weight:$("weight").value,waist:$("waist").value,arm:$("arm").value,thigh:$("thigh").value,sleep:$("sleep").value,appetite:$("appetite").value,digestion:$("gi").value,note:$("diet-note").value});save()}
 function renderCalendar(){let wk=week();$("calendar").innerHTML=`${head("Calendário de treinos","12 semanas com vídeos de execução.")}<div class="week-strip">${PLAN.weeks.map(x=>`<button class="${x.week===u().week?"active":""}" onclick="u().week=${x.week};save()">S${x.week}<br><span style="font-size:10px">${x.phase.split(" ")[0]}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="notice">${wk.rule}</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(workouts()).map(([day,w])=>`<div class="card item"><div style="display:flex;justify-content:space-between;gap:8px"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><button class="ghost" onclick="u().dayOverrideDate='${today()}';u().dayOverride='${day}';save();openTab('train')">Usar hoje</button></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
 
 function progressMonthName(m){return ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"][m]}
@@ -36,9 +102,9 @@ function progressISO(y,m,d){return `${y}-${String(m+1).padStart(2,"0")}-${String
 function progressFlags(date){
   const daily=u().dailyLogs.find(x=>x.date===date);
   const trainDaily=!!((daily?.exercises||[]).length>0 && (daily.exercises||[]).every(e=>e.done));
-  const dietDaily=!!((daily?.meals||[]).length>0 && (daily.meals||[]).every(m=>m.done));
+  const dietDaily=!!(daily?.diet?.complete || ((daily?.meals||[]).length>0 && (daily.meals||[]).every(m=>m.done) && (!(daily?.extras)||daily.extras.length===0 || daily.extras.every(e=>e.done))));
   const trainLog=(u().workoutLogs||[]).some(l=>l.date===date && ((l.exercises||[]).length>0 && (l.exercises||[]).every(e=>e.done)));
-  const dietLog=(u().dietLogs||[]).some(l=>l.date===date && ((l.meals||[]).length>0 && (l.meals||[]).every(m=>m.done)));
+  const dietLog=(u().dietLogs||[]).some(l=>l.date===date && (l.complete || ((l.meals||[]).length>0 && (l.meals||[]).every(m=>m.done) && (!(l.extras)||l.extras.length===0 || l.extras.every(e=>e.done)))));
   return {train:trainDaily||trainLog,diet:dietDaily||dietLog};
 }
 function progressMonthStats(y,m){
@@ -67,7 +133,7 @@ function progressCalendarHTML(){
 }
 
 function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância: treino, dieta ou ambos.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">inicial ${prof().initialWeight||"—"}</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div><div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div><div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
-function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,12);return rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length} • Refeições: ${(r.meals||[]).filter(m=>m.done).length}/${(r.meals||[]).length}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`}
+function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,12);return rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length} • Dieta: ${r.diet?.complete?"completa":`${r.diet?.count??(r.meals||[]).filter(m=>m.done).length}/${r.diet?.total??(r.meals||[]).length}`}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`}
 function renderMore(){$("more").innerHTML=`${head("Mais","Perfis, lembretes, exames e backup.")}<div class="card"><h2>Perfis</h2><div class="form-grid"><div><label>Perfil ativo</label><select onchange="switchProfile(this.value)">${Object.entries(PLAN.profiles).map(([k,p])=>`<option value="${k}" ${state.profile===k?"selected":""}>${p.name}</option>`).join("")}</select></div><div><label>Treino detectado</label><input readonly value="${activeDay()}"></div></div></div><div class="card"><h2>Lembretes</h2><p class="notice">Lembretes simples dependem do navegador/PWA. Para alerta confiável com app fechado, precisa Web Push com servidor.</p><div class="actions"><button class="primary" onclick="enableReminders()">Ativar</button><button class="ghost" onclick="testNotification()">Testar</button><button class="danger" onclick="disableReminders()">Desativar</button></div></div><div class="card"><h2>Rotina</h2><div class="list">${PLAN.schedule.map(s=>`<div class="item"><strong>${s.time} • ${s.item}</strong><span>${s.note}</span></div>`).join("")}</div></div><div class="card"><h2>Exames</h2><div class="list">${PLAN.exams.map(e=>`<div class="item"><strong>${e.group}</strong><span>${e.name} • ${e.frequency}</span></div>`).join("")}</div></div><div class="card"><h2>Backup</h2><div class="actions"><button class="primary" onclick="exportBackup()">Exportar JSON</button><button class="danger" onclick="resetAll()">Apagar tudo</button></div></div>`}
 function exportBackup(){let b=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=`sheipados_backup_${today()}.json`;a.click()}
 function resetAll(){if(confirm("Apagar dados locais?")){localStorage.removeItem(KEY);state={profile:"rogerio",users:{rogerio:{...u(),dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[]},fernanda:{...u(),dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[]}}};location.reload()}}

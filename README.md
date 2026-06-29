@@ -20,3 +20,15 @@ Teste:
 - Atualize tudo no GitHub.
 - Abra com:
   https://rogeriolucena.github.io/Portal-performance-rogerio/?v=14
+
+
+## v15 — Dieta agrupada
+
+Alterações:
+- A aba Dieta agora agrupa refeição, água e suplementos/rotina associada no mesmo card.
+- Removidos os blocos separados de Água, Rotina/Suplementos e Alternativas.
+- A seleção da opção realmente consumida fica no próprio card da refeição.
+- O ícone de comida no calendário de progresso agora considera todos os flags da dieta:
+  - refeições;
+  - água;
+  - suplementos/rotina prescrita.
