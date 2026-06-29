@@ -641,31 +641,15 @@ input#date{
 
 
 
-/* v30 — bioimpedância PDF + gráficos, base v25 */
+/* v31 — bioimpedância PDF + gráficos, base v25 limpa */
 .bio-summary{margin-top:14px}
 .bio-summary > div:first-child{margin-bottom:10px}
 .bio-summary b{color:#dbe8ff}
 .bio-summary span{color:var(--muted);display:block;margin-top:3px}
 
-.trend-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:12px;
-  margin-top:12px;
-}
-.trend-card{
-  border:1px solid rgba(255,255,255,.08);
-  background:rgba(255,255,255,.035);
-  border-radius:18px;
-  padding:12px;
-}
-.trend-head{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:10px;
-  margin-bottom:8px;
-}
+.trend-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.trend-card{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035);border-radius:18px;padding:12px}
+.trend-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}
 .trend-head strong{display:block;color:#f2f6ff;font-size:14px}
 .trend-head span{display:block;font-size:11px;color:var(--muted);margin-top:3px}
 .trend-value{font-size:18px;font-weight:900;color:#dbe8ff;white-space:nowrap}
