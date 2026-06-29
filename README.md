@@ -164,3 +164,19 @@ Alterações:
   - metabolismo basal.
 - Removidos sono, apetite, digestão e notas dessa medição.
 - Histórico passa a listar também bioimpedâncias importadas.
+
+
+## v27 — Gráficos de bioimpedância
+
+Alterações:
+- Os principais indicadores da bioimpedância agora viram gráficos na aba Evolução.
+- Indicadores exibidos em gráfico:
+  - peso;
+  - gordura corporal (%);
+  - massa muscular;
+  - massa magra.
+- Cada gráfico mostra:
+  - valor atual;
+  - linha de tendência;
+  - valor inicial;
+  - variação acumulada.

@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v26";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v27";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
 
 function dateSerial(ds){
@@ -312,7 +312,49 @@ async function handleBioPdfUpload(){
   }
 }
 
-function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância, bioimpedância e histórico.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">última bio/medição</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div><div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div>${bioMeasurementCard()}<div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
+
+function bioTrendEntries(){
+  return [...(u().bodyLogs||[])]
+    .filter(x=>x.source==="bioimpedance_pdf")
+    .sort((a,b)=>a.date.localeCompare(b.date));
+}
+function numVal(v){
+  const n=parseFloat(String(v||"").replace(",","."));
+  return Number.isFinite(n)?n:null;
+}
+function fmtDelta(v,unit){
+  if(v===null || v===undefined || !Number.isFinite(v)) return "—";
+  const sign=v>0?"+":"";
+  return `${sign}${v.toFixed(1)} ${unit}`.trim();
+}
+function sparklineSVG(points){
+  const width=320, height=120, padX=14, padY=14;
+  const vals=points.map(p=>p.value);
+  let min=Math.min(...vals), max=Math.max(...vals);
+  if(min===max){ const pad=Math.max(1,Math.abs(min)*0.05); min-=pad; max+=pad; }
+  const xStep=(width-padX*2)/Math.max(1, points.length-1);
+  const yFor=v => height-padY - ((v-min)/(max-min))*(height-padY*2);
+  const coords=points.map((p,i)=>`${(padX+i*xStep).toFixed(1)},${yFor(p.value).toFixed(1)}`);
+  const area=`${padX},${height-padY} `+coords.join(' ')+` ${padX+(points.length-1)*xStep},${height-padY}`;
+  const circles=points.map((p,i)=>`<circle cx="${(padX+i*xStep).toFixed(1)}" cy="${yFor(p.value).toFixed(1)}" r="3.2"></circle>`).join('');
+  return `<svg class="spark" viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" aria-hidden="true"><line x1="${padX}" y1="${height-padY}" x2="${width-padX}" y2="${height-padY}" class="axis"></line><line x1="${padX}" y1="${padY}" x2="${padX}" y2="${height-padY}" class="axis"></line><polyline points="${area}" class="area"></polyline><polyline points="${coords.join(' ')}" class="line"></polyline>${circles}</svg>`;
+}
+function bioTrendCard(title,key,unit){
+  const rows=bioTrendEntries().map(r=>({date:r.date, value:numVal(r[key])})).filter(r=>r.value!==null);
+  if(!rows.length){
+    return `<div class="trend-card"><div class="trend-head"><strong>${title}</strong><span class="muted">Sem dados</span></div><div class="trend-empty">Importe ao menos 1 PDF com este indicador.</div></div>`;
+  }
+  const latest=rows[rows.length-1].value;
+  const first=rows[0].value;
+  const delta=latest-first;
+  const subtitle=`${rows.length} medição(ões) • última ${rows[rows.length-1].date}`;
+  return `<div class="trend-card"><div class="trend-head"><div><strong>${title}</strong><span>${subtitle}</span></div><div class="trend-value">${latest.toFixed(1)} ${unit}</div></div>${sparklineSVG(rows)}<div class="trend-foot"><span>Inicial: ${first.toFixed(1)} ${unit}</span><span>Variação: ${fmtDelta(delta,unit)}</span></div></div>`;
+}
+function bioTrendSection(){
+  return `<div class="card"><h2>Tendências da bioimpedância</h2><p class="muted">Acompanhe os principais indicadores importados dos PDFs ao longo do tempo.</p><div class="trend-grid">${bioTrendCard("Peso","weight","kg")}${bioTrendCard("Gordura corporal","bodyFat","%")}${bioTrendCard("Massa muscular","muscleMass","kg")}${bioTrendCard("Massa magra","leanMass","kg")}</div></div>`;
+}
+
+function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância, bioimpedância e histórico.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">última bio/medição</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div><div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div>${bioMeasurementCard()}${bioTrendSection()}<div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
 
 function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10), bios=[...(u().bodyLogs||[])].filter(x=>x.source==="bioimpedance_pdf").sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);let daily=rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length} • Dieta: ${r.diet?.complete?"completa":`${r.diet?.count??(r.meals||[]).filter(m=>m.done).length}/${r.diet?.total??(r.meals||[]).length}`}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`;let bio=bios.length?`<h3>Bioimpedâncias</h3>`+bios.map(b=>`<div class="history"><h3>${b.date} • ${b.filename||"PDF"}</h3><p>Peso: ${bioValue(b.weight,"kg")} • Gordura: ${bioValue(b.bodyFat,"%")} • Massa muscular: ${bioValue(b.muscleMass,"kg")}</p></div>`).join(""):"";return daily+bio}
 
