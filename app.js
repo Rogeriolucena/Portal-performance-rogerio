@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v35";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v36";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v34","sheipados_v33","sheipados_v32","sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v35","sheipados_v34","sheipados_v33","sheipados_v32","sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
 
 function dateSerial(ds){
@@ -106,6 +106,7 @@ function input(id,label,type="text",ph="",val=""){return`<div><label>${label}</l
 function select(id,label,ops,val=""){return`<div><label>${label}</label><select id="${id}">${ops.map(o=>`<option ${o===val?"selected":""}>${o}</option>`).join("")}</select></div>`}
 function head(t,s){return`<div class="page-head"><h2>${t}</h2><p>${s||""}</p></div>`}
 
+
 function exerciseOptions(e){
   return (e.options&&e.options.length)?e.options:[{name:e.name,sets:e.sets,reps:e.reps,effort:`Esforço ${e.rpe}/10`,rir:"Sobra 1–3 reps",load:e.load||"Carga controlada",rest:e.rest||"60–90 s",tempo:e.tempo||"2–3 s descida",cue:e.cue||"Controle e amplitude.",video:e.link||""}];
 }
@@ -115,21 +116,24 @@ function exerciseOption(e,i){
   const idx=sel?Number(sel.value||0):0;
   return opts[idx]||opts[0];
 }
+function exerciseCompact(opt){
+  return `${opt.sets} séries • ${opt.reps} reps • ${opt.effort}`;
+}
 function exerciseOptionDetails(opt){
   return `<div class="exercise-detail-grid"><div><b>Séries</b><span>${opt.sets}</span></div><div><b>Repetições</b><span>${opt.reps}</span></div><div><b>Esforço</b><span>${opt.effort}</span></div><div><b>Reserva</b><span>${opt.rir}</span></div><div class="wide"><b>Carga</b><span>${opt.load}</span></div><div><b>Descanso</b><span>${opt.rest}</span></div><div><b>Tempo</b><span>${opt.tempo}</span></div><div class="wide"><b>Dica</b><span>${opt.cue}</span></div></div>${opt.video?`<div class="actions compact"><a class="video" href="${opt.video}" target="_blank" rel="noopener">ver vídeo de execução</a></div>`:""}`;
 }
 function updateExerciseSelection(i){
   const w=workout(), e=w.exercises[i], opt=exerciseOption(e,i);
-  const nameEl=$(`ex-name-${i}`), detailEl=$(`ex-detail-${i}`);
+  const nameEl=$(`ex-name-${i}`), summaryEl=$(`ex-summary-${i}`), detailEl=$(`ex-detail-${i}`);
   if(nameEl) nameEl.textContent=opt.name;
+  if(summaryEl) summaryEl.textContent=exerciseCompact(opt);
   if(detailEl) detailEl.innerHTML=exerciseOptionDetails(opt);
 }
 function exerciseCard(e,i){
   const opts=exerciseOptions(e);
   const base=opts[0];
-  return `<div class="exercise-card"><label class="exercise-check"><input type="checkbox" id="ex-${i}"><span>feito</span></label><div class="exercise-main"><strong id="ex-name-${i}">${base.name}</strong><div class="choice-row"><label>Exercício realizado</label><select id="ex-choice-${i}" onchange="updateExerciseSelection(${i})">${opts.map((o,idx)=>`<option value="${idx}">${idx===0?"Base: ":"Alternativa: "}${o.name}</option>`).join("")}</select></div><div id="ex-detail-${i}">${exerciseOptionDetails(base)}</div></div></div>`;
+  return `<div class="exercise-card"><label class="exercise-check"><input type="checkbox" id="ex-${i}"><span>feito</span></label><div class="exercise-main"><strong id="ex-name-${i}">${base.name}</strong><span id="ex-summary-${i}" class="exercise-summary">${exerciseCompact(base)}</span><div class="choice-row"><label>Exercício realizado</label><select id="ex-choice-${i}" onchange="updateExerciseSelection(${i})">${opts.map((o,idx)=>`<option value="${idx}">${idx===0?"Base: ":"Alternativa: "}${o.name}</option>`).join("")}</select></div><details class="exercise-details"><summary>Ver detalhes, carga e vídeo</summary><div id="ex-detail-${i}">${exerciseOptionDetails(base)}</div></details></div></div>`;
 }
-
 
 function renderTrain(){let w=workout(), wk=week(), aw=activeWeekNumber(), done=weekProgressInCycle(), total=coreWorkoutCheckins();$("train").innerHTML=`${head("Hoje • Treino",`Detectado automaticamente: ${activeDay()}.`)}<div class="grid two"><div class="card kpi"><div class="label">Treino</div><div class="value" style="font-size:20px">${w.title}</div><div class="hint">${activeDay()}</div></div><div class="card kpi"><div class="label">Semana automática</div><div class="value">S${aw}</div><div class="hint">${done}/5 check-ins nesta semana</div></div></div><div class="card"><p class="pill">${currentWorkoutBlock().name} • ${currentWorkoutBlock().focus}</p><p class="notice"><b>Ciclo:</b> início em 29/06/2026. A cada 5 check-ins válidos de segunda a sexta, o app avança automaticamente uma semana. Sábado/domingo fica como bônus opcional e não conta para avançar semana.</p><p class="muted" style="font-size:13px">Check-ins válidos desde o início: ${total}. Semana atual: S${aw} • ${wk.phase}.</p><details><summary>Mudar treino só hoje</summary><div class="form-grid"><div><label>Semana só hoje</label><select onchange="u().weekOverrideDate=today();u().weekOverride=Number(this.value);save()">${PLAN.weeks.map(x=>`<option value="${x.week}" ${x.week===aw?"selected":""}>Semana ${x.week}</option>`).join("")}</select></div><div><label>Dia só hoje</label><select onchange="u().dayOverrideDate=today();u().dayOverride=this.value;save()">${Object.keys(workouts()).map(d=>`<option ${d===activeDay()?"selected":""}>${d}</option>`).join("")}</select></div></div><div class="actions"><button class="ghost" onclick="u().weekOverrideDate=null;u().weekOverride=null;u().dayOverrideDate=null;u().dayOverride=null;save()">Limpar troca de hoje</button></div></details><h3>Exercícios executados</h3><p class="muted" style="font-size:13px">Escolha a variação realmente executada. A prescrição mostra séries, repetições, carga por esforço, descanso, tempo e vídeo curado.</p><div class="list">${w.exercises.map((e,i)=>exerciseCard(e,i)).join("")}</div><div style="margin-top:12px"><label>Nota do treino</label><textarea id="tr-note" placeholder="Ex.: completo, energia baixa, adaptação..."></textarea></div><div class="actions"><button class="primary" onclick="saveTrain()">Salvar treino</button></div></div>`}
 function saveTrain(){let w=workout(), aw=activeWeekNumber(), ex=w.exercises.map((e,i)=>{let opt=exerciseOption(e,i);return {name:opt.name,base:e.name,done:$(`ex-${i}`).checked,sets:opt.sets,reps:opt.reps,effort:opt.effort,load:opt.load,rest:opt.rest,video:opt.video}});u().workoutLogs.push({id:uid(),date:today(),week:aw,day:activeDay(),title:w.title,exercises:ex,note:$("tr-note").value});upsertDaily({exercises:ex,day:activeDay(),week:aw,workoutTitle:w.title});save()}

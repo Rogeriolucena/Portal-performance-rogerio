@@ -73,3 +73,15 @@ Alterações:
   - dica técnica.
 - Os vídeos deixam de apontar para pesquisa no YouTube.
 - Foram inseridos links diretos para vídeos específicos de execução, escolhidos por padrão de movimento.
+
+
+## v36 — Detalhes retráteis no treino
+
+Alterações:
+- Os cards de exercício agora mostram apenas:
+  - checkbox;
+  - nome;
+  - resumo rápido;
+  - seletor de alternativa.
+- As informações detalhadas ficaram dentro de “Ver detalhes, carga e vídeo”.
+- O usuário pode expandir/contrair cada exercício individualmente.
