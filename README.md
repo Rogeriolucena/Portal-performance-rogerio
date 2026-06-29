@@ -33,3 +33,14 @@ Alterações:
 Cuidados:
 - Foto precisa estar nítida, sem corte e com boa iluminação.
 - OCR depende de internet para carregar a biblioteca externa.
+
+
+## v33 — Upload separado PDF e foto
+
+Ajuste:
+- A medição quinzenal agora mostra dois campos separados:
+  - PDF da bioimpedância;
+  - Foto ou imagem da bioimpedância.
+- Incluído botão específico para “Ler PDF”.
+- Incluído botão específico para “Ler foto/imagem”.
+- Isso evita o comportamento do iPhone/Chrome que escondia a opção de imagem quando tudo ficava no mesmo campo.

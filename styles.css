@@ -672,3 +672,16 @@ svg.spark{width:100%;height:140px;display:block}
 #bio-file-status{
   min-height:16px;
 }
+
+
+
+/* v33 — upload separado PDF/foto */
+.bio-upload-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+  margin-top:10px;
+}
+.bio-upload-grid input[type="file"]{
+  width:100%;
+}
