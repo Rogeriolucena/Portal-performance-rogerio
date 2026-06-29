@@ -147,49 +147,21 @@ Alterações:
 - Salvamento da dieta agora registra apenas o checklist e a nota do dia.
 
 
-## v26 — Bioimpedância por PDF
+## v30 — Base v25 + bioimpedância PDF + gráficos
 
-Alterações:
-- Medição quinzenal agora fica depois do calendário na aba Evolução.
-- Medição quinzenal não é mais manual.
-- O app lê PDF de bioimpedância e tenta extrair automaticamente:
+Correção de rota:
+- Esta versão parte da v25, não da v26/v27.
+- A v26/v27 já tinham bug de tela inicial vazia e aba Mais vazia, então foram abandonadas como base.
+
+Incluído:
+- Medição quinzenal por PDF de bioimpedância.
+- Card de medição fica após o calendário na aba Evolução.
+- Sem preenchimento manual de peso/cintura/sono/apetite/digestão/notas.
+- Gráficos de:
   - peso;
-  - percentual de gordura;
-  - massa gorda;
-  - massa magra;
-  - massa muscular;
-  - água corporal;
-  - IMC;
-  - gordura visceral;
-  - metabolismo basal.
-- Removidos sono, apetite, digestão e notas dessa medição.
-- Histórico passa a listar também bioimpedâncias importadas.
-
-
-## v27 — Gráficos de bioimpedância
-
-Alterações:
-- Os principais indicadores da bioimpedância agora viram gráficos na aba Evolução.
-- Indicadores exibidos em gráfico:
-  - peso;
-  - gordura corporal (%);
+  - gordura corporal;
   - massa muscular;
   - massa magra.
-- Cada gráfico mostra:
-  - valor atual;
-  - linha de tendência;
-  - valor inicial;
-  - variação acumulada.
 
-
-## v28 — Correção de tela vazia, aba Mais e OCR de bioimpedância
-
-Correções:
-- Corrigido bug da tela inicial vazia ao abrir o app.
-- Corrigido bug da aba Mais vazia.
-- Renderização protegida: se uma aba falhar, as demais continuam carregando.
-
-Bioimpedância:
-- A medição quinzenal agora aceita PDF ou imagem/foto.
-- Para imagem, o app usa OCR via Tesseract.js no navegador.
-- Os dados extraídos alimentam os gráficos de evolução.
+Não incluído nesta versão:
+- OCR/imagem de bioimpedância. Será adicionado em versão separada depois que esta base for validada.
