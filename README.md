@@ -18,3 +18,18 @@ Incluído:
 
 Não incluído:
 - OCR/imagem. Será tratado em versão separada depois que esta versão estiver validada.
+
+
+## v32 — OCR de bioimpedância
+
+Base: v31 estável.
+
+Alterações:
+- Medição quinzenal agora aceita PDF ou imagem/foto.
+- PDF segue usando PDF.js.
+- Imagem/foto usa OCR via Tesseract.js.
+- Resultados importados por imagem também alimentam os gráficos da aba Evolução.
+
+Cuidados:
+- Foto precisa estar nítida, sem corte e com boa iluminação.
+- OCR depende de internet para carregar a biblioteca externa.

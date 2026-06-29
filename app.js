@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v31";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v32";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
 
 function dateSerial(ds){
@@ -260,6 +260,20 @@ async function extractPdfText(file){
   }
   return text;
 }
+
+async function extractImageText(file,statusEl){
+  if(!window.Tesseract) throw new Error("OCR não carregado. Verifique a internet e atualize a página.");
+  const result=await Tesseract.recognize(file,"por+eng",{
+    logger:m=>{
+      if(statusEl && m.status){
+        const pct=m.progress?` ${Math.round(m.progress*100)}%`:"";
+        statusEl.textContent=`Lendo imagem: ${m.status}${pct}`;
+      }
+    }
+  });
+  return result?.data?.text || "";
+}
+
 function parseBioimpedanceText(text){
   const clean=String(text||"").replace(/\s+/g," ");
   return {
@@ -299,12 +313,12 @@ function bioValue(v,unit){
 }
 function latestBio(){
   return [...(u().bodyLogs||[])]
-    .filter(x=>x.source==="bioimpedance_pdf")
+    .filter(x=>x.source==="bioimpedance_pdf"||x.source==="bioimpedance_image")
     .sort((a,b)=>b.date.localeCompare(a.date))[0];
 }
 function bioTrendEntries(){
   return [...(u().bodyLogs||[])]
-    .filter(x=>x.source==="bioimpedance_pdf")
+    .filter(x=>x.source==="bioimpedance_pdf"||x.source==="bioimpedance_image")
     .sort((a,b)=>a.date.localeCompare(b.date));
 }
 function numVal(v){
@@ -344,34 +358,41 @@ function bioTrendSection(){
 }
 function bioMeasurementCard(){
   const last=lastBody(), due=daysSince(last)>=15, latest=latestBio();
-  return `<div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><p class="muted">Insira o PDF da bioimpedância. O app tenta ler automaticamente os principais valores e salva na evolução.</p><div><label>Selecionar PDF de bioimpedância</label><input id="bio-pdf-input" type="file" accept="application/pdf"></div><div class="actions"><button class="primary" onclick="handleBioPdfUpload()">Ler e salvar bioimpedância</button></div><p id="bio-pdf-status" class="muted" style="font-size:12px"></p>${latest?`<div class="bio-summary"><div><b>Último PDF</b><span>${latest.date} • ${latest.filename||"bioimpedância"}</span></div><div class="exam-grid"><div class="exam-result"><b>Peso</b><span>${bioValue(latest.weight,"kg")}</span></div><div class="exam-result"><b>Gordura corporal</b><span>${bioValue(latest.bodyFat,"%")}</span></div><div class="exam-result"><b>Massa gorda</b><span>${bioValue(latest.fatMass,"kg")}</span></div><div class="exam-result"><b>Massa magra</b><span>${bioValue(latest.leanMass,"kg")}</span></div><div class="exam-result"><b>Massa muscular</b><span>${bioValue(latest.muscleMass,"kg")}</span></div><div class="exam-result"><b>Água corporal</b><span>${bioValue(latest.water,"L")}</span></div><div class="exam-result"><b>IMC</b><span>${bioValue(latest.bmi,"")}</span></div><div class="exam-result"><b>Gordura visceral</b><span>${bioValue(latest.visceralFat,"")}</span></div><div class="exam-result"><b>Metabolismo basal</b><span>${bioValue(latest.bmr,"kcal")}</span></div></div></div>`:""}</div>`;
+  return `<div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><p class="muted">Insira o PDF ou uma imagem/foto da bioimpedância. O app tenta ler automaticamente os principais valores e salva na evolução.</p><div><label>Selecionar PDF ou imagem de bioimpedância</label><input id="bio-file-input" type="file" accept="application/pdf,image/*"></div><div class="actions"><button class="primary" onclick="handleBioFileUpload()">Ler e salvar bioimpedância</button></div><p id="bio-file-status" class="muted" style="font-size:12px"></p><p class="muted" style="font-size:12px">Para imagem: use foto nítida, sem corte, com boa iluminação e o texto reto.</p>${latest?`<div class="bio-summary"><div><b>Último arquivo</b><span>${latest.date} • ${latest.filename||"bioimpedância"}</span></div><div class="exam-grid"><div class="exam-result"><b>Peso</b><span>${bioValue(latest.weight,"kg")}</span></div><div class="exam-result"><b>Gordura corporal</b><span>${bioValue(latest.bodyFat,"%")}</span></div><div class="exam-result"><b>Massa gorda</b><span>${bioValue(latest.fatMass,"kg")}</span></div><div class="exam-result"><b>Massa magra</b><span>${bioValue(latest.leanMass,"kg")}</span></div><div class="exam-result"><b>Massa muscular</b><span>${bioValue(latest.muscleMass,"kg")}</span></div><div class="exam-result"><b>Água corporal</b><span>${bioValue(latest.water,"L")}</span></div><div class="exam-result"><b>IMC</b><span>${bioValue(latest.bmi,"")}</span></div><div class="exam-result"><b>Gordura visceral</b><span>${bioValue(latest.visceralFat,"")}</span></div><div class="exam-result"><b>Metabolismo basal</b><span>${bioValue(latest.bmr,"kcal")}</span></div></div></div>`:""}</div>`;
 }
-async function handleBioPdfUpload(){
-  const input=$("bio-pdf-input");
-  const status=$("bio-pdf-status");
-  if(!input || !input.files || !input.files.length){alert("Selecione um PDF primeiro.");return;}
+async function handleBioFileUpload(){
+  const input=$("bio-file-input");
+  const status=$("bio-file-status");
+  if(!input || !input.files || !input.files.length){alert("Selecione um PDF ou imagem primeiro.");return;}
   const file=input.files[0];
-  if(status) status.textContent="Lendo PDF de bioimpedância...";
+  const name=(file.name||"").toLowerCase();
+  const isPdf=file.type==="application/pdf" || name.endsWith(".pdf");
+  const isImage=(file.type||"").startsWith("image/");
+  if(!isPdf && !isImage){
+    alert("Formato não suportado. Use PDF ou imagem.");
+    return;
+  }
+  if(status) status.textContent=isPdf ? "Lendo PDF de bioimpedância..." : "Lendo imagem de bioimpedância...";
   try{
-    const text=await extractPdfText(file);
+    const text=isPdf ? await extractPdfText(file) : await extractImageText(file,status);
     const parsed=parseBioimpedanceText(text);
     const hasAny=Object.values(parsed).some(v=>!!v);
     if(!hasAny){
-      if(status) status.textContent="PDF lido, mas não encontrei valores de bioimpedância automaticamente.";
-      alert("Li o PDF, mas não identifiquei os valores automaticamente. Pode ser PDF escaneado/imagem ou um layout ainda não mapeado.");
+      if(status) status.textContent="Arquivo lido, mas não encontrei valores de bioimpedância automaticamente.";
+      alert("Li o arquivo, mas não identifiquei os valores automaticamente. Tente um PDF com texto selecionável ou uma imagem mais nítida.");
       return;
     }
     const date=today();
-    const rec={id:uid(),date,source:"bioimpedance_pdf",filename:file.name,size:file.size,...parsed,createdAt:new Date().toISOString()};
+    const rec={id:uid(),date,source:isPdf?"bioimpedance_pdf":"bioimpedance_image",filename:file.name,size:file.size,...parsed,createdAt:new Date().toISOString()};
     u().bodyLogs.push(rec);
+    if(status) status.textContent="Bioimpedância salva.";
     save();
   }catch(err){
     console.error(err);
-    if(status) status.textContent="Erro ao ler PDF: "+err.message;
-    alert("Não consegui ler este PDF automaticamente. Se ele for imagem escaneada, precisaremos de OCR em versão separada.");
+    if(status) status.textContent="Erro ao ler arquivo: "+err.message;
+    alert("Não consegui ler este arquivo automaticamente. Para imagem, tente boa iluminação, sem corte e texto nítido.");
   }
 }
-
 
 function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância, bioimpedância e histórico.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">última bio/medição</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div><div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div>${bioMeasurementCard()}${bioTrendSection()}<div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
 

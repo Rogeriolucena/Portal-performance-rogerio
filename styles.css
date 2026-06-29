@@ -665,3 +665,10 @@ svg.spark{width:100%;height:140px;display:block}
   .trend-value{font-size:16px}
   svg.spark{height:128px}
 }
+
+
+
+/* v32 — OCR de imagem para bioimpedância */
+#bio-file-status{
+  min-height:16px;
+}
