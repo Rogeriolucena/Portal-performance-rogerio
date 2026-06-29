@@ -124,7 +124,7 @@ window.PLAN_DATA = {
               "sets": "3",
               "reps": "8–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=paralelas+triceps+peito+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=ByImBQeorZY",
               "options": [
                 {
                   "name": "Paralelas ou mergulho",
@@ -136,7 +136,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                   "kind": "base"
                 },
                 {
@@ -149,7 +149,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                   "kind": "alternativa"
                 },
                 {
@@ -162,7 +162,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                   "kind": "alternativa"
                 }
               ],
@@ -176,7 +176,7 @@ window.PLAN_DATA = {
               "sets": "3",
               "reps": "12–15",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=crucifixo+maquina+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=E3aha5zhlc0",
               "options": [
                 {
                   "name": "Crucifixo máquina/crossover",
@@ -188,7 +188,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                   "kind": "base"
                 },
                 {
@@ -201,7 +201,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                   "kind": "alternativa"
                 },
                 {
@@ -214,7 +214,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                   "kind": "alternativa"
                 }
               ],
@@ -266,7 +266,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2 s descida • 1 s pausa • subir controlado",
                   "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                   "kind": "alternativa"
                 }
               ],
@@ -280,7 +280,7 @@ window.PLAN_DATA = {
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=triceps+frances+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=aHUB1thRUiY",
               "options": [
                 {
                   "name": "Tríceps francês",
@@ -292,7 +292,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2 s descida • 1 s pausa • subir controlado",
                   "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                   "kind": "base"
                 },
                 {
@@ -318,7 +318,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2 s descida • 1 s pausa • subir controlado",
                   "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                   "kind": "alternativa"
                 }
               ],
@@ -862,7 +862,7 @@ window.PLAN_DATA = {
               "sets": "5",
               "reps": "12–20",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+sentado+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
               "options": [
                 {
                   "name": "Panturrilha em pé/sentado",
@@ -874,7 +874,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                   "kind": "base"
                 },
                 {
@@ -887,7 +887,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=Nap62yku2ks",
                   "kind": "alternativa"
                 },
                 {
@@ -900,7 +900,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                   "kind": "alternativa"
                 }
               ],
@@ -1023,7 +1023,7 @@ window.PLAN_DATA = {
               "sets": "3",
               "reps": "12–15",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+posterior+ombro+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=5-HhI9yCuUo",
               "options": [
                 {
                   "name": "Elevação posterior",
@@ -1035,7 +1035,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=5-HhI9yCuUo",
                   "kind": "base"
                 },
                 {
@@ -1048,7 +1048,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=kYMTJAx_dTM",
                   "kind": "alternativa"
                 },
                 {
@@ -1061,7 +1061,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                   "kind": "alternativa"
                 }
               ],
@@ -1075,7 +1075,7 @@ window.PLAN_DATA = {
               "sets": "4",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=encolhimento+trap%C3%A9zio+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
               "options": [
                 {
                   "name": "Encolhimento",
@@ -1087,7 +1087,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                   "kind": "base"
                 },
                 {
@@ -1100,7 +1100,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                   "kind": "alternativa"
                 },
                 {
@@ -1113,7 +1113,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                   "kind": "alternativa"
                 }
               ],
@@ -1127,7 +1127,7 @@ window.PLAN_DATA = {
               "sets": "3",
               "reps": "30–60s",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=qNRqGqESAWU",
               "options": [
                 {
                   "name": "Prancha",
@@ -1139,7 +1139,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                   "kind": "base"
                 },
                 {
@@ -1152,7 +1152,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                   "kind": "alternativa"
                 },
                 {
@@ -1165,7 +1165,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                   "kind": "alternativa"
                 }
               ],
@@ -1179,7 +1179,7 @@ window.PLAN_DATA = {
               "sets": "3",
               "reps": "12–15",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o",
+              "link": "https://www.youtube.com/watch?v=I64bjVbs7XI",
               "options": [
                 {
                   "name": "Abdominal na polia",
@@ -1191,7 +1191,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                   "kind": "base"
                 },
                 {
@@ -1204,7 +1204,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                   "kind": "alternativa"
                 },
                 {
@@ -1217,7 +1217,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                   "kind": "alternativa"
                 }
               ],
@@ -1482,7 +1482,7 @@ window.PLAN_DATA = {
                   "rest": "45–75 s",
                   "tempo": "2 s descida • 1 s pausa • subir controlado",
                   "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                   "kind": "alternativa"
                 }
               ],
@@ -1553,7 +1553,7 @@ window.PLAN_DATA = {
               "sets": "1",
               "reps": "35–45 min",
               "rpe": "6–7",
-              "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+              "link": "https://www.youtube.com/watch?v=PmI06ZanWxI",
               "options": [
                 {
                   "name": "Cardio Zona 2",
@@ -1565,7 +1565,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                   "kind": "base"
                 },
                 {
@@ -1578,7 +1578,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=aRLSSGyrkFw",
                   "kind": "alternativa"
                 },
                 {
@@ -1591,7 +1591,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                   "kind": "alternativa"
                 }
               ],
@@ -1605,7 +1605,7 @@ window.PLAN_DATA = {
               "sets": "1",
               "reps": "30–45 min",
               "rpe": "6–8",
-              "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado",
+              "link": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
               "options": [
                 {
                   "name": "Funcional leve/moderado",
@@ -1617,7 +1617,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                   "kind": "base"
                 },
                 {
@@ -1630,7 +1630,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                   "kind": "alternativa"
                 },
                 {
@@ -1643,7 +1643,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                   "kind": "alternativa"
                 }
               ],
@@ -1657,7 +1657,7 @@ window.PLAN_DATA = {
               "sets": "1",
               "reps": "10–15 min",
               "rpe": "5–6",
-              "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tor%C3%A1cica+ombros",
+              "link": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
               "options": [
                 {
                   "name": "Mobilidade",
@@ -1669,7 +1669,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                   "kind": "base"
                 },
                 {
@@ -1682,7 +1682,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                   "kind": "alternativa"
                 },
                 {
@@ -1695,7 +1695,7 @@ window.PLAN_DATA = {
                   "rest": "60–90 s",
                   "tempo": "2–3 s descida • subir com controle",
                   "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                  "video": "",
+                  "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                   "kind": "alternativa"
                 }
               ],
@@ -1830,7 +1830,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=paralelas+triceps+peito+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=ByImBQeorZY",
                   "options": [
                     {
                       "name": "Paralelas ou mergulho",
@@ -1842,7 +1842,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                       "kind": "base"
                     },
                     {
@@ -1855,7 +1855,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                       "kind": "alternativa"
                     },
                     {
@@ -1868,7 +1868,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                       "kind": "alternativa"
                     }
                   ],
@@ -1882,7 +1882,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=crucifixo+maquina+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                   "options": [
                     {
                       "name": "Crucifixo máquina/crossover",
@@ -1894,7 +1894,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "base"
                     },
                     {
@@ -1907,7 +1907,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -1920,7 +1920,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -1972,7 +1972,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -1986,7 +1986,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=triceps+frances+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                   "options": [
                     {
                       "name": "Tríceps francês",
@@ -1998,7 +1998,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "base"
                     },
                     {
@@ -2024,7 +2024,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -2568,7 +2568,7 @@ window.PLAN_DATA = {
                   "sets": "5",
                   "reps": "12–20",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+sentado+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                   "options": [
                     {
                       "name": "Panturrilha em pé/sentado",
@@ -2580,7 +2580,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                       "kind": "base"
                     },
                     {
@@ -2593,7 +2593,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=Nap62yku2ks",
                       "kind": "alternativa"
                     },
                     {
@@ -2606,7 +2606,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                       "kind": "alternativa"
                     }
                   ],
@@ -2729,7 +2729,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+posterior+ombro+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=5-HhI9yCuUo",
                   "options": [
                     {
                       "name": "Elevação posterior",
@@ -2741,7 +2741,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=5-HhI9yCuUo",
                       "kind": "base"
                     },
                     {
@@ -2754,7 +2754,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kYMTJAx_dTM",
                       "kind": "alternativa"
                     },
                     {
@@ -2767,7 +2767,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -2781,7 +2781,7 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=encolhimento+trap%C3%A9zio+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                   "options": [
                     {
                       "name": "Encolhimento",
@@ -2793,7 +2793,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                       "kind": "base"
                     },
                     {
@@ -2806,7 +2806,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                       "kind": "alternativa"
                     },
                     {
@@ -2819,7 +2819,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=AdkMdSoRVPE",
                       "kind": "alternativa"
                     }
                   ],
@@ -2833,7 +2833,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "30–60s",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                   "options": [
                     {
                       "name": "Prancha",
@@ -2845,7 +2845,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "base"
                     },
                     {
@@ -2858,7 +2858,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "alternativa"
                     },
                     {
@@ -2871,7 +2871,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "alternativa"
                     }
                   ],
@@ -2885,7 +2885,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                   "options": [
                     {
                       "name": "Abdominal na polia",
@@ -2897,7 +2897,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "base"
                     },
                     {
@@ -2910,7 +2910,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "alternativa"
                     },
                     {
@@ -2923,7 +2923,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "alternativa"
                     }
                   ],
@@ -3188,7 +3188,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -3259,7 +3259,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "35–45 min",
                   "rpe": "6–7",
-                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+                  "link": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                   "options": [
                     {
                       "name": "Cardio Zona 2",
@@ -3271,7 +3271,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                       "kind": "base"
                     },
                     {
@@ -3284,7 +3284,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aRLSSGyrkFw",
                       "kind": "alternativa"
                     },
                     {
@@ -3297,7 +3297,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                       "kind": "alternativa"
                     }
                   ],
@@ -3311,7 +3311,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "30–45 min",
                   "rpe": "6–8",
-                  "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado",
+                  "link": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                   "options": [
                     {
                       "name": "Funcional leve/moderado",
@@ -3323,7 +3323,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                       "kind": "base"
                     },
                     {
@@ -3336,7 +3336,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                       "kind": "alternativa"
                     },
                     {
@@ -3349,7 +3349,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                       "kind": "alternativa"
                     }
                   ],
@@ -3363,7 +3363,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "10–15 min",
                   "rpe": "5–6",
-                  "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tor%C3%A1cica+ombros",
+                  "link": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                   "options": [
                     {
                       "name": "Mobilidade",
@@ -3375,7 +3375,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "base"
                     },
                     {
@@ -3388,7 +3388,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "alternativa"
                     },
                     {
@@ -3401,7 +3401,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "alternativa"
                     }
                   ],
@@ -3536,7 +3536,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=crossover+polia+execu%C3%A7%C3%A3o+correta",
+                  "link": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                   "options": [
                     {
                       "name": "Crossover na polia",
@@ -3548,7 +3548,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "base"
                     },
                     {
@@ -3561,7 +3561,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -3574,7 +3574,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -3588,7 +3588,7 @@ window.PLAN_DATA = {
                   "sets": "2–3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=crucifixo+inclinado+halteres+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                   "options": [
                     {
                       "name": "Crucifixo inclinado com halteres",
@@ -3600,7 +3600,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "base"
                     },
                     {
@@ -3613,7 +3613,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -3626,7 +3626,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -3640,7 +3640,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+testa+barra+ez+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                   "options": [
                     {
                       "name": "Tríceps testa barra EZ",
@@ -3652,7 +3652,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "base"
                     },
                     {
@@ -3678,7 +3678,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -3730,7 +3730,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -4274,7 +4274,7 @@ window.PLAN_DATA = {
                   "sets": "5",
                   "reps": "12–20",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=panturrilha+sentado+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=Nap62yku2ks",
                   "options": [
                     {
                       "name": "Panturrilha sentado",
@@ -4286,7 +4286,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=Nap62yku2ks",
                       "kind": "base"
                     },
                     {
@@ -4299,7 +4299,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=Nap62yku2ks",
                       "kind": "alternativa"
                     },
                     {
@@ -4312,7 +4312,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                       "kind": "alternativa"
                     }
                   ],
@@ -4435,7 +4435,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=posterior+ombro+peck+deck+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                   "options": [
                     {
                       "name": "Posterior no peck deck",
@@ -4447,7 +4447,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "base"
                     },
                     {
@@ -4460,7 +4460,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -4473,7 +4473,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -4487,7 +4487,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=face+pull+execu%C3%A7%C3%A3o+correta",
+                  "link": "https://www.youtube.com/watch?v=kYMTJAx_dTM",
                   "options": [
                     {
                       "name": "Face pull",
@@ -4499,7 +4499,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kYMTJAx_dTM",
                       "kind": "base"
                     },
                     {
@@ -4512,7 +4512,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kYMTJAx_dTM",
                       "kind": "alternativa"
                     },
                     {
@@ -4525,7 +4525,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -4539,7 +4539,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=abdominal+infra+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=fN1zziClTfE",
                   "options": [
                     {
                       "name": "Abdominal infra",
@@ -4551,7 +4551,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=fN1zziClTfE",
                       "kind": "base"
                     },
                     {
@@ -4564,7 +4564,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "alternativa"
                     },
                     {
@@ -4577,7 +4577,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "alternativa"
                     }
                   ],
@@ -4616,7 +4616,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "alternativa"
                     },
                     {
@@ -4629,7 +4629,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "alternativa"
                     }
                   ],
@@ -4752,7 +4752,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+p%C3%A9lvica+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                   "options": [
                     {
                       "name": "Elevação pélvica",
@@ -4764,7 +4764,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                       "kind": "base"
                     },
                     {
@@ -4777,7 +4777,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                       "kind": "alternativa"
                     },
                     {
@@ -4790,7 +4790,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                       "kind": "alternativa"
                     }
                   ],
@@ -4856,7 +4856,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+unilateral+polia+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=9cmeOVHOjck",
                   "options": [
                     {
                       "name": "Tríceps unilateral na polia",
@@ -4868,7 +4868,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=9cmeOVHOjck",
                       "kind": "base"
                     },
                     {
@@ -4894,7 +4894,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -4965,7 +4965,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "40–50 min",
                   "rpe": "6–7",
-                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+                  "link": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                   "options": [
                     {
                       "name": "Cardio Zona 2",
@@ -4977,7 +4977,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                       "kind": "base"
                     },
                     {
@@ -4990,7 +4990,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aRLSSGyrkFw",
                       "kind": "alternativa"
                     },
                     {
@@ -5003,7 +5003,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                       "kind": "alternativa"
                     }
                   ],
@@ -5017,7 +5017,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "30–40 min",
                   "rpe": "6–8",
-                  "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado",
+                  "link": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                   "options": [
                     {
                       "name": "Funcional moderado",
@@ -5029,7 +5029,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                       "kind": "base"
                     },
                     {
@@ -5042,7 +5042,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                       "kind": "alternativa"
                     },
                     {
@@ -5055,7 +5055,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=YlG4lBk9JAM",
                       "kind": "alternativa"
                     }
                   ],
@@ -5069,7 +5069,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "15 min",
                   "rpe": "5–6",
-                  "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tornozelo+ombro",
+                  "link": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                   "options": [
                     {
                       "name": "Mobilidade + liberação",
@@ -5081,7 +5081,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "base"
                     },
                     {
@@ -5094,7 +5094,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "alternativa"
                     },
                     {
@@ -5107,7 +5107,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "alternativa"
                     }
                   ],
@@ -5242,7 +5242,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=crossover+alto+para+baixo+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                   "options": [
                     {
                       "name": "Crossover alto para baixo",
@@ -5254,7 +5254,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "base"
                     },
                     {
@@ -5267,7 +5267,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -5280,7 +5280,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -5294,7 +5294,7 @@ window.PLAN_DATA = {
                   "sets": "2–3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=peck+deck+execu%C3%A7%C3%A3o+correta",
+                  "link": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                   "options": [
                     {
                       "name": "Peck deck",
@@ -5306,7 +5306,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "base"
                     },
                     {
@@ -5319,7 +5319,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -5332,7 +5332,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -5384,7 +5384,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -5398,7 +5398,7 @@ window.PLAN_DATA = {
                   "sets": "2–3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=mergulho+banco+tr%C3%ADceps+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=ByImBQeorZY",
                   "options": [
                     {
                       "name": "Mergulho no banco/máquina",
@@ -5410,7 +5410,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                       "kind": "base"
                     },
                     {
@@ -5423,7 +5423,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                       "kind": "alternativa"
                     },
                     {
@@ -5436,7 +5436,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=ByImBQeorZY",
                       "kind": "alternativa"
                     }
                   ],
@@ -5980,7 +5980,7 @@ window.PLAN_DATA = {
                   "sets": "5",
                   "reps": "12–20",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                   "options": [
                     {
                       "name": "Panturrilha em pé",
@@ -5992,7 +5992,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                       "kind": "base"
                     },
                     {
@@ -6005,7 +6005,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=Nap62yku2ks",
                       "kind": "alternativa"
                     },
                     {
@@ -6018,7 +6018,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=tPiLhI7TkLE",
                       "kind": "alternativa"
                     }
                   ],
@@ -6193,7 +6193,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=posterior+ombro+peck+deck+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                   "options": [
                     {
                       "name": "Posterior no peck deck",
@@ -6205,7 +6205,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "base"
                     },
                     {
@@ -6218,7 +6218,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=E3aha5zhlc0",
                       "kind": "alternativa"
                     },
                     {
@@ -6231,7 +6231,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=FzCnfD0gOXo",
                       "kind": "alternativa"
                     }
                   ],
@@ -6245,7 +6245,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                   "options": [
                     {
                       "name": "Abdominal na polia",
@@ -6257,7 +6257,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "base"
                     },
                     {
@@ -6270,7 +6270,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "alternativa"
                     },
                     {
@@ -6283,7 +6283,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "alternativa"
                     }
                   ],
@@ -6297,7 +6297,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "45–60s",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                   "options": [
                     {
                       "name": "Prancha",
@@ -6309,7 +6309,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "base"
                     },
                     {
@@ -6322,7 +6322,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=qNRqGqESAWU",
                       "kind": "alternativa"
                     },
                     {
@@ -6335,7 +6335,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=I64bjVbs7XI",
                       "kind": "alternativa"
                     }
                   ],
@@ -6458,7 +6458,7 @@ window.PLAN_DATA = {
                   "sets": "3",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+p%C3%A9lvica+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                   "options": [
                     {
                       "name": "Elevação pélvica",
@@ -6470,7 +6470,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                       "kind": "base"
                     },
                     {
@@ -6483,7 +6483,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                       "kind": "alternativa"
                     },
                     {
@@ -6496,7 +6496,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=kvmT_ZlgVI0",
                       "kind": "alternativa"
                     }
                   ],
@@ -6548,7 +6548,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -6600,7 +6600,7 @@ window.PLAN_DATA = {
                       "rest": "45–75 s",
                       "tempo": "2 s descida • 1 s pausa • subir controlado",
                       "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aHUB1thRUiY",
                       "kind": "alternativa"
                     }
                   ],
@@ -6619,7 +6619,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "35–45 min",
                   "rpe": "6–7",
-                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+                  "link": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                   "options": [
                     {
                       "name": "Cardio Zona 2",
@@ -6631,7 +6631,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                       "kind": "base"
                     },
                     {
@@ -6644,7 +6644,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=aRLSSGyrkFw",
                       "kind": "alternativa"
                     },
                     {
@@ -6657,7 +6657,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=PmI06ZanWxI",
                       "kind": "alternativa"
                     }
                   ],
@@ -6671,7 +6671,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "8–12 tiros curtos",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=hiit+iniciante+esteira+bicicleta+execu%C3%A7%C3%A3o",
+                  "link": "https://www.youtube.com/watch?v=7WCHNqHo52o",
                   "options": [
                     {
                       "name": "HIIT leve opcional",
@@ -6683,7 +6683,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=7WCHNqHo52o",
                       "kind": "base"
                     },
                     {
@@ -6696,7 +6696,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=7WCHNqHo52o",
                       "kind": "alternativa"
                     },
                     {
@@ -6709,7 +6709,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=7WCHNqHo52o",
                       "kind": "alternativa"
                     }
                   ],
@@ -6723,7 +6723,7 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "15 min",
                   "rpe": "5–6",
-                  "link": "https://www.youtube.com/results?search_query=mobilidade+geral+treino",
+                  "link": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                   "options": [
                     {
                       "name": "Mobilidade geral",
@@ -6735,7 +6735,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "base"
                     },
                     {
@@ -6748,7 +6748,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "alternativa"
                     },
                     {
@@ -6761,7 +6761,7 @@ window.PLAN_DATA = {
                       "rest": "60–90 s",
                       "tempo": "2–3 s descida • subir com controle",
                       "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
-                      "video": "",
+                      "video": "https://www.youtube.com/watch?v=JyG8LvVNIKM",
                       "kind": "alternativa"
                     }
                   ],
@@ -7353,5 +7353,5 @@ window.PLAN_DATA = {
       "frequency": "8–12 semanas"
     }
   ],
-  "version": "v36"
+  "version": "v38"
 };

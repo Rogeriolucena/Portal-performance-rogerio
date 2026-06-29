@@ -822,3 +822,36 @@ svg.spark{width:100%;height:140px;display:block}
 .exercise-details:not([open]) .actions.compact{
   display:none;
 }
+
+
+
+/* v38 — check-in concluído */
+.done-card{
+  text-align:center;
+}
+.done-icon{
+  font-size:48px;
+  line-height:1;
+  margin-bottom:8px;
+}
+.done-card h2{
+  margin-bottom:8px;
+}
+.done-summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.035);
+  border-radius:16px;
+  padding:12px;
+  margin:14px 0 8px;
+}
+.done-summary span{
+  color:var(--muted);
+}
+.done-summary strong{
+  color:#dbe8ff;
+  font-size:18px;
+}

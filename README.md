@@ -85,3 +85,28 @@ Alterações:
   - seletor de alternativa.
 - As informações detalhadas ficaram dentro de “Ver detalhes, carga e vídeo”.
 - O usuário pode expandir/contrair cada exercício individualmente.
+
+
+## v37 — Correção de vídeos ausentes
+
+Correções:
+- Preenchidos os vídeos ausentes nas opções de exercícios.
+- Removidos links antigos de pesquisa do YouTube dos dados de treino.
+- Todos os exercícios/opções agora possuem um link direto de vídeo.
+- Movimentos acessórios compartilham vídeo-base equivalente quando a execução é muito próxima.
+
+Ajustes aplicados:
+- Opções sem vídeo antes da correção: 141
+- Campos de vídeo/link atualizados: 186
+
+
+## v38 — Check-in concluído para treino e dieta
+
+Alterações:
+- Ao salvar o treino, a aba Treino passa a mostrar “Treino concluído hoje”.
+- As opções do treino somem para o dia atual.
+- No dia seguinte, o app mostra o treino do novo dia automaticamente.
+- Ao salvar a dieta, a aba Dieta passa a mostrar “Dieta concluída hoje”.
+- As opções da dieta somem para o dia atual.
+- O calendário da aba Evolução passa a registrar treino/dieta concluídos com base no check-in salvo.
+- Incluído botão “Editar check-in de hoje” em Treino e Dieta.
