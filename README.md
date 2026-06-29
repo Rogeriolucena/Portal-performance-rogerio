@@ -110,3 +110,14 @@ Alterações:
 - As opções da dieta somem para o dia atual.
 - O calendário da aba Evolução passa a registrar treino/dieta concluídos com base no check-in salvo.
 - Incluído botão “Editar check-in de hoje” em Treino e Dieta.
+
+
+## v39 — Horário do check-in
+
+Alterações:
+- O treino agora registra horário do check-in (`checkInTime`) e data/hora ISO (`checkInAt`).
+- A dieta também registra horário do check-in.
+- O card de concluído mostra “Registrado às HH:MM”.
+- Histórico da aba Evolução mostra o horário de treino/dieta quando disponível.
+- Botão “Salvar treino” alterado para “Registrar treino”.
+- Botão “Salvar dieta” alterado para “Registrar dieta”.
