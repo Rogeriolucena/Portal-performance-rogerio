@@ -1,24 +1,65 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v23";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v24";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
 function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"],d=m[new Date().getDay()];return d==="Sábado"||d==="Domingo"?"Sábado/Domingo":d}
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
-function blankUser(){return{week:1,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
+function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
-function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} function currentWorkoutBlock(){
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
+
+function dateSerial(ds){
+  return Math.floor(new Date(ds+"T00:00:00").getTime()/86400000);
+}
+function isAfterTrainingStart(ds){
+  return !!ds && dateSerial(ds)>=dateSerial(TRAINING_START_DATE);
+}
+function isCoreWorkoutDayName(day){
+  return day && day!=="Sábado/Domingo";
+}
+function validWorkoutLog(log){
+  return log && isAfterTrainingStart(log.date) && isCoreWorkoutDayName(log.day) && ((log.exercises||[]).some(e=>e.done));
+}
+function coreWorkoutCheckins(){
+  const seen=new Set();
+  (u().workoutLogs||[]).forEach(log=>{
+    if(validWorkoutLog(log)) seen.add(log.date);
+  });
+  return seen.size;
+}
+function autoWeek(){
+  return Math.max(1,Math.min(12,Math.floor(coreWorkoutCheckins()/5)+1));
+}
+function weekProgressInCycle(){
+  return coreWorkoutCheckins()%5;
+}
+function activeWeekNumber(){
+  if(u().weekOverrideDate===today() && u().weekOverride) return Number(u().weekOverride);
+  return autoWeek();
+}
+function calendarWeekNumber(){
+  return Number(u().calendarWeek||activeWeekNumber());
+}
+function workoutBlockForWeek(weekNumber){
   const blocks=prof().workoutBlocks;
   if(!blocks) return {key:"A",name:"Bloco A",focus:"",workouts:prof().workouts};
-  const wk=u().week||1;
+  const wk=Number(weekNumber)||1;
   const key=wk<=4?"A":wk<=8?"B":"C";
   return {key,...blocks[key]};
 }
-function workouts(){return currentWorkoutBlock().workouts||prof().workouts}
+function currentWorkoutBlock(){
+  return workoutBlockForWeek(activeWeekNumber());
+}
+function workoutsForWeek(weekNumber){
+  return workoutBlockForWeek(weekNumber).workouts||prof().workouts;
+}
+function workouts(){return workoutsForWeek(activeWeekNumber())}
 function activeDay(){return u().dayOverrideDate===today()&&u().dayOverride?u().dayOverride:dayName()}
 function workout(){return workouts()[activeDay()]||workouts().Segunda}
-function week(){return PLAN.weeks.find(x=>x.week===u().week)||PLAN.weeks[0]}
+function week(){return PLAN.weeks.find(x=>x.week===activeWeekNumber())||PLAN.weeks[0]}
+function calendarWeek(){return PLAN.weeks.find(x=>x.week===calendarWeekNumber())||PLAN.weeks[0]}
 
 function currentOpenTab(){
   const active=document.querySelector(".section.active");
@@ -46,16 +87,10 @@ function scrollCalendarWeekIntoView(weekNumber){
 }
 
 function setCalendarWeek(weekNumber){
-  const content=document.querySelector(".content");
-  const previousTop=content ? content.scrollTop : 0;
-  u().week=Number(weekNumber);
+  u().calendarWeek=Number(weekNumber);
   localStorage.setItem(KEY,JSON.stringify(state));
   renderCalendar();
-  renderTrain();
   openTab("calendar");
-  const newContent=document.querySelector(".content");
-  if(newContent) newContent.scrollTop=previousTop;
-  scrollCalendarWeekIntoView(weekNumber);
 }
 
 function save(){const tab=currentOpenTab();localStorage.setItem(KEY,JSON.stringify(state));render(tab);scheduleReminders()}
@@ -70,9 +105,9 @@ function shell(){let p=prof();document.getElementById("app").innerHTML=`<div cla
 function input(id,label,type="text",ph="",val=""){return`<div><label>${label}</label><input id="${id}" type="${type}" placeholder="${ph}" value="${val}"></div>`}
 function select(id,label,ops,val=""){return`<div><label>${label}</label><select id="${id}">${ops.map(o=>`<option ${o===val?"selected":""}>${o}</option>`).join("")}</select></div>`}
 function head(t,s){return`<div class="page-head"><h2>${t}</h2><p>${s||""}</p></div>`}
-function renderTrain(){let w=workout(), wk=week(), p=prof();$("train").innerHTML=`${head("Hoje • Treino",`Detectado automaticamente: ${activeDay()}.`)}<div class="grid three"><div class="card kpi"><div class="label">Treino</div><div class="value" style="font-size:20px">${w.title}</div><div class="hint">${activeDay()}</div></div><div class="card kpi"><div class="label">Semana</div><div class="value">S${u().week}</div><div class="hint">${wk.phase}</div></div><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">meta ${p.targetWeight||"—"} kg</div></div></div><div class="card"><p class="pill">${currentWorkoutBlock().name} • ${currentWorkoutBlock().focus}</p><p class="notice"><b>Regra:</b> ${wk.rule}</p><details><summary>Trocar treino só hoje</summary><div class="form-grid"><div><label>Semana</label><select onchange="u().week=Number(this.value);save()">${PLAN.weeks.map(x=>`<option value="${x.week}" ${x.week===u().week?"selected":""}>Semana ${x.week}</option>`).join("")}</select></div><div><label>Dia</label><select onchange="u().dayOverrideDate='${today()}';u().dayOverride=this.value;save()">${Object.keys(workouts()).map(d=>`<option ${d===activeDay()?"selected":""}>${d}</option>`).join("")}</select></div></div></details><h3>Exercícios executados</h3><div class="list">${w.exercises.map((e,i)=>`<label class="check"><input type="checkbox" id="ex-${i}"><div><strong>${e.name}</strong><span>${e.sets}x${e.reps} • RPE ${e.rpe} ${e.link&&e.link!=="#"?`• <a href="${e.link}" target="_blank">vídeo</a>`:""}</span></div></label>`).join("")}</div><div style="margin-top:12px"><label>Nota do treino</label><textarea id="tr-note" placeholder="Ex.: completo, energia baixa, adaptação..."></textarea></div><div class="actions"><button class="primary" onclick="saveTrain()">Salvar treino</button></div></div>`}
-function saveTrain(){let w=workout(), ex=w.exercises.map((e,i)=>({name:e.name,done:$(`ex-${i}`).checked}));u().workoutLogs.push({id:uid(),date:today(),week:u().week,day:activeDay(),title:w.title,exercises:ex,note:$("tr-note").value});upsertDaily({exercises:ex,day:activeDay(),week:u().week,workoutTitle:w.title});save()}
-function upsertDaily(part){let d=today(), log=u().dailyLogs.find(x=>x.date===d);if(!log){log={id:uid(),date:d,day:activeDay(),week:u().week,exercises:[],meals:[],water:[],schedule:[]};u().dailyLogs.push(log)}Object.assign(log,part)}
+function renderTrain(){let w=workout(), wk=week(), p=prof(), aw=activeWeekNumber(), done=weekProgressInCycle(), total=coreWorkoutCheckins();$("train").innerHTML=`${head("Hoje • Treino",`Detectado automaticamente: ${activeDay()}.`)}<div class="grid three"><div class="card kpi"><div class="label">Treino</div><div class="value" style="font-size:20px">${w.title}</div><div class="hint">${activeDay()}</div></div><div class="card kpi"><div class="label">Semana automática</div><div class="value">S${aw}</div><div class="hint">${done}/5 check-ins nesta semana</div></div><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">meta ${p.targetWeight||"—"} kg</div></div></div><div class="card"><p class="pill">${currentWorkoutBlock().name} • ${currentWorkoutBlock().focus}</p><p class="notice"><b>Ciclo:</b> início em 29/06/2026. A cada 5 check-ins válidos de segunda a sexta, o app avança automaticamente uma semana. Sábado/domingo fica como bônus opcional e não conta para avançar semana.</p><p class="muted" style="font-size:13px">Check-ins válidos desde o início: ${total}. Semana atual: S${aw} • ${wk.phase}.</p><details><summary>Mudar treino só hoje</summary><div class="form-grid"><div><label>Semana só hoje</label><select onchange="u().weekOverrideDate=today();u().weekOverride=Number(this.value);save()">${PLAN.weeks.map(x=>`<option value="${x.week}" ${x.week===aw?"selected":""}>Semana ${x.week}</option>`).join("")}</select></div><div><label>Dia só hoje</label><select onchange="u().dayOverrideDate=today();u().dayOverride=this.value;save()">${Object.keys(workouts()).map(d=>`<option ${d===activeDay()?"selected":""}>${d}</option>`).join("")}</select></div></div><div class="actions"><button class="ghost" onclick="u().weekOverrideDate=null;u().weekOverride=null;u().dayOverrideDate=null;u().dayOverride=null;save()">Limpar troca de hoje</button></div></details><h3>Exercícios executados</h3><div class="list">${w.exercises.map((e,i)=>`<label class="check"><input type="checkbox" id="ex-${i}"><div><strong>${e.name}</strong><span>${e.sets}x${e.reps} • RPE ${e.rpe} ${e.link&&e.link!=="#"?`• <a href="${e.link}" target="_blank">vídeo</a>`:""}</span></div></label>`).join("")}</div><div style="margin-top:12px"><label>Nota do treino</label><textarea id="tr-note" placeholder="Ex.: completo, energia baixa, adaptação..."></textarea></div><div class="actions"><button class="primary" onclick="saveTrain()">Salvar treino</button></div></div>`}
+function saveTrain(){let w=workout(), aw=activeWeekNumber(), ex=w.exercises.map((e,i)=>({name:e.name,done:$(`ex-${i}`).checked}));u().workoutLogs.push({id:uid(),date:today(),week:aw,day:activeDay(),title:w.title,exercises:ex,note:$("tr-note").value});upsertDaily({exercises:ex,day:activeDay(),week:aw,workoutTitle:w.title});save()}
+function upsertDaily(part){let d=today(), log=u().dailyLogs.find(x=>x.date===d);if(!log){log={id:uid(),date:d,day:activeDay(),week:activeWeekNumber(),exercises:[],meals:[],water:[],schedule:[]};u().dailyLogs.push(log)}Object.assign(log,part)}
 
 function dietExtras(i){
   const groups=[
@@ -160,7 +195,7 @@ function weekShortLabel(phase){
   return phase.split(" ")[0];
 }
 
-function renderCalendar(){let wk=week();$("calendar").innerHTML=`${head("Calendário de treinos","12 semanas com vídeos de execução.")}<div class="week-strip">${PLAN.weeks.map(x=>`<button class="week-chip ${x.week===u().week?"active":""}" data-week="${x.week}" onclick="setCalendarWeek(${x.week})"><span class="week-num">S${x.week}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="muted" style="margin:8px 0 0">${currentWorkoutBlock().name} • ${currentWorkoutBlock().focus}</p><p class="notice">${wk.rule}</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(workouts()).map(([day,w])=>`<div class="card item"><div style="display:flex;justify-content:space-between;gap:8px"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><button class="ghost" onclick="u().dayOverrideDate='${today()}';u().dayOverride='${day}';save();openTab('train')">Usar hoje</button></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
+function renderCalendar(){let wk=calendarWeek(), cw=calendarWeekNumber(), block=workoutBlockForWeek(cw), list=workoutsForWeek(cw);$("calendar").innerHTML=`${head("Calendário de treinos","Consulta das 12 semanas. Não altera a aba Treino.")}<div class="week-strip week-grid">${PLAN.weeks.map(x=>`<button class="week-chip ${x.week===cw?"active":""}" data-week="${x.week}" onclick="setCalendarWeek(${x.week})"><span class="week-num">S${x.week}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="muted" style="margin:8px 0 0">${block.name} • ${block.focus}</p><p class="notice">${wk.rule}</p><p class="muted" style="font-size:12px">Esta seleção é apenas para consulta. A aba Treino usa a semana automática baseada nos check-ins.</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(list).map(([day,w])=>`<div class="card item"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
 
 function progressMonthName(m){return ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"][m]}
 function progressISO(y,m,d){return `${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`}

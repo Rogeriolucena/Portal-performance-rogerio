@@ -116,3 +116,21 @@ Correção:
 - Substituído `scrollIntoView()` por cálculo manual de `scrollLeft`.
 - O ajuste é repetido em múltiplos tempos após o redesenho, porque o Chrome/iPhone recalcula o layout depois do primeiro frame.
 - O chip selecionado deve permanecer visível/centralizado mesmo ao selecionar S10, S11 ou S12.
+
+
+## v24 — Semana automática e calendário apenas consulta
+
+Alterações:
+- Ciclo de treino iniciado em 29/06/2026.
+- Aba Treino usa semana automática:
+  - 5 check-ins válidos de segunda a sexta avançam 1 semana;
+  - sábado/domingo é bônus opcional e não avança semana.
+- Mantida a opção “Mudar treino só hoje”:
+  - semana só hoje;
+  - dia só hoje;
+  - botão para limpar troca de hoje.
+- Aba Calendário virou apenas consulta:
+  - selecionar S1...S12 não altera a aba Treino.
+- Correção definitiva do problema de scroll:
+  - os chips agora ficam em grade fixa;
+  - não há mais carrossel horizontal para voltar ao início.

@@ -598,3 +598,34 @@ input#date{
 .week-chip{
   flex:0 0 auto!important;
 }
+
+
+
+/* v24 — chips do calendário em grade fixa, sem scroll horizontal */
+.week-strip.week-grid{
+  display:grid!important;
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:8px!important;
+  overflow:visible!important;
+  padding:4px 0 14px!important;
+  scroll-behavior:auto!important;
+}
+.week-strip.week-grid .week-chip{
+  min-width:0!important;
+  width:100%!important;
+  max-width:none!important;
+  min-height:54px!important;
+  padding:8px 4px!important;
+  flex:none!important;
+}
+.week-strip.week-grid .week-num{
+  font-size:20px!important;
+}
+@media(max-width:420px){
+  .week-strip.week-grid{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  }
+  .week-strip.week-grid .week-chip{
+    min-height:50px!important;
+  }
+}
