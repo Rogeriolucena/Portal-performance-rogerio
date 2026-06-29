@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v33";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v34";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v32","sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v33","sheipados_v32","sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
 
 function dateSerial(ds){
@@ -358,7 +358,7 @@ function bioTrendSection(){
 }
 function bioMeasurementCard(){
   const last=lastBody(), due=daysSince(last)>=15, latest=latestBio();
-  return `<div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><p class="muted">Insira o PDF ou uma foto/imagem da bioimpedância. O app tenta ler automaticamente os principais valores e salva na evolução.</p><div class="bio-upload-grid"><div><label>PDF da bioimpedância</label><input id="bio-pdf-input" type="file" accept="application/pdf"></div><div><label>Foto ou imagem da bioimpedância</label><input id="bio-image-input" type="file" accept="image/*" capture="environment"></div></div><div class="actions"><button class="primary" onclick="handleBioPdfUpload()">Ler PDF</button><button class="ghost" onclick="handleBioImageUpload()">Ler foto/imagem</button></div><p id="bio-file-status" class="muted" style="font-size:12px"></p><p class="muted" style="font-size:12px">Para imagem: use foto nítida, sem corte, com boa iluminação e o texto reto.</p>${latest?`<div class="bio-summary"><div><b>Último arquivo</b><span>${latest.date} • ${latest.filename||"bioimpedância"}</span></div><div class="exam-grid"><div class="exam-result"><b>Peso</b><span>${bioValue(latest.weight,"kg")}</span></div><div class="exam-result"><b>Gordura corporal</b><span>${bioValue(latest.bodyFat,"%")}</span></div><div class="exam-result"><b>Massa gorda</b><span>${bioValue(latest.fatMass,"kg")}</span></div><div class="exam-result"><b>Massa magra</b><span>${bioValue(latest.leanMass,"kg")}</span></div><div class="exam-result"><b>Massa muscular</b><span>${bioValue(latest.muscleMass,"kg")}</span></div><div class="exam-result"><b>Água corporal</b><span>${bioValue(latest.water,"L")}</span></div><div class="exam-result"><b>IMC</b><span>${bioValue(latest.bmi,"")}</span></div><div class="exam-result"><b>Gordura visceral</b><span>${bioValue(latest.visceralFat,"")}</span></div><div class="exam-result"><b>Metabolismo basal</b><span>${bioValue(latest.bmr,"kcal")}</span></div></div></div>`:""}</div>`;
+  return `<div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><p class="muted">Insira a bioimpedância por PDF, foto da câmera ou imagem da galeria.</p><input id="bio-camera-input" class="hidden-file" type="file" accept="image/*" capture="environment" onchange="handleBioCameraSelected(this)"><input id="bio-gallery-input" class="hidden-file" type="file" accept="image/*" onchange="handleBioGallerySelected(this)"><input id="bio-pdf-input" class="hidden-file" type="file" accept="application/pdf" onchange="handleBioPdfSelected(this)"><div class="bio-action-grid"><button class="primary" onclick="$('bio-camera-input').click()">📷 Tirar foto</button><button class="ghost" onclick="$('bio-gallery-input').click()">🖼️ Escolher imagem</button><button class="ghost" onclick="$('bio-pdf-input').click()">📄 Selecionar PDF</button></div><p id="bio-file-status" class="muted" style="font-size:12px"></p><p class="muted" style="font-size:12px">Para foto/imagem: use boa iluminação, sem corte, com o texto reto e nítido.</p>${latest?`<div class="bio-summary"><div><b>Último arquivo</b><span>${latest.date} • ${latest.filename||"bioimpedância"}</span></div><div class="exam-grid"><div class="exam-result"><b>Peso</b><span>${bioValue(latest.weight,"kg")}</span></div><div class="exam-result"><b>Gordura corporal</b><span>${bioValue(latest.bodyFat,"%")}</span></div><div class="exam-result"><b>Massa gorda</b><span>${bioValue(latest.fatMass,"kg")}</span></div><div class="exam-result"><b>Massa magra</b><span>${bioValue(latest.leanMass,"kg")}</span></div><div class="exam-result"><b>Massa muscular</b><span>${bioValue(latest.muscleMass,"kg")}</span></div><div class="exam-result"><b>Água corporal</b><span>${bioValue(latest.water,"L")}</span></div><div class="exam-result"><b>IMC</b><span>${bioValue(latest.bmi,"")}</span></div><div class="exam-result"><b>Gordura visceral</b><span>${bioValue(latest.visceralFat,"")}</span></div><div class="exam-result"><b>Metabolismo basal</b><span>${bioValue(latest.bmr,"kcal")}</span></div></div></div>`:""}</div>`;
 }
 async function saveBioFromFile(file, mode){
   const status=$("bio-file-status");
@@ -384,12 +384,24 @@ async function saveBioFromFile(file, mode){
     alert("Não consegui ler este arquivo automaticamente. Para foto, tente boa iluminação, sem corte e texto nítido.");
   }
 }
+async function handleBioCameraSelected(input){
+  await saveBioFromFile(input?.files?.[0], "image");
+  if(input) input.value="";
+}
+async function handleBioGallerySelected(input){
+  await saveBioFromFile(input?.files?.[0], "image");
+  if(input) input.value="";
+}
+async function handleBioPdfSelected(input){
+  await saveBioFromFile(input?.files?.[0], "pdf");
+  if(input) input.value="";
+}
 async function handleBioPdfUpload(){
   const input=$("bio-pdf-input");
   await saveBioFromFile(input?.files?.[0], "pdf");
 }
 async function handleBioImageUpload(){
-  const input=$("bio-image-input");
+  const input=$("bio-gallery-input")||$("bio-image-input");
   await saveBioFromFile(input?.files?.[0], "image");
 }
 

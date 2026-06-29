@@ -44,3 +44,14 @@ Ajuste:
 - Incluído botão específico para “Ler PDF”.
 - Incluído botão específico para “Ler foto/imagem”.
 - Isso evita o comportamento do iPhone/Chrome que escondia a opção de imagem quando tudo ficava no mesmo campo.
+
+
+## v34 — Botões explícitos de foto/imagem/PDF
+
+Ajuste:
+- Substituído o campo visível “Escolher arquivo” por três botões:
+  - Tirar foto;
+  - Escolher imagem;
+  - Selecionar PDF.
+- Os inputs reais ficam ocultos e são acionados pelos botões.
+- Isso tenta contornar o comportamento do iPhone/Chrome que escondia a opção de foto.
