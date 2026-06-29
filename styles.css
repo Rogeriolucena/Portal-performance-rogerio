@@ -638,3 +638,21 @@ input#date{
     grid-template-columns:1fr!important;
   }
 }
+
+
+
+/* v26 — bioimpedância por PDF */
+.bio-summary{
+  margin-top:14px;
+}
+.bio-summary > div:first-child{
+  margin-bottom:10px;
+}
+.bio-summary b{
+  color:#dbe8ff;
+}
+.bio-summary span{
+  color:var(--muted);
+  display:block;
+  margin-top:3px;
+}

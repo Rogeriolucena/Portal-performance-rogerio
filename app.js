@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v25";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v26";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
 
 function dateSerial(ds){
@@ -235,106 +235,86 @@ function progressCalendarHTML(){
 }
 
 
-function bodyMeasurementCard(){
-  const last=lastBody(), due=daysSince(last)>=15;
-  return `<div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><details ${due?"open":""}><summary>Registrar peso/cintura</summary><div class="form-grid">${input("body-weight","Peso kg","number","76.4")}${input("body-waist","Cintura cm","number","82")}${input("body-arm","Braço cm","number","opcional")}${input("body-thigh","Coxa cm","number","opcional")}</div></details><div class="form-grid" style="margin-top:12px">${input("body-date","Data","text","AAAA-MM-DD",today())}${input("body-sleep","Sono h","number","7.5")}${select("body-appetite","Apetite",["Bom","Normal","Baixo","Muito baixo"],"Normal")}${select("body-gi","Digestão/GI",["Normal","Constipado","Náusea","Refluxo","Diarreia"],"Normal")}</div><div style="margin-top:12px"><label>Nota rápida</label><textarea id="body-note" placeholder="Ex.: cintura menor, retenção, sono ruim..."></textarea></div><div class="actions"><button class="primary" onclick="saveBodyLog()">Salvar medição</button></div></div>`;
-}
-function saveBodyLog(){
-  const date=$("body-date").value||today();
-  if(!$("body-weight").value && !$("body-waist").value && !$("body-arm").value && !$("body-thigh").value){
-    alert("Informe pelo menos peso, cintura, braço ou coxa.");
-    return;
-  }
-  u().bodyLogs.push({id:uid(),date,weight:$("body-weight").value,waist:$("body-waist").value,arm:$("body-arm").value,thigh:$("body-thigh").value,sleep:$("body-sleep").value,appetite:$("body-appetite").value,digestion:$("body-gi").value,note:$("body-note").value});
-  save();
-}
 
-function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância, medições e histórico.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">inicial ${prof().initialWeight||"—"}</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div>${bodyMeasurementCard()}<div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div><div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
-
-function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,12);return rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length} • Dieta: ${r.diet?.complete?"completa":`${r.diet?.count??(r.meals||[]).filter(m=>m.done).length}/${r.diet?.total??(r.meals||[]).length}`}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`}
-
-function examPatterns(){
-  return [
-    {key:"glicose", label:"Glicose", unit:"mg/dL", re:/(?:glicose|glucose)[^\d]{0,30}(\d{2,3}(?:[,.]\d+)?)/i},
-    {key:"creatinina", label:"Creatinina", unit:"mg/dL", re:/(?:creatinina|creatinine)[^\d]{0,30}(\d{1,2}(?:[,.]\d+)?)/i},
-    {key:"ureia", label:"Ureia", unit:"mg/dL", re:/(?:ureia|urea)[^\d]{0,30}(\d{1,3}(?:[,.]\d+)?)/i},
-    {key:"tgo_ast", label:"TGO/AST", unit:"U/L", re:/(?:tgo|ast|transaminase oxalac[eé]tica)[^\d]{0,40}(\d{1,4}(?:[,.]\d+)?)/i},
-    {key:"tgp_alt", label:"TGP/ALT", unit:"U/L", re:/(?:tgp|alt|transaminase pir[uú]vica)[^\d]{0,40}(\d{1,4}(?:[,.]\d+)?)/i},
-    {key:"acido_urico", label:"Ácido úrico", unit:"mg/dL", re:/(?:[aá]cido [uú]rico|uric acid)[^\d]{0,40}(\d{1,2}(?:[,.]\d+)?)/i},
-    {key:"colesterol_total", label:"Colesterol total", unit:"mg/dL", re:/(?:colesterol total)[^\d]{0,40}(\d{2,3}(?:[,.]\d+)?)/i},
-    {key:"hdl", label:"HDL", unit:"mg/dL", re:/(?:hdl)[^\d]{0,40}(\d{2,3}(?:[,.]\d+)?)/i},
-    {key:"ldl", label:"LDL", unit:"mg/dL", re:/(?:ldl)[^\d]{0,40}(\d{2,3}(?:[,.]\d+)?)/i},
-    {key:"triglicerideos", label:"Triglicerídeos", unit:"mg/dL", re:/(?:triglicer[ií]deos|triglycerides)[^\d]{0,40}(\d{2,4}(?:[,.]\d+)?)/i},
-    {key:"hemoglobina", label:"Hemoglobina", unit:"g/dL", re:/(?:hemoglobina)[^\d]{0,40}(\d{1,2}(?:[,.]\d+)?)/i},
-    {key:"hematocrito", label:"Hematócrito", unit:"%", re:/(?:hemat[oó]crito)[^\d]{0,40}(\d{1,2}(?:[,.]\d+)?)/i},
-    {key:"leucocitos", label:"Leucócitos", unit:"/mm³", re:/(?:leuc[oó]citos)[^\d]{0,40}(\d{1,6}(?:[,.]\d+)?)/i},
-    {key:"plaquetas", label:"Plaquetas", unit:"/mm³", re:/(?:plaquetas)[^\d]{0,40}(\d{1,6}(?:[,.]\d+)?)/i},
-    {key:"vitamina_d", label:"Vitamina D", unit:"ng/mL", re:/(?:vitamina d|25[\s-]*oh|25 hidroxi)[^\d]{0,50}(\d{1,3}(?:[,.]\d+)?)/i},
-    {key:"b12", label:"Vitamina B12", unit:"pg/mL", re:/(?:vitamina b12|b12)[^\d]{0,50}(\d{2,5}(?:[,.]\d+)?)/i},
-    {key:"ferritina", label:"Ferritina", unit:"ng/mL", re:/(?:ferritina)[^\d]{0,50}(\d{1,5}(?:[,.]\d+)?)/i},
-    {key:"tsh", label:"TSH", unit:"µUI/mL", re:/(?:tsh)[^\d]{0,40}(\d{1,3}(?:[,.]\d+)?)/i},
-    {key:"t4_livre", label:"T4 livre", unit:"ng/dL", re:/(?:t4 livre|tiroxina livre)[^\d]{0,50}(\d{1,3}(?:[,.]\d+)?)/i},
-    {key:"testosterona", label:"Testosterona", unit:"ng/dL", re:/(?:testosterona total|testosterona)[^\d]{0,50}(\d{1,5}(?:[,.]\d+)?)/i},
-    {key:"estradiol", label:"Estradiol", unit:"pg/mL", re:/(?:estradiol)[^\d]{0,50}(\d{1,5}(?:[,.]\d+)?)/i},
-    {key:"insulina", label:"Insulina", unit:"µUI/mL", re:/(?:insulina)[^\d]{0,50}(\d{1,4}(?:[,.]\d+)?)/i}
-  ];
-}
-function normalizeExamNumber(v){
-  return String(v||"").replace(",",".");
-}
-function parseExamText(text){
-  const found=[];
+function firstBioMatch(text, patterns){
   const clean=String(text||"").replace(/\s+/g," ");
-  examPatterns().forEach(p=>{
-    const m=clean.match(p.re);
-    if(m && m[1]) found.push({key:p.key,label:p.label,value:normalizeExamNumber(m[1]),unit:p.unit});
-  });
-  return found;
-}
-async function extractPdfText(file){
-  if(!window.pdfjsLib) throw new Error("Leitor de PDF não carregado. Verifique a internet ou atualize a página.");
-  pdfjsLib.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
-  const buffer=await file.arrayBuffer();
-  const pdf=await pdfjsLib.getDocument({data:buffer}).promise;
-  let text="";
-  for(let i=1;i<=pdf.numPages;i++){
-    const page=await pdf.getPage(i);
-    const content=await page.getTextContent();
-    text += " " + content.items.map(item=>item.str).join(" ");
+  for(const p of patterns){
+    const m=clean.match(p);
+    if(m && m[1]) return normalizeExamNumber(m[1]);
   }
-  return text;
+  return "";
 }
-async function handleExamPdfUpload(){
-  const input=$("exam-pdf-input");
-  const status=$("exam-pdf-status");
+function parseBioimpedanceText(text){
+  const clean=String(text||"").replace(/\s+/g," ");
+  return {
+    weight:firstBioMatch(clean,[
+      /(?:peso|weight|massa corporal)[^\d]{0,35}(\d{2,3}(?:[,.]\d+)?)/i,
+      /(\d{2,3}(?:[,.]\d+)?)\s*kg(?:\s|$)/i
+    ]),
+    bodyFat:firstBioMatch(clean,[
+      /(?:gordura corporal|percentual de gordura|% gordura|body fat|fat mass percentage)[^\d]{0,45}(\d{1,2}(?:[,.]\d+)?)/i,
+      /(\d{1,2}(?:[,.]\d+)?)\s*%\s*(?:gordura|fat)/i
+    ]),
+    fatMass:firstBioMatch(clean,[
+      /(?:massa de gordura|massa gorda|fat mass)[^\d]{0,45}(\d{1,3}(?:[,.]\d+)?)/i
+    ]),
+    leanMass:firstBioMatch(clean,[
+      /(?:massa magra|lean mass|free fat mass|fat free mass)[^\d]{0,45}(\d{1,3}(?:[,.]\d+)?)/i
+    ]),
+    muscleMass:firstBioMatch(clean,[
+      /(?:massa muscular|skeletal muscle mass|m[úu]sculo esquel[eé]tico)[^\d]{0,55}(\d{1,3}(?:[,.]\d+)?)/i
+    ]),
+    water:firstBioMatch(clean,[
+      /(?:[áa]gua corporal total|total body water|tbw)[^\d]{0,55}(\d{1,3}(?:[,.]\d+)?)/i
+    ]),
+    bmi:firstBioMatch(clean,[
+      /(?:imc|bmi)[^\d]{0,30}(\d{1,2}(?:[,.]\d+)?)/i
+    ]),
+    visceralFat:firstBioMatch(clean,[
+      /(?:gordura visceral|visceral fat|visceral)[^\d]{0,45}(\d{1,3}(?:[,.]\d+)?)/i
+    ]),
+    bmr:firstBioMatch(clean,[
+      /(?:taxa metab[oó]lica basal|metabolismo basal|bmr|basal metabolic rate)[^\d]{0,60}(\d{3,5}(?:[,.]\d+)?)/i
+    ])
+  };
+}
+function bioValue(v,unit){
+  return v ? `${v}${unit?` ${unit}`:""}` : "—";
+}
+function bioMeasurementCard(){
+  const last=lastBody(), due=daysSince(last)>=15;
+  const latest=[...u().bodyLogs].filter(x=>x.source==="bioimpedance_pdf").sort((a,b)=>b.date.localeCompare(a.date))[0];
+  return `<div class="card"><h2>Medição quinzenal</h2><p class="${due?"notice":"ok"}">${due?"Medição liberada/pendente.":"Última medição em "+last+". Próxima em aprox. "+(15-daysSince(last))+" dia(s)."}</p><p class="muted">Insira o PDF da bioimpedância. O app tenta ler automaticamente os principais valores e salva na evolução.</p><div><label>Selecionar PDF de bioimpedância</label><input id="bio-pdf-input" type="file" accept="application/pdf"></div><div class="actions"><button class="primary" onclick="handleBioPdfUpload()">Ler e salvar bioimpedância</button></div><p id="bio-pdf-status" class="muted" style="font-size:12px"></p>${latest?`<div class="bio-summary"><div><b>Último PDF</b><span>${latest.date} • ${latest.filename||"bioimpedância"}</span></div><div class="exam-grid"><div class="exam-result"><b>Peso</b><span>${bioValue(latest.weight,"kg")}</span></div><div class="exam-result"><b>Gordura corporal</b><span>${bioValue(latest.bodyFat,"%")}</span></div><div class="exam-result"><b>Massa gorda</b><span>${bioValue(latest.fatMass,"kg")}</span></div><div class="exam-result"><b>Massa magra</b><span>${bioValue(latest.leanMass,"kg")}</span></div><div class="exam-result"><b>Massa muscular</b><span>${bioValue(latest.muscleMass,"kg")}</span></div><div class="exam-result"><b>Água corporal</b><span>${bioValue(latest.water,"L")}</span></div><div class="exam-result"><b>IMC</b><span>${bioValue(latest.bmi,"")}</span></div><div class="exam-result"><b>Gordura visceral</b><span>${bioValue(latest.visceralFat,"")}</span></div><div class="exam-result"><b>Metabolismo basal</b><span>${bioValue(latest.bmr,"kcal")}</span></div></div></div>`:""}</div>`;
+}
+async function handleBioPdfUpload(){
+  const input=$("bio-pdf-input");
+  const status=$("bio-pdf-status");
   if(!input || !input.files || !input.files.length){alert("Selecione um PDF primeiro.");return;}
   const file=input.files[0];
-  if(status) status.textContent="Lendo PDF...";
+  if(status) status.textContent="Lendo PDF de bioimpedância...";
   try{
     const text=await extractPdfText(file);
-    const results=parseExamText(text);
-    const rec={id:uid(),date:today(),filename:file.name,size:file.size,results,createdAt:new Date().toISOString()};
-    u().examPdfLogs=u().examPdfLogs||[];
-    u().examPdfLogs.unshift(rec);
-    localStorage.setItem(KEY,JSON.stringify(state));
-    if(status) status.textContent=results.length?`PDF lido. ${results.length} resultado(s) identificado(s).`:"PDF lido, mas nenhum exame conhecido foi identificado automaticamente.";
-    renderMore();
+    const parsed=parseBioimpedanceText(text);
+    const hasAny=Object.values(parsed).some(v=>!!v);
+    if(!hasAny){
+      if(status) status.textContent="PDF lido, mas não encontrei valores de bioimpedância automaticamente.";
+      alert("Li o PDF, mas não identifiquei os valores automaticamente. Pode ser PDF escaneado/imagem ou um layout ainda não mapeado.");
+      return;
+    }
+    const date=today();
+    const rec={id:uid(),date,source:"bioimpedance_pdf",filename:file.name,size:file.size,...parsed,createdAt:new Date().toISOString()};
+    u().bodyLogs.push(rec);
+    save();
   }catch(err){
     console.error(err);
     if(status) status.textContent="Erro ao ler PDF: "+err.message;
-    alert("Não consegui ler este PDF automaticamente. Alguns laudos vêm como imagem; nesses casos seria necessário OCR ou lançamento manual.");
+    alert("Não consegui ler este PDF automaticamente. Se ele for imagem escaneada, precisaremos de OCR.");
   }
 }
-function deleteExamPdf(id){
-  if(!confirm("Excluir este registro de exame?")) return;
-  u().examPdfLogs=(u().examPdfLogs||[]).filter(x=>x.id!==id);
-  save();
-}
-function examResultsHTML(){
-  const logs=u().examPdfLogs||[];
-  if(!logs.length) return `<p class="muted">Nenhum PDF de exame inserido ainda.</p>`;
-  return logs.map(log=>`<div class="item exam-card"><strong>${log.filename}</strong><span>${log.date} • ${(log.size/1024).toFixed(0)} KB</span>${log.results?.length?`<div class="exam-grid">${log.results.map(r=>`<div class="exam-result"><b>${r.label}</b><span>${r.value} ${r.unit}</span></div>`).join("")}</div>`:`<p class="notice">PDF lido, mas sem resultados reconhecidos automaticamente.</p>`}<div class="actions"><button class="danger" onclick="deleteExamPdf('${log.id}')">Excluir</button></div></div>`).join("");
-}
+
+function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância, bioimpedância e histórico.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">última bio/medição</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div><div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div>${bioMeasurementCard()}<div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
+
+function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10), bios=[...(u().bodyLogs||[])].filter(x=>x.source==="bioimpedance_pdf").sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);let daily=rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length} • Dieta: ${r.diet?.complete?"completa":`${r.diet?.count??(r.meals||[]).filter(m=>m.done).length}/${r.diet?.total??(r.meals||[]).length}`}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`;let bio=bios.length?`<h3>Bioimpedâncias</h3>`+bios.map(b=>`<div class="history"><h3>${b.date} • ${b.filename||"PDF"}</h3><p>Peso: ${bioValue(b.weight,"kg")} • Gordura: ${bioValue(b.bodyFat,"%")} • Massa muscular: ${bioValue(b.muscleMass,"kg")}</p></div>`).join(""):"";return daily+bio}
 
 function renderMore(){$("more").innerHTML=`${head("Mais","Exames, perfis e backup.")}<div class="card"><h2>Perfis</h2><div class="form-grid"><div><label>Perfil ativo</label><select onchange="switchProfile(this.value)">${Object.entries(PLAN.profiles).map(([k,p])=>`<option value="${k}" ${state.profile===k?"selected":""}>${p.name}</option>`).join("")}</select></div><div><label>Treino detectado</label><input readonly value="${activeDay()}"></div></div></div><div class="card"><h2>Exames em PDF</h2><p class="muted">Insira o PDF do laudo. O app tenta ler automaticamente os resultados mais comuns e salva os dados neste aparelho.</p><div><label>Selecionar PDF de exame</label><input id="exam-pdf-input" type="file" accept="application/pdf"></div><div class="actions"><button class="primary" onclick="handleExamPdfUpload()">Ler e salvar PDF</button></div><p id="exam-pdf-status" class="muted" style="font-size:12px"></p><div class="list">${examResultsHTML()}</div></div><div class="card"><h2>Exames recomendados</h2><div class="list">${PLAN.exams.map(e=>`<div class="item"><strong>${e.group}</strong><span>${e.name} • ${e.frequency}</span></div>`).join("")}</div></div><div class="card"><h2>Backup</h2><div class="actions"><button class="primary" onclick="exportBackup()">Exportar JSON</button><button class="danger" onclick="resetAll()">Apagar tudo</button></div></div>`}
 function exportBackup(){let b=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=`sheipados_backup_${today()}.json`;a.click()}

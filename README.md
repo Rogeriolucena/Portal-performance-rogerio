@@ -145,3 +145,22 @@ Alterações:
 - Checklist da dieta agora tem botão “Marcar/Desmarcar tudo”.
 - Botões/cards de lembretes removidos do app.
 - Salvamento da dieta agora registra apenas o checklist e a nota do dia.
+
+
+## v26 — Bioimpedância por PDF
+
+Alterações:
+- Medição quinzenal agora fica depois do calendário na aba Evolução.
+- Medição quinzenal não é mais manual.
+- O app lê PDF de bioimpedância e tenta extrair automaticamente:
+  - peso;
+  - percentual de gordura;
+  - massa gorda;
+  - massa magra;
+  - massa muscular;
+  - água corporal;
+  - IMC;
+  - gordura visceral;
+  - metabolismo basal.
+- Removidos sono, apetite, digestão e notas dessa medição.
+- Histórico passa a listar também bioimpedâncias importadas.
