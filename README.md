@@ -180,3 +180,16 @@ Alterações:
   - linha de tendência;
   - valor inicial;
   - variação acumulada.
+
+
+## v28 — Correção de tela vazia, aba Mais e OCR de bioimpedância
+
+Correções:
+- Corrigido bug da tela inicial vazia ao abrir o app.
+- Corrigido bug da aba Mais vazia.
+- Renderização protegida: se uma aba falhar, as demais continuam carregando.
+
+Bioimpedância:
+- A medição quinzenal agora aceita PDF ou imagem/foto.
+- Para imagem, o app usa OCR via Tesseract.js no navegador.
+- Os dados extraídos alimentam os gráficos de evolução.

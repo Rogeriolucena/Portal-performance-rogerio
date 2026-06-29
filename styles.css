@@ -743,3 +743,11 @@ svg.spark{
   .trend-value{font-size:16px;}
   svg.spark{height:128px;}
 }
+
+
+
+/* v28 — OCR e proteção contra tela vazia */
+#bio-file-status,
+#exam-pdf-status{
+  min-height:16px;
+}
