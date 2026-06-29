@@ -61,3 +61,16 @@ Correção visual:
   - Intensificação → Intens.
   - Consolidação → Consol.
 - O texto não deve mais sair da caixa nas semanas finais.
+
+
+## v19 — Layout e exames PDF
+
+Alterações:
+- Removido “80 kg seco” do cabeçalho.
+- Cards das semanas no Calendário agora mostram só S1, S2, S3... sem texto de fase dentro do chip.
+- Campo de data da medição quinzenal passa a ser texto para evitar estouro visual nativo do iPhone/Chrome.
+- Aba Mais:
+  - removido bloco Rotina;
+  - incluída área para inserir PDFs de exames;
+  - o app tenta ler o PDF via PDF.js e extrair exames comuns automaticamente;
+  - resultados ficam salvos localmente no aparelho.
