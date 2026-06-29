@@ -1,30 +1,22 @@
-# Sheipados — v12 Floating Chrome Fix
+# Sheipados — v14
 
-O que mudou:
-- Volta do menu flutuante inferior.
-- No Chrome/iPhone, o menu fica mais alto para não brigar com a barra inferior do navegador.
-- Em modo app instalado/standalone, o menu volta para baixo.
-- Ícone com padding interno para não cortar.
-- Cabeçalho usa o PNG do ícone; se falhar, cai para halter desenhado em CSS.
-- Mantém calendário de progresso na aba Evolução.
+Estratégia desta versão:
+- Volta para a arquitetura da v7, que foi a última base com clique funcionando.
+- Não altera a navegação, o render principal nem o comportamento do rodapé.
+- Adiciona somente o calendário de progresso dentro da aba Evolução.
+- Mantém ícone com padding interno para não cortar.
 
-Por que a v7 funcionava e as posteriores quebraram:
-- A partir das correções de rolagem, o app passou a travar o body e usar uma área interna de scroll.
-- Isso resolveu o espaço infinito, mas no Chrome/iPhone o menu fixo ficou numa zona ruim perto da barra inferior do navegador.
-- A v12 mantém a correção de scroll e desloca o menu flutuante para uma área clicável no Chrome.
+Diagnóstico:
+- O problema de clique não veio do calendário em si.
+- Ele apareceu porque as versões após a implementação do calendário também mudaram a arquitetura de renderização/navegação.
+- A v14 isola a funcionalidade do calendário sem mexer na navegação da v7.
 
-Atualização:
-- Substitua todos os arquivos.
-- Abra com ?v=12 para furar cache:
-  https://rogeriolucena.github.io/Portal-performance-rogerio/?v=12
+Critérios do calendário:
+- Halter: todos os exercícios do treino daquele dia marcados.
+- Comida: todas as refeições daquele dia marcadas.
+- Dois ícones: treino + dieta completos no mesmo dia.
 
-
-## v13 — Touch Fix
-
-Correção focada no Chrome/iPhone:
-- Mantém o menu flutuante.
-- Envolve o menu em `.nav-shell`.
-- Os botões deixam de depender só de `onclick`.
-- Navegação passa a capturar `pointerdown`, `touchstart` e `click`.
-- Usa `data-tab` para troca de abas.
-- Reduz chance de o conteúdo interceptar o toque.
+Teste:
+- Atualize tudo no GitHub.
+- Abra com:
+  https://rogeriolucena.github.io/Portal-performance-rogerio/?v=14
