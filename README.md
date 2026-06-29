@@ -74,3 +74,11 @@ Alterações:
   - incluída área para inserir PDFs de exames;
   - o app tenta ler o PDF via PDF.js e extrair exames comuns automaticamente;
   - resultados ficam salvos localmente no aparelho.
+
+
+## v20 — Correção dos chips do calendário
+
+Correção:
+- Clicar nos chips S1, S2, S3... não leva mais automaticamente para a aba Treino.
+- Os chips agora usam `setCalendarWeek()`, atualizando apenas a semana do calendário e mantendo a aba Calendário aberta.
+- A função geral `save()` também foi ajustada para preservar a aba atualmente aberta quando renderizar o app.

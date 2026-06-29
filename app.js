@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v19";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v20";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,12 +7,25 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} function workouts(){return prof().workouts}
 function activeDay(){return u().dayOverrideDate===today()&&u().dayOverride?u().dayOverride:dayName()}
 function workout(){return workouts()[activeDay()]||workouts().Segunda}
 function week(){return PLAN.weeks.find(x=>x.week===u().week)||PLAN.weeks[0]}
-function save(){localStorage.setItem(KEY,JSON.stringify(state));render();scheduleReminders()}
+
+function currentOpenTab(){
+  const active=document.querySelector(".section.active");
+  return active?.id || location.hash.replace("#","") || "train";
+}
+function setCalendarWeek(weekNumber){
+  u().week=Number(weekNumber);
+  localStorage.setItem(KEY,JSON.stringify(state));
+  renderCalendar();
+  renderTrain();
+  openTab("calendar");
+}
+
+function save(){const tab=currentOpenTab();localStorage.setItem(KEY,JSON.stringify(state));render(tab);scheduleReminders()}
 function $(id){return document.getElementById(id)} function num(v){let n=Number(v);return Number.isFinite(n)?n:0}
 function latestWeight(){let l=[...u().bodyLogs].filter(x=>x.weight).sort((a,b)=>a.date.localeCompare(b.date));return l.length?num(l.at(-1).weight):(prof().initialWeight?num(prof().initialWeight):0)}
 function lastBody(){let l=[...u().bodyLogs].filter(x=>x.weight||x.waist).sort((a,b)=>a.date.localeCompare(b.date));return l.length?l.at(-1).date:null}
@@ -114,7 +127,7 @@ function weekShortLabel(phase){
   return phase.split(" ")[0];
 }
 
-function renderCalendar(){let wk=week();$("calendar").innerHTML=`${head("Calendário de treinos","12 semanas com vídeos de execução.")}<div class="week-strip">${PLAN.weeks.map(x=>`<button class="week-chip ${x.week===u().week?"active":""}" onclick="u().week=${x.week};save()"><span class="week-num">S${x.week}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="notice">${wk.rule}</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(workouts()).map(([day,w])=>`<div class="card item"><div style="display:flex;justify-content:space-between;gap:8px"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><button class="ghost" onclick="u().dayOverrideDate='${today()}';u().dayOverride='${day}';save();openTab('train')">Usar hoje</button></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
+function renderCalendar(){let wk=week();$("calendar").innerHTML=`${head("Calendário de treinos","12 semanas com vídeos de execução.")}<div class="week-strip">${PLAN.weeks.map(x=>`<button class="week-chip ${x.week===u().week?"active":""}" onclick="setCalendarWeek(${x.week})"><span class="week-num">S${x.week}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="notice">${wk.rule}</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(workouts()).map(([day,w])=>`<div class="card item"><div style="display:flex;justify-content:space-between;gap:8px"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><button class="ghost" onclick="u().dayOverrideDate='${today()}';u().dayOverride='${day}';save();openTab('train')">Usar hoje</button></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
 
 function progressMonthName(m){return ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"][m]}
 function progressISO(y,m,d){return `${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`}
@@ -245,5 +258,5 @@ async function enableReminders(){if(!("Notification"in window))return alert("Sem
 function disableReminders(){u().settings.reminders=false;localStorage.setItem(KEY,JSON.stringify(state));timers.forEach(clearTimeout);timers=[];render()}
 function testNotification(){showNotify("Sheipados","Teste de alerta funcionando.")}
 function scheduleReminders(){timers.forEach(clearTimeout);timers=[];if(!u().settings.reminders||!("Notification"in window)||Notification.permission!=="granted")return;let now=new Date();PLAN.schedule.forEach(s=>{if(s.weekly&&now.getDay()!==0)return;let [h,m]=s.hhmm.split(":").map(Number),target=new Date();target.setHours(h,m,0,0);let delay=target-now;if(delay>0&&delay<86400000)timers.push(setTimeout(()=>showNotify("Sheipados",`${s.time} • ${s.item}. ${s.note}`),delay))})}
-function render(){shell();renderTrain();renderDiet();renderCalendar();renderProgress();renderMore();let h=location.hash.replace("#","")||"train";openTab(tabs.some(t=>t[0]===h)?h:"train")}
+function render(forceTab){shell();renderTrain();renderDiet();renderCalendar();renderProgress();renderMore();let h=forceTab||location.hash.replace("#","")||"train";openTab(tabs.some(t=>t[0]===h)?h:"train")}
 if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));render();scheduleReminders();
