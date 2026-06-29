@@ -20,42 +20,312 @@ window.PLAN_DATA = {
               "sets": "4",
               "reps": "6–8",
               "rpe": "7–8",
-              "link": "https://www.youtube.com/results?search_query=supino+reto+execu%C3%A7%C3%A3o+correta"
+              "link": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+              "options": [
+                {
+                  "name": "Supino reto",
+                  "sets": "4",
+                  "reps": "6–8",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                  "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "kind": "base"
+                },
+                {
+                  "name": "Supino reto com halteres",
+                  "sets": "4",
+                  "reps": "6–8",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                  "video": "https://www.youtube.com/watch?v=31j_Io3ncRg",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Supino máquina convergente",
+                  "sets": "4",
+                  "reps": "6–8",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                  "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
             },
             {
               "name": "Supino inclinado com halteres",
               "sets": "3",
               "reps": "8–10",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=supino+inclinado+halteres+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+              "options": [
+                {
+                  "name": "Supino inclinado com halteres",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                  "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "kind": "base"
+                },
+                {
+                  "name": "Supino inclinado na máquina",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                  "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Supino inclinado no Smith",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                  "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
             },
             {
               "name": "Paralelas ou mergulho",
               "sets": "3",
               "reps": "8–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=paralelas+triceps+peito+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=paralelas+triceps+peito+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Paralelas ou mergulho",
+                  "sets": "3",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Paralelas ou mergulho — variação máquina",
+                  "sets": "3",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Paralelas ou mergulho — variação halteres",
+                  "sets": "3",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Crucifixo máquina/crossover",
               "sets": "3",
               "reps": "12–15",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=crucifixo+maquina+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=crucifixo+maquina+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Crucifixo máquina/crossover",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Crossover na polia",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Peck deck",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Tríceps pulley",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=triceps+pulley+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+              "options": [
+                {
+                  "name": "Tríceps pulley",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "kind": "base"
+                },
+                {
+                  "name": "Tríceps corda",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Tríceps testa barra EZ",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo fixo; estenda até contrair o tríceps."
             },
             {
               "name": "Tríceps francês",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=triceps+frances+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=triceps+frances+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Tríceps francês",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Tríceps corda",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Tríceps testa barra EZ",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo fixo; estenda até contrair o tríceps."
             }
           ]
         },
@@ -67,42 +337,312 @@ window.PLAN_DATA = {
               "sets": "4",
               "reps": "6–10",
               "rpe": "7–8",
-              "link": "https://www.youtube.com/results?search_query=barra+fixa+execu%C3%A7%C3%A3o+correta"
+              "link": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+              "options": [
+                {
+                  "name": "Barra fixa ou puxada alta",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "kind": "base"
+                },
+                {
+                  "name": "Puxada alta frente pronada",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Puxada neutra/triângulo",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
             },
             {
               "name": "Remada curvada",
               "sets": "4",
               "reps": "6–8",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=remada+curvada+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+              "options": [
+                {
+                  "name": "Remada curvada",
+                  "sets": "4",
+                  "reps": "6–8",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "kind": "base"
+                },
+                {
+                  "name": "Remada baixa pegada neutra",
+                  "sets": "4",
+                  "reps": "6–8",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Remada apoiada/chest supported",
+                  "sets": "4",
+                  "reps": "6–8",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
             },
             {
               "name": "Puxada aberta",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=puxada+aberta+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+              "options": [
+                {
+                  "name": "Puxada aberta",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "kind": "base"
+                },
+                {
+                  "name": "Puxada alta frente pronada",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Puxada neutra/triângulo",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
             },
             {
               "name": "Remada baixa",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=remada+baixa+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+              "options": [
+                {
+                  "name": "Remada baixa",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "kind": "base"
+                },
+                {
+                  "name": "Remada baixa pegada neutra",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Remada apoiada/chest supported",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                  "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
             },
             {
               "name": "Rosca direta",
               "sets": "3",
               "reps": "8–10",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=rosca+direta+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+              "options": [
+                {
+                  "name": "Rosca direta",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "base"
+                },
+                {
+                  "name": "Rosca EZ",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Rosca alternada com halteres",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo estável; não roubar com lombar."
             },
             {
               "name": "Rosca inclinada",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=rosca+inclinada+halteres+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+              "options": [
+                {
+                  "name": "Rosca inclinada",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "base"
+                },
+                {
+                  "name": "Rosca EZ",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Rosca alternada com halteres",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo estável; não roubar com lombar."
             }
           ]
         },
@@ -114,35 +654,260 @@ window.PLAN_DATA = {
               "sets": "4",
               "reps": "5–8",
               "rpe": "7–8",
-              "link": "https://www.youtube.com/results?search_query=agachamento+livre+execu%C3%A7%C3%A3o+correta"
+              "link": "https://www.youtube.com/watch?v=xRevfevb51o",
+              "options": [
+                {
+                  "name": "Agachamento livre",
+                  "sets": "4",
+                  "reps": "5–8",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "kind": "base"
+                },
+                {
+                  "name": "Agachamento no Smith",
+                  "sets": "4",
+                  "reps": "5–8",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=XYg9TS_3Sik",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Hack machine",
+                  "sets": "4",
+                  "reps": "5–8",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
             },
             {
               "name": "Leg press",
               "sets": "4",
               "reps": "8–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=leg+press+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+              "options": [
+                {
+                  "name": "Leg press",
+                  "sets": "4",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                  "kind": "base"
+                },
+                {
+                  "name": "Leg press pés baixos",
+                  "sets": "4",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Hack machine",
+                  "sets": "4",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
             },
             {
               "name": "Hack machine",
               "sets": "3",
               "reps": "8–10",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=hack+machine+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=xRevfevb51o",
+              "options": [
+                {
+                  "name": "Hack machine",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "kind": "base"
+                },
+                {
+                  "name": "Hack machine — variação máquina",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Hack machine — variação halteres",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                  "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
             },
             {
               "name": "Cadeira extensora",
               "sets": "3",
               "reps": "12–15",
               "rpe": "8–9",
-              "link": "https://www.youtube.com/results?search_query=cadeira+extensora+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+              "options": [
+                {
+                  "name": "Cadeira extensora",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8–9/10",
+                  "rir": "Sobra 1 rep",
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                  "kind": "base"
+                },
+                {
+                  "name": "Cadeira extensora unilateral",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8–9/10",
+                  "rir": "Sobra 1 rep",
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Cadeira extensora com pausa",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8–9/10",
+                  "rir": "Sobra 1 rep",
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Panturrilha em pé/sentado",
               "sets": "5",
               "reps": "12–20",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+sentado+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+sentado+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Panturrilha em pé/sentado",
+                  "sets": "5",
+                  "reps": "12–20",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Panturrilha sentado",
+                  "sets": "5",
+                  "reps": "12–20",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Panturrilha em pé",
+                  "sets": "5",
+                  "reps": "12–20",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             }
           ]
         },
@@ -154,42 +919,312 @@ window.PLAN_DATA = {
               "sets": "4",
               "reps": "6–10",
               "rpe": "7–8",
-              "link": "https://www.youtube.com/results?search_query=desenvolvimento+halteres+ombro+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+              "options": [
+                {
+                  "name": "Desenvolvimento militar/halteres",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                  "kind": "base"
+                },
+                {
+                  "name": "Desenvolvimento na máquina",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Desenvolvimento com halteres",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Elevação lateral",
               "sets": "4",
               "reps": "12–15",
               "rpe": "8–9",
-              "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+lateral+execu%C3%A7%C3%A3o+correta"
+              "link": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+              "options": [
+                {
+                  "name": "Elevação lateral",
+                  "sets": "4",
+                  "reps": "12–15",
+                  "effort": "Esforço 8–9/10",
+                  "rir": "Sobra 1 rep",
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                  "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "kind": "base"
+                },
+                {
+                  "name": "Elevação lateral na polia",
+                  "sets": "4",
+                  "reps": "12–15",
+                  "effort": "Esforço 8–9/10",
+                  "rir": "Sobra 1 rep",
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                  "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Elevação lateral máquina",
+                  "sets": "4",
+                  "reps": "12–15",
+                  "effort": "Esforço 8–9/10",
+                  "rir": "Sobra 1 rep",
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                  "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento."
             },
             {
               "name": "Elevação posterior",
               "sets": "3",
               "reps": "12–15",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+posterior+ombro+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+posterior+ombro+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Elevação posterior",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Face pull",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Posterior no peck deck",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Encolhimento",
               "sets": "4",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=encolhimento+trap%C3%A9zio+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=encolhimento+trap%C3%A9zio+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Encolhimento",
+                  "sets": "4",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Encolhimento — variação máquina",
+                  "sets": "4",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Encolhimento — variação halteres",
+                  "sets": "4",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Prancha",
               "sets": "3",
               "reps": "30–60s",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Prancha",
+                  "sets": "3",
+                  "reps": "30–60s",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Prancha",
+                  "sets": "3",
+                  "reps": "30–60s",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Abdominal na polia",
+                  "sets": "3",
+                  "reps": "30–60s",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Abdominal na polia",
               "sets": "3",
               "reps": "12–15",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o",
+              "options": [
+                {
+                  "name": "Abdominal na polia",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Prancha",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Abdominal na polia",
+                  "sets": "3",
+                  "reps": "12–15",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             }
           ]
         },
@@ -201,42 +1236,312 @@ window.PLAN_DATA = {
               "sets": "4",
               "reps": "6–10",
               "rpe": "7–8",
-              "link": "https://www.youtube.com/results?search_query=terra+romeno+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=NP548KPEpMw",
+              "options": [
+                {
+                  "name": "Terra romeno",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                  "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                  "kind": "base"
+                },
+                {
+                  "name": "Stiff com halteres",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                  "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Terra romeno com barra",
+                  "sets": "4",
+                  "reps": "6–10",
+                  "effort": "Esforço 7–8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                  "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Quadril vai para trás, coluna neutra e tensão no posterior."
             },
             {
               "name": "Mesa flexora",
               "sets": "4",
               "reps": "8–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=mesa+flexora+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+              "options": [
+                {
+                  "name": "Mesa flexora",
+                  "sets": "4",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                  "kind": "base"
+                },
+                {
+                  "name": "Mesa flexora",
+                  "sets": "4",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Cadeira flexora",
+                  "sets": "4",
+                  "reps": "8–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Stiff com halteres/barra",
               "sets": "3",
               "reps": "8–10",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=stiff+barra+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+              "options": [
+                {
+                  "name": "Stiff com halteres/barra",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                  "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                  "kind": "base"
+                },
+                {
+                  "name": "Stiff com halteres",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                  "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Terra romeno com barra",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                  "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "90–150 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Quadril vai para trás, coluna neutra e tensão no posterior."
             },
             {
               "name": "Rosca Scott",
               "sets": "3",
               "reps": "8–10",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=rosca+scott+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+              "options": [
+                {
+                  "name": "Rosca Scott",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "base"
+                },
+                {
+                  "name": "Rosca EZ",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Rosca alternada com halteres",
+                  "sets": "3",
+                  "reps": "8–10",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo estável; não roubar com lombar."
             },
             {
               "name": "Tríceps corda",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=triceps+corda+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+              "options": [
+                {
+                  "name": "Tríceps corda",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "kind": "base"
+                },
+                {
+                  "name": "Tríceps corda",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Tríceps testa barra EZ",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo fixo; estenda até contrair o tríceps."
             },
             {
               "name": "Rosca martelo",
               "sets": "3",
               "reps": "10–12",
               "rpe": "8",
-              "link": "https://www.youtube.com/results?search_query=rosca+martelo+execu%C3%A7%C3%A3o"
+              "link": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+              "options": [
+                {
+                  "name": "Rosca martelo",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                  "kind": "base"
+                },
+                {
+                  "name": "Rosca martelo alternada",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Rosca no cabo com corda",
+                  "sets": "3",
+                  "reps": "10–12",
+                  "effort": "Esforço 8/10",
+                  "rir": "Sobra 1–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar.",
+                  "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "45–75 s",
+              "tempo": "2 s descida • 1 s pausa • subir controlado",
+              "cue": "Cotovelo estável; não roubar com lombar."
             }
           ]
         },
@@ -248,21 +1553,156 @@ window.PLAN_DATA = {
               "sets": "1",
               "reps": "35–45 min",
               "rpe": "6–7",
-              "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer"
+              "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+              "options": [
+                {
+                  "name": "Cardio Zona 2",
+                  "sets": "1",
+                  "reps": "35–45 min",
+                  "effort": "Esforço 6–7/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Bike Zona 2",
+                  "sets": "1",
+                  "reps": "35–45 min",
+                  "effort": "Esforço 6–7/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Esteira inclinada Zona 2",
+                  "sets": "1",
+                  "reps": "35–45 min",
+                  "effort": "Esforço 6–7/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Funcional leve/moderado",
               "sets": "1",
               "reps": "30–45 min",
               "rpe": "6–8",
-              "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado"
+              "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado",
+              "options": [
+                {
+                  "name": "Funcional leve/moderado",
+                  "sets": "1",
+                  "reps": "30–45 min",
+                  "effort": "Esforço 6–8/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Funcional leve/moderado — variação máquina",
+                  "sets": "1",
+                  "reps": "30–45 min",
+                  "effort": "Esforço 6–8/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Funcional leve/moderado — variação halteres",
+                  "sets": "1",
+                  "reps": "30–45 min",
+                  "effort": "Esforço 6–8/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             },
             {
               "name": "Mobilidade",
               "sets": "1",
               "reps": "10–15 min",
               "rpe": "5–6",
-              "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tor%C3%A1cica+ombros"
+              "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tor%C3%A1cica+ombros",
+              "options": [
+                {
+                  "name": "Mobilidade",
+                  "sets": "1",
+                  "reps": "10–15 min",
+                  "effort": "Esforço 5–6/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "base"
+                },
+                {
+                  "name": "Mobilidade — variação máquina",
+                  "sets": "1",
+                  "reps": "10–15 min",
+                  "effort": "Esforço 5–6/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                },
+                {
+                  "name": "Mobilidade — variação halteres",
+                  "sets": "1",
+                  "reps": "10–15 min",
+                  "effort": "Esforço 5–6/10",
+                  "rir": "Sobra 2–3 reps",
+                  "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                  "video": "",
+                  "kind": "alternativa"
+                }
+              ],
+              "load": "Carga que permita cumprir as repetições com técnica limpa.",
+              "rest": "60–90 s",
+              "tempo": "2–3 s descida • subir com controle",
+              "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
             }
           ]
         }
@@ -286,42 +1726,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–8",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=supino+reto+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "options": [
+                    {
+                      "name": "Supino reto",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Supino reto com halteres",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=31j_Io3ncRg",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Supino máquina convergente",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
                 },
                 {
                   "name": "Supino inclinado com halteres",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=supino+inclinado+halteres+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "options": [
+                    {
+                      "name": "Supino inclinado com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Supino inclinado na máquina",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Supino inclinado no Smith",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
                 },
                 {
                   "name": "Paralelas ou mergulho",
                   "sets": "3",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=paralelas+triceps+peito+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=paralelas+triceps+peito+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Paralelas ou mergulho",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Paralelas ou mergulho — variação máquina",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Paralelas ou mergulho — variação halteres",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Crucifixo máquina/crossover",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=crucifixo+maquina+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=crucifixo+maquina+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Crucifixo máquina/crossover",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Tríceps pulley",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=triceps+pulley+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "options": [
+                    {
+                      "name": "Tríceps pulley",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 },
                 {
                   "name": "Tríceps francês",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=triceps+frances+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=triceps+frances+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Tríceps francês",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 }
               ]
             },
@@ -333,42 +2043,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–10",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=barra+fixa+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "options": [
+                    {
+                      "name": "Barra fixa ou puxada alta",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Puxada alta frente pronada",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Puxada neutra/triângulo",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Remada curvada",
                   "sets": "4",
                   "reps": "6–8",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=remada+curvada+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "options": [
+                    {
+                      "name": "Remada curvada",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Puxada aberta",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=puxada+aberta+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "options": [
+                    {
+                      "name": "Puxada aberta",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Puxada alta frente pronada",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Puxada neutra/triângulo",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Remada baixa",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=remada+baixa+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "options": [
+                    {
+                      "name": "Remada baixa",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Rosca direta",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+direta+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca direta",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 },
                 {
                   "name": "Rosca inclinada",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+inclinada+halteres+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca inclinada",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 }
               ]
             },
@@ -380,35 +2360,260 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "5–8",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=agachamento+livre+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "options": [
+                    {
+                      "name": "Agachamento livre",
+                      "sets": "4",
+                      "reps": "5–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Agachamento no Smith",
+                      "sets": "4",
+                      "reps": "5–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=XYg9TS_3Sik",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine",
+                      "sets": "4",
+                      "reps": "5–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Leg press",
                   "sets": "4",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=leg+press+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                  "options": [
+                    {
+                      "name": "Leg press",
+                      "sets": "4",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Leg press pés baixos",
+                      "sets": "4",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine",
+                      "sets": "4",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Hack machine",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=hack+machine+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "options": [
+                    {
+                      "name": "Hack machine",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Hack machine — variação máquina",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine — variação halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Cadeira extensora",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=cadeira+extensora+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                  "options": [
+                    {
+                      "name": "Cadeira extensora",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Cadeira extensora unilateral",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Cadeira extensora com pausa",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Panturrilha em pé/sentado",
                   "sets": "5",
                   "reps": "12–20",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+sentado+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+sentado+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Panturrilha em pé/sentado",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Panturrilha sentado",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Panturrilha em pé",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -420,42 +2625,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–10",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=desenvolvimento+halteres+ombro+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                  "options": [
+                    {
+                      "name": "Desenvolvimento militar/halteres",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Desenvolvimento na máquina",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Desenvolvimento com halteres",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Elevação lateral",
                   "sets": "4",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+lateral+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "options": [
+                    {
+                      "name": "Elevação lateral",
+                      "sets": "4",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Elevação lateral na polia",
+                      "sets": "4",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Elevação lateral máquina",
+                      "sets": "4",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento."
                 },
                 {
                   "name": "Elevação posterior",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+posterior+ombro+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+posterior+ombro+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Elevação posterior",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Face pull",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Posterior no peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Encolhimento",
                   "sets": "4",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=encolhimento+trap%C3%A9zio+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=encolhimento+trap%C3%A9zio+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Encolhimento",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Encolhimento — variação máquina",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Encolhimento — variação halteres",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Prancha",
                   "sets": "3",
                   "reps": "30–60s",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "30–60s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "30–60s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "30–60s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Abdominal na polia",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -467,42 +2942,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–10",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=terra+romeno+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                  "options": [
+                    {
+                      "name": "Terra romeno",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Stiff com halteres",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Terra romeno com barra",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior."
                 },
                 {
                   "name": "Mesa flexora",
                   "sets": "4",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=mesa+flexora+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                  "options": [
+                    {
+                      "name": "Mesa flexora",
+                      "sets": "4",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mesa flexora",
+                      "sets": "4",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Cadeira flexora",
+                      "sets": "4",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Stiff com halteres/barra",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=stiff+barra+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                  "options": [
+                    {
+                      "name": "Stiff com halteres/barra",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Stiff com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Terra romeno com barra",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior."
                 },
                 {
                   "name": "Rosca Scott",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+scott+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca Scott",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 },
                 {
                   "name": "Tríceps corda",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=triceps+corda+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "options": [
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 },
                 {
                   "name": "Rosca martelo",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+martelo+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                  "options": [
+                    {
+                      "name": "Rosca martelo",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca martelo alternada",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca no cabo com corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 }
               ]
             },
@@ -514,21 +3259,156 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "35–45 min",
                   "rpe": "6–7",
-                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer"
+                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+                  "options": [
+                    {
+                      "name": "Cardio Zona 2",
+                      "sets": "1",
+                      "reps": "35–45 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Bike Zona 2",
+                      "sets": "1",
+                      "reps": "35–45 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Esteira inclinada Zona 2",
+                      "sets": "1",
+                      "reps": "35–45 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Funcional leve/moderado",
                   "sets": "1",
                   "reps": "30–45 min",
                   "rpe": "6–8",
-                  "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado"
+                  "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado",
+                  "options": [
+                    {
+                      "name": "Funcional leve/moderado",
+                      "sets": "1",
+                      "reps": "30–45 min",
+                      "effort": "Esforço 6–8/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Funcional leve/moderado — variação máquina",
+                      "sets": "1",
+                      "reps": "30–45 min",
+                      "effort": "Esforço 6–8/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Funcional leve/moderado — variação halteres",
+                      "sets": "1",
+                      "reps": "30–45 min",
+                      "effort": "Esforço 6–8/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Mobilidade",
                   "sets": "1",
                   "reps": "10–15 min",
                   "rpe": "5–6",
-                  "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tor%C3%A1cica+ombros"
+                  "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tor%C3%A1cica+ombros",
+                  "options": [
+                    {
+                      "name": "Mobilidade",
+                      "sets": "1",
+                      "reps": "10–15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mobilidade — variação máquina",
+                      "sets": "1",
+                      "reps": "10–15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Mobilidade — variação halteres",
+                      "sets": "1",
+                      "reps": "10–15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             }
@@ -552,42 +3432,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–8",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=supino+reto+halteres+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=31j_Io3ncRg",
+                  "options": [
+                    {
+                      "name": "Supino reto com halteres",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=31j_Io3ncRg",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Supino reto com halteres",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=31j_Io3ncRg",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Supino máquina convergente",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
                 },
                 {
                   "name": "Supino inclinado na máquina",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=supino+inclinado+m%C3%A1quina+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                  "options": [
+                    {
+                      "name": "Supino inclinado na máquina",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Supino inclinado na máquina",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Supino inclinado no Smith",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
                 },
                 {
                   "name": "Crossover na polia",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=crossover+polia+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/results?search_query=crossover+polia+execu%C3%A7%C3%A3o+correta",
+                  "options": [
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Crucifixo inclinado com halteres",
                   "sets": "2–3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=crucifixo+inclinado+halteres+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=crucifixo+inclinado+halteres+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Crucifixo inclinado com halteres",
+                      "sets": "2–3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "2–3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "2–3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Tríceps testa barra EZ",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+testa+barra+ez+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+testa+barra+ez+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 },
                 {
                   "name": "Tríceps corda",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+corda+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "options": [
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 }
               ]
             },
@@ -599,42 +3749,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "8–10",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=puxada+neutra+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "options": [
+                    {
+                      "name": "Puxada neutra",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Puxada alta frente pronada",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Puxada neutra/triângulo",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Remada apoiada/chest supported",
                   "sets": "4",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=remada+apoiada+chest+supported+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "options": [
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Remada unilateral com halter",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=remada+unilateral+halter+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "options": [
+                    {
+                      "name": "Remada unilateral com halter",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Pulldown braço estendido",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=pulldown+bra%C3%A7o+estendido+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                  "options": [
+                    {
+                      "name": "Pulldown braço estendido",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Pulldown braço estendido — variação máquina",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Pulldown braço estendido — variação halteres",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Rosca EZ",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+barra+ez+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 },
                 {
                   "name": "Rosca martelo",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+martelo+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                  "options": [
+                    {
+                      "name": "Rosca martelo",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca martelo alternada",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca no cabo com corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 }
               ]
             },
@@ -646,35 +4066,260 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–8",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=agachamento+smith+frontal+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=XYg9TS_3Sik",
+                  "options": [
+                    {
+                      "name": "Agachamento no Smith ou frontal",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=XYg9TS_3Sik",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Agachamento no Smith",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=XYg9TS_3Sik",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Leg press pés baixos",
                   "sets": "4",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=leg+press+p%C3%A9s+baixos+quadriceps+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                  "options": [
+                    {
+                      "name": "Leg press pés baixos",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Leg press pés baixos",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Afundo búlgaro",
                   "sets": "3",
                   "reps": "8–10/cada",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=afundo+b%C3%BAlgaro+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                  "options": [
+                    {
+                      "name": "Afundo búlgaro",
+                      "sets": "3",
+                      "reps": "8–10/cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Afundo búlgaro",
+                      "sets": "3",
+                      "reps": "8–10/cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Passada caminhando",
+                      "sets": "3",
+                      "reps": "8–10/cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Cadeira extensora com pausa",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=cadeira+extensora+pausa+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                  "options": [
+                    {
+                      "name": "Cadeira extensora com pausa",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Cadeira extensora unilateral",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Cadeira extensora com pausa",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Panturrilha sentado",
                   "sets": "5",
                   "reps": "12–20",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=panturrilha+sentado+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=panturrilha+sentado+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Panturrilha sentado",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Panturrilha sentado",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Panturrilha em pé",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -686,42 +4331,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "8–10",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=desenvolvimento+m%C3%A1quina+ombro+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                  "options": [
+                    {
+                      "name": "Desenvolvimento na máquina",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Desenvolvimento na máquina",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Desenvolvimento com halteres",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Elevação lateral na polia",
                   "sets": "4",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+lateral+polia+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "options": [
+                    {
+                      "name": "Elevação lateral na polia",
+                      "sets": "4",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Elevação lateral na polia",
+                      "sets": "4",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Elevação lateral máquina",
+                      "sets": "4",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento."
                 },
                 {
                   "name": "Posterior no peck deck",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=posterior+ombro+peck+deck+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=posterior+ombro+peck+deck+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Posterior no peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Face pull",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=face+pull+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/results?search_query=face+pull+execu%C3%A7%C3%A3o+correta",
+                  "options": [
+                    {
+                      "name": "Face pull",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Face pull",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Posterior no peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Abdominal infra",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=abdominal+infra+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=abdominal+infra+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Abdominal infra",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Prancha lateral",
                   "sets": "3",
                   "reps": "30–45s",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=prancha+lateral+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=B9jV09yHIwA",
+                  "options": [
+                    {
+                      "name": "Prancha lateral",
+                      "sets": "3",
+                      "reps": "30–45s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B9jV09yHIwA",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "30–45s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "30–45s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -733,42 +4648,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "8–10",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=stiff+halteres+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                  "options": [
+                    {
+                      "name": "Stiff com halteres",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Stiff com halteres",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Terra romeno com barra",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior."
                 },
                 {
                   "name": "Cadeira flexora",
                   "sets": "4",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=cadeira+flexora+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                  "options": [
+                    {
+                      "name": "Cadeira flexora",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mesa flexora",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Cadeira flexora",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Elevação pélvica",
                   "sets": "3",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+p%C3%A9lvica+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+p%C3%A9lvica+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Elevação pélvica",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Elevação pélvica máquina",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Glute bridge com barra",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Rosca alternada",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+alternada+halteres+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca alternada",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 },
                 {
                   "name": "Tríceps unilateral na polia",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+unilateral+polia+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+unilateral+polia+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Tríceps unilateral na polia",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 },
                 {
                   "name": "Rosca cabo",
                   "sets": "2–3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+cabo+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca cabo",
+                      "sets": "2–3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "2–3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "2–3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 }
               ]
             },
@@ -780,21 +4965,156 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "40–50 min",
                   "rpe": "6–7",
-                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer"
+                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+                  "options": [
+                    {
+                      "name": "Cardio Zona 2",
+                      "sets": "1",
+                      "reps": "40–50 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Bike Zona 2",
+                      "sets": "1",
+                      "reps": "40–50 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Esteira inclinada Zona 2",
+                      "sets": "1",
+                      "reps": "40–50 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Funcional moderado",
                   "sets": "1",
                   "reps": "30–40 min",
                   "rpe": "6–8",
-                  "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado"
+                  "link": "https://www.youtube.com/results?search_query=treino+funcional+moderado",
+                  "options": [
+                    {
+                      "name": "Funcional moderado",
+                      "sets": "1",
+                      "reps": "30–40 min",
+                      "effort": "Esforço 6–8/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Funcional moderado — variação máquina",
+                      "sets": "1",
+                      "reps": "30–40 min",
+                      "effort": "Esforço 6–8/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Funcional moderado — variação halteres",
+                      "sets": "1",
+                      "reps": "30–40 min",
+                      "effort": "Esforço 6–8/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Mobilidade + liberação",
                   "sets": "1",
                   "reps": "15 min",
                   "rpe": "5–6",
-                  "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tornozelo+ombro"
+                  "link": "https://www.youtube.com/results?search_query=mobilidade+quadril+tornozelo+ombro",
+                  "options": [
+                    {
+                      "name": "Mobilidade + liberação",
+                      "sets": "1",
+                      "reps": "15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mobilidade + liberação — variação máquina",
+                      "sets": "1",
+                      "reps": "15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Mobilidade + liberação — variação halteres",
+                      "sets": "1",
+                      "reps": "15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             }
@@ -818,42 +5138,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "5–7",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=supino+reto+com+pausa+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "options": [
+                    {
+                      "name": "Supino reto com pausa",
+                      "sets": "4",
+                      "reps": "5–7",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Supino reto com halteres",
+                      "sets": "4",
+                      "reps": "5–7",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=31j_Io3ncRg",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Supino máquina convergente",
+                      "sets": "4",
+                      "reps": "5–7",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
                 },
                 {
                   "name": "Supino inclinado com halteres",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=supino+inclinado+halteres+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                  "options": [
+                    {
+                      "name": "Supino inclinado com halteres",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Supino inclinado na máquina",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=yj3CnWaoIRI",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Supino inclinado no Smith",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle.",
+                      "video": "https://www.youtube.com/watch?v=EZMYCLKuGow",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Escápulas firmes, pés apoiados e barra/halter descendo com controle."
                 },
                 {
                   "name": "Crossover alto para baixo",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=crossover+alto+para+baixo+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=crossover+alto+para+baixo+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Crossover alto para baixo",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Peck deck",
                   "sets": "2–3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=peck+deck+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/results?search_query=peck+deck+execu%C3%A7%C3%A3o+correta",
+                  "options": [
+                    {
+                      "name": "Peck deck",
+                      "sets": "2–3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "2–3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "2–3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Tríceps corda com drop set",
                   "sets": "3",
                   "reps": "10–12 + drop",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=tr%C3%ADceps+corda+drop+set+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "options": [
+                    {
+                      "name": "Tríceps corda com drop set",
+                      "sets": "3",
+                      "reps": "10–12 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo fixo; estenda até contrair o tríceps."
                 },
                 {
                   "name": "Mergulho no banco/máquina",
                   "sets": "2–3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=mergulho+banco+tr%C3%ADceps+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=mergulho+banco+tr%C3%ADceps+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Mergulho no banco/máquina",
+                      "sets": "2–3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mergulho no banco/máquina — variação máquina",
+                      "sets": "2–3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Mergulho no banco/máquina — variação halteres",
+                      "sets": "2–3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -865,42 +5455,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=barra+fixa+puxada+neutra+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                  "options": [
+                    {
+                      "name": "Barra fixa ou puxada neutra",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Puxada alta frente pronada",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Puxada neutra/triângulo",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=mPmfwbc_svw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Remada unilateral na máquina",
                   "sets": "4",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=remada+unilateral+m%C3%A1quina+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "options": [
+                    {
+                      "name": "Remada unilateral na máquina",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "4",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Remada baixa pegada neutra",
                   "sets": "3",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=remada+baixa+pegada+neutra+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                  "options": [
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Remada baixa pegada neutra",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Remada apoiada/chest supported",
+                      "sets": "3",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço.",
+                      "video": "https://www.youtube.com/watch?v=f8AVh4VBbos",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Puxe com cotovelos, mantenha peito aberto e evite balanço."
                 },
                 {
                   "name": "Pulldown braço estendido",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=pulldown+bra%C3%A7o+estendido+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                  "options": [
+                    {
+                      "name": "Pulldown braço estendido",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Pulldown braço estendido — variação máquina",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Pulldown braço estendido — variação halteres",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=B7ayOYBohhY",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Rosca martelo",
                   "sets": "3",
                   "reps": "8–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=rosca+martelo+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                  "options": [
+                    {
+                      "name": "Rosca martelo",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca martelo alternada",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca no cabo com corda",
+                      "sets": "3",
+                      "reps": "8–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 },
                 {
                   "name": "Rosca no cabo com drop set",
                   "sets": "2–3",
                   "reps": "12–15 + drop",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=rosca+cabo+drop+set+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                  "options": [
+                    {
+                      "name": "Rosca no cabo com drop set",
+                      "sets": "2–3",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Rosca EZ",
+                      "sets": "2–3",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Rosca alternada com halteres",
+                      "sets": "2–3",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=7G8V11vEifU",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 }
               ]
             },
@@ -912,35 +5772,260 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=hack+machine+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=xRevfevb51o",
+                  "options": [
+                    {
+                      "name": "Hack machine pesado",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Hack machine pesado — variação máquina",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine pesado — variação halteres",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Leg press",
                   "sets": "4",
                   "reps": "10–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=leg+press+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                  "options": [
+                    {
+                      "name": "Leg press",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Leg press pés baixos",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=waAxlYvtCcI",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Hack machine",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra.",
+                      "video": "https://www.youtube.com/watch?v=xRevfevb51o",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Joelhos acompanham a ponta dos pés; amplitude sem perder lombar neutra."
                 },
                 {
                   "name": "Passada ou avanço",
                   "sets": "3",
                   "reps": "10/cada",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=passada+avan%C3%A7o+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                  "options": [
+                    {
+                      "name": "Passada ou avanço",
+                      "sets": "3",
+                      "reps": "10/cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Afundo búlgaro",
+                      "sets": "3",
+                      "reps": "10/cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Passada caminhando",
+                      "sets": "3",
+                      "reps": "10/cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=3jovnve2_JQ",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Cadeira extensora com drop set",
                   "sets": "3",
                   "reps": "12–15 + drop",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=cadeira+extensora+drop+set+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                  "options": [
+                    {
+                      "name": "Cadeira extensora com drop set",
+                      "sets": "3",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Cadeira extensora unilateral",
+                      "sets": "3",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Cadeira extensora com pausa",
+                      "sets": "3",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=kH2K6JU27MQ",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Panturrilha em pé",
                   "sets": "5",
                   "reps": "12–20",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=panturrilha+em+p%C3%A9+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Panturrilha em pé",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Panturrilha sentado",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Panturrilha em pé",
+                      "sets": "5",
+                      "reps": "12–20",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -952,42 +6037,312 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–10",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=desenvolvimento+ombro+halteres+m%C3%A1quina+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                  "options": [
+                    {
+                      "name": "Desenvolvimento halteres/máquina",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Desenvolvimento na máquina",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Desenvolvimento com halteres",
+                      "sets": "4",
+                      "reps": "6–10",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=dxQCyYawS-0",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Elevação lateral com drop set",
                   "sets": "4",
                   "reps": "12–15 + drop",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+lateral+drop+set+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "options": [
+                    {
+                      "name": "Elevação lateral com drop set",
+                      "sets": "4",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Elevação lateral na polia",
+                      "sets": "4",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Elevação lateral máquina",
+                      "sets": "4",
+                      "reps": "12–15 + drop",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento."
                 },
                 {
                   "name": "Elevação lateral inclinada",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+lateral+inclinada+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                  "options": [
+                    {
+                      "name": "Elevação lateral inclinada",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Elevação lateral na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Elevação lateral máquina",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento.",
+                      "video": "https://www.youtube.com/watch?v=X5eS54qlVpA",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Suba pelo cotovelo, sem trapézio dominar o movimento."
                 },
                 {
                   "name": "Posterior no peck deck",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=posterior+ombro+peck+deck+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=posterior+ombro+peck+deck+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Posterior no peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Crossover na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Peck deck",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Abdominal na polia",
                   "sets": "3",
                   "reps": "12–15",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=abdominal+na+polia+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "12–15",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Prancha",
                   "sets": "3",
                   "reps": "45–60s",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=prancha+abdominal+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "45–60s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Prancha",
+                      "sets": "3",
+                      "reps": "45–60s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Abdominal na polia",
+                      "sets": "3",
+                      "reps": "45–60s",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             },
@@ -999,35 +6354,260 @@ window.PLAN_DATA = {
                   "sets": "4",
                   "reps": "6–8",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=terra+romeno+execu%C3%A7%C3%A3o+correta"
+                  "link": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                  "options": [
+                    {
+                      "name": "Terra romeno controlado",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Stiff com halteres",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=8R-Yz0yQIn0",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Terra romeno com barra",
+                      "sets": "4",
+                      "reps": "6–8",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "90–150 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Quadril vai para trás, coluna neutra e tensão no posterior.",
+                      "video": "https://www.youtube.com/watch?v=NP548KPEpMw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "90–150 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Quadril vai para trás, coluna neutra e tensão no posterior."
                 },
                 {
                   "name": "Mesa flexora com pausa",
                   "sets": "4",
                   "reps": "10–12",
                   "rpe": "8–9",
-                  "link": "https://www.youtube.com/results?search_query=mesa+flexora+pausa+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                  "options": [
+                    {
+                      "name": "Mesa flexora com pausa",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mesa flexora",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Cadeira flexora",
+                      "sets": "4",
+                      "reps": "10–12",
+                      "effort": "Esforço 8–9/10",
+                      "rir": "Sobra 1 rep",
+                      "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "https://www.youtube.com/watch?v=sWSm1pWb3lw",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga pesada controlada; deve sobrar 1 repetição boa.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Elevação pélvica",
                   "sets": "3",
                   "reps": "8–12",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+p%C3%A9lvica+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=eleva%C3%A7%C3%A3o+p%C3%A9lvica+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "Elevação pélvica",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Elevação pélvica máquina",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Glute bridge com barra",
+                      "sets": "3",
+                      "reps": "8–12",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Rosca Scott + tríceps corda",
                   "sets": "3",
                   "reps": "10–12 cada",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=bi+set+rosca+scott+tr%C3%ADceps+corda"
+                  "link": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                  "options": [
+                    {
+                      "name": "Rosca Scott + tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12 cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12 cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12 cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 },
                 {
                   "name": "Rosca martelo + tríceps francês",
                   "sets": "3",
                   "reps": "10–12 cada",
                   "rpe": "8",
-                  "link": "https://www.youtube.com/results?search_query=bi+set+rosca+martelo+tr%C3%ADceps+franc%C3%AAs"
+                  "link": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                  "options": [
+                    {
+                      "name": "Rosca martelo + tríceps francês",
+                      "sets": "3",
+                      "reps": "10–12 cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo estável; não roubar com lombar.",
+                      "video": "https://www.youtube.com/watch?v=HgTwegZjTg8",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Tríceps corda",
+                      "sets": "3",
+                      "reps": "10–12 cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "https://www.youtube.com/watch?v=afkbiAZbGxM",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Tríceps testa barra EZ",
+                      "sets": "3",
+                      "reps": "10–12 cada",
+                      "effort": "Esforço 8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "45–75 s",
+                      "tempo": "2 s descida • 1 s pausa • subir controlado",
+                      "cue": "Cotovelo fixo; estenda até contrair o tríceps.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "45–75 s",
+                  "tempo": "2 s descida • 1 s pausa • subir controlado",
+                  "cue": "Cotovelo estável; não roubar com lombar."
                 }
               ]
             },
@@ -1039,21 +6619,156 @@ window.PLAN_DATA = {
                   "sets": "1",
                   "reps": "35–45 min",
                   "rpe": "6–7",
-                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer"
+                  "link": "https://www.youtube.com/results?search_query=cardio+zona+2+como+fazer",
+                  "options": [
+                    {
+                      "name": "Cardio Zona 2",
+                      "sets": "1",
+                      "reps": "35–45 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Bike Zona 2",
+                      "sets": "1",
+                      "reps": "35–45 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Esteira inclinada Zona 2",
+                      "sets": "1",
+                      "reps": "35–45 min",
+                      "effort": "Esforço 6–7/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada; devem sobrar 2–3 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "HIIT leve opcional",
                   "sets": "1",
                   "reps": "8–12 tiros curtos",
                   "rpe": "7–8",
-                  "link": "https://www.youtube.com/results?search_query=hiit+iniciante+esteira+bicicleta+execu%C3%A7%C3%A3o"
+                  "link": "https://www.youtube.com/results?search_query=hiit+iniciante+esteira+bicicleta+execu%C3%A7%C3%A3o",
+                  "options": [
+                    {
+                      "name": "HIIT leve opcional",
+                      "sets": "1",
+                      "reps": "8–12 tiros curtos",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "HIIT leve opcional — variação máquina",
+                      "sets": "1",
+                      "reps": "8–12 tiros curtos",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "HIIT leve opcional — variação halteres",
+                      "sets": "1",
+                      "reps": "8–12 tiros curtos",
+                      "effort": "Esforço 7–8/10",
+                      "rir": "Sobra 1–3 reps",
+                      "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga moderada/pesada; devem sobrar cerca de 2 repetições boas.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 },
                 {
                   "name": "Mobilidade geral",
                   "sets": "1",
                   "reps": "15 min",
                   "rpe": "5–6",
-                  "link": "https://www.youtube.com/results?search_query=mobilidade+geral+treino"
+                  "link": "https://www.youtube.com/results?search_query=mobilidade+geral+treino",
+                  "options": [
+                    {
+                      "name": "Mobilidade geral",
+                      "sets": "1",
+                      "reps": "15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "base"
+                    },
+                    {
+                      "name": "Mobilidade geral — variação máquina",
+                      "sets": "1",
+                      "reps": "15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    },
+                    {
+                      "name": "Mobilidade geral — variação halteres",
+                      "sets": "1",
+                      "reps": "15 min",
+                      "effort": "Esforço 5–6/10",
+                      "rir": "Sobra 2–3 reps",
+                      "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                      "rest": "60–90 s",
+                      "tempo": "2–3 s descida • subir com controle",
+                      "cue": "Priorize amplitude, controle e técnica antes de aumentar carga.",
+                      "video": "",
+                      "kind": "alternativa"
+                    }
+                  ],
+                  "load": "Carga que permita cumprir as repetições com técnica limpa.",
+                  "rest": "60–90 s",
+                  "tempo": "2–3 s descida • subir com controle",
+                  "cue": "Priorize amplitude, controle e técnica antes de aumentar carga."
                 }
               ]
             }
@@ -1638,5 +7353,5 @@ window.PLAN_DATA = {
       "frequency": "8–12 semanas"
     }
   ],
-  "version": "v34"
+  "version": "v35"
 };

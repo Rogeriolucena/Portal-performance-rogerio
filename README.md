@@ -55,3 +55,21 @@ Ajuste:
   - Selecionar PDF.
 - Os inputs reais ficam ocultos e são acionados pelos botões.
 - Isso tenta contornar o comportamento do iPhone/Chrome que escondia a opção de foto.
+
+
+## v35 — Treino com alternativas e vídeos curados
+
+Alterações:
+- Cada exercício do treino agora possui opções alternativas selecionáveis.
+- A seleção fica no próprio card do exercício, como foi feito na Dieta.
+- A prescrição do exercício ficou mais clara:
+  - séries;
+  - repetições;
+  - esforço;
+  - reps em reserva;
+  - orientação de carga;
+  - descanso;
+  - tempo de execução;
+  - dica técnica.
+- Os vídeos deixam de apontar para pesquisa no YouTube.
+- Foram inseridos links diretos para vídeos específicos de execução, escolhidos por padrão de movimento.
