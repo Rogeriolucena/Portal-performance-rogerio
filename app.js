@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v20";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v22";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,8 +7,15 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
-function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} function workouts(){return prof().workouts}
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} function currentWorkoutBlock(){
+  const blocks=prof().workoutBlocks;
+  if(!blocks) return {key:"A",name:"Bloco A",focus:"",workouts:prof().workouts};
+  const wk=u().week||1;
+  const key=wk<=4?"A":wk<=8?"B":"C";
+  return {key,...blocks[key]};
+}
+function workouts(){return currentWorkoutBlock().workouts||prof().workouts}
 function activeDay(){return u().dayOverrideDate===today()&&u().dayOverride?u().dayOverride:dayName()}
 function workout(){return workouts()[activeDay()]||workouts().Segunda}
 function week(){return PLAN.weeks.find(x=>x.week===u().week)||PLAN.weeks[0]}
@@ -17,12 +24,26 @@ function currentOpenTab(){
   const active=document.querySelector(".section.active");
   return active?.id || location.hash.replace("#","") || "train";
 }
+
+function scrollCalendarWeekIntoView(weekNumber){
+  requestAnimationFrame(()=>{
+    const chip=document.querySelector(`.week-chip[data-week="${weekNumber}"]`);
+    if(!chip) return;
+    chip.scrollIntoView({behavior:"smooth", inline:"center", block:"nearest"});
+  });
+}
+
 function setCalendarWeek(weekNumber){
+  const content=document.querySelector(".content");
+  const previousTop=content ? content.scrollTop : 0;
   u().week=Number(weekNumber);
   localStorage.setItem(KEY,JSON.stringify(state));
   renderCalendar();
   renderTrain();
   openTab("calendar");
+  const newContent=document.querySelector(".content");
+  if(newContent) newContent.scrollTop=previousTop;
+  scrollCalendarWeekIntoView(weekNumber);
 }
 
 function save(){const tab=currentOpenTab();localStorage.setItem(KEY,JSON.stringify(state));render(tab);scheduleReminders()}
@@ -37,7 +58,7 @@ function shell(){let p=prof();document.getElementById("app").innerHTML=`<div cla
 function input(id,label,type="text",ph="",val=""){return`<div><label>${label}</label><input id="${id}" type="${type}" placeholder="${ph}" value="${val}"></div>`}
 function select(id,label,ops,val=""){return`<div><label>${label}</label><select id="${id}">${ops.map(o=>`<option ${o===val?"selected":""}>${o}</option>`).join("")}</select></div>`}
 function head(t,s){return`<div class="page-head"><h2>${t}</h2><p>${s||""}</p></div>`}
-function renderTrain(){let w=workout(), wk=week(), p=prof();$("train").innerHTML=`${head("Hoje • Treino",`Detectado automaticamente: ${activeDay()}.`)}<div class="grid three"><div class="card kpi"><div class="label">Treino</div><div class="value" style="font-size:20px">${w.title}</div><div class="hint">${activeDay()}</div></div><div class="card kpi"><div class="label">Semana</div><div class="value">S${u().week}</div><div class="hint">${wk.phase}</div></div><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">meta ${p.targetWeight||"—"} kg</div></div></div><div class="card"><p class="notice"><b>Regra:</b> ${wk.rule}</p><details><summary>Trocar treino só hoje</summary><div class="form-grid"><div><label>Semana</label><select onchange="u().week=Number(this.value);save()">${PLAN.weeks.map(x=>`<option value="${x.week}" ${x.week===u().week?"selected":""}>Semana ${x.week}</option>`).join("")}</select></div><div><label>Dia</label><select onchange="u().dayOverrideDate='${today()}';u().dayOverride=this.value;save()">${Object.keys(workouts()).map(d=>`<option ${d===activeDay()?"selected":""}>${d}</option>`).join("")}</select></div></div></details><h3>Exercícios executados</h3><div class="list">${w.exercises.map((e,i)=>`<label class="check"><input type="checkbox" id="ex-${i}"><div><strong>${e.name}</strong><span>${e.sets}x${e.reps} • RPE ${e.rpe} ${e.link&&e.link!=="#"?`• <a href="${e.link}" target="_blank">vídeo</a>`:""}</span></div></label>`).join("")}</div><div style="margin-top:12px"><label>Nota do treino</label><textarea id="tr-note" placeholder="Ex.: completo, energia baixa, adaptação..."></textarea></div><div class="actions"><button class="primary" onclick="saveTrain()">Salvar treino</button></div></div>`}
+function renderTrain(){let w=workout(), wk=week(), p=prof();$("train").innerHTML=`${head("Hoje • Treino",`Detectado automaticamente: ${activeDay()}.`)}<div class="grid three"><div class="card kpi"><div class="label">Treino</div><div class="value" style="font-size:20px">${w.title}</div><div class="hint">${activeDay()}</div></div><div class="card kpi"><div class="label">Semana</div><div class="value">S${u().week}</div><div class="hint">${wk.phase}</div></div><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">meta ${p.targetWeight||"—"} kg</div></div></div><div class="card"><p class="pill">${currentWorkoutBlock().name} • ${currentWorkoutBlock().focus}</p><p class="notice"><b>Regra:</b> ${wk.rule}</p><details><summary>Trocar treino só hoje</summary><div class="form-grid"><div><label>Semana</label><select onchange="u().week=Number(this.value);save()">${PLAN.weeks.map(x=>`<option value="${x.week}" ${x.week===u().week?"selected":""}>Semana ${x.week}</option>`).join("")}</select></div><div><label>Dia</label><select onchange="u().dayOverrideDate='${today()}';u().dayOverride=this.value;save()">${Object.keys(workouts()).map(d=>`<option ${d===activeDay()?"selected":""}>${d}</option>`).join("")}</select></div></div></details><h3>Exercícios executados</h3><div class="list">${w.exercises.map((e,i)=>`<label class="check"><input type="checkbox" id="ex-${i}"><div><strong>${e.name}</strong><span>${e.sets}x${e.reps} • RPE ${e.rpe} ${e.link&&e.link!=="#"?`• <a href="${e.link}" target="_blank">vídeo</a>`:""}</span></div></label>`).join("")}</div><div style="margin-top:12px"><label>Nota do treino</label><textarea id="tr-note" placeholder="Ex.: completo, energia baixa, adaptação..."></textarea></div><div class="actions"><button class="primary" onclick="saveTrain()">Salvar treino</button></div></div>`}
 function saveTrain(){let w=workout(), ex=w.exercises.map((e,i)=>({name:e.name,done:$(`ex-${i}`).checked}));u().workoutLogs.push({id:uid(),date:today(),week:u().week,day:activeDay(),title:w.title,exercises:ex,note:$("tr-note").value});upsertDaily({exercises:ex,day:activeDay(),week:u().week,workoutTitle:w.title});save()}
 function upsertDaily(part){let d=today(), log=u().dailyLogs.find(x=>x.date===d);if(!log){log={id:uid(),date:d,day:activeDay(),week:u().week,exercises:[],meals:[],water:[],schedule:[]};u().dailyLogs.push(log)}Object.assign(log,part)}
 
@@ -127,7 +148,7 @@ function weekShortLabel(phase){
   return phase.split(" ")[0];
 }
 
-function renderCalendar(){let wk=week();$("calendar").innerHTML=`${head("Calendário de treinos","12 semanas com vídeos de execução.")}<div class="week-strip">${PLAN.weeks.map(x=>`<button class="week-chip ${x.week===u().week?"active":""}" onclick="setCalendarWeek(${x.week})"><span class="week-num">S${x.week}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="notice">${wk.rule}</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(workouts()).map(([day,w])=>`<div class="card item"><div style="display:flex;justify-content:space-between;gap:8px"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><button class="ghost" onclick="u().dayOverrideDate='${today()}';u().dayOverride='${day}';save();openTab('train')">Usar hoje</button></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
+function renderCalendar(){let wk=week();$("calendar").innerHTML=`${head("Calendário de treinos","12 semanas com vídeos de execução.")}<div class="week-strip">${PLAN.weeks.map(x=>`<button class="week-chip ${x.week===u().week?"active":""}" data-week="${x.week}" onclick="setCalendarWeek(${x.week})"><span class="week-num">S${x.week}</span></button>`).join("")}</div><div class="card"><span class="pill">Semana ${wk.week} • ${wk.phase}</span><p class="muted" style="margin:8px 0 0">${currentWorkoutBlock().name} • ${currentWorkoutBlock().focus}</p><p class="notice">${wk.rule}</p></div><div class="calendar-grid" style="margin-top:12px">${Object.entries(workouts()).map(([day,w])=>`<div class="card item"><div style="display:flex;justify-content:space-between;gap:8px"><div><strong>${day}</strong><div class="muted">${w.title}</div></div><button class="ghost" onclick="u().dayOverrideDate='${today()}';u().dayOverride='${day}';save();openTab('train')">Usar hoje</button></div><ul>${w.exercises.map(e=>`<li>${e.name} — ${e.sets}x${e.reps} ${e.link&&e.link!=="#"?`<a class="video" href="${e.link}" target="_blank">vídeo</a>`:""}</li>`).join("")}</ul></div>`).join("")}</div>`}
 
 function progressMonthName(m){return ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"][m]}
 function progressISO(y,m,d){return `${y}-${String(m+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`}

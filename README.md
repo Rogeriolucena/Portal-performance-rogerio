@@ -82,3 +82,29 @@ Correção:
 - Clicar nos chips S1, S2, S3... não leva mais automaticamente para a aba Treino.
 - Os chips agora usam `setCalendarWeek()`, atualizando apenas a semana do calendário e mantendo a aba Calendário aberta.
 - A função geral `save()` também foi ajustada para preservar a aba atualmente aberta quando renderizar o app.
+
+
+## v21 — Correção do scroll dos chips de semana
+
+Correção:
+- Ao clicar em S8, S9, S10, S11 ou S12, a faixa de chips não volta mais para S1.
+- O chip selecionado é centralizado automaticamente após a troca de semana.
+- A posição vertical da aba Calendário é preservada ao trocar a semana.
+
+
+## v22 — Blocos de treino
+
+Alterações:
+- Incorpora a correção da v21: chips do calendário mantêm a semana selecionada visível.
+- Treinos agora variam por bloco de 4 semanas:
+  - Semanas 1–4: Bloco A — base técnica e hipertrofia.
+  - Semanas 5–8: Bloco B — variação de estímulo, ângulos, pegadas e máquinas.
+  - Semanas 9–12: Bloco C — intensificação, acabamento e consolidação.
+- A divisão semanal foi mantida:
+  - Segunda: Peito + tríceps
+  - Terça: Costas + bíceps
+  - Quarta: Quadríceps
+  - Quinta: Ombros + abdômen
+  - Sexta: Posterior + glúteos + braços
+  - Sábado/Domingo: cardio ou funcional
+- O app mostra o bloco atual no Treino e no Calendário.

@@ -573,3 +573,10 @@ input#date{
     grid-template-columns:1fr;
   }
 }
+
+
+
+/* v22 — blocos de treino */
+.card .pill + .notice{
+  margin-top:12px;
+}
