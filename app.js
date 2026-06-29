@@ -1,7 +1,7 @@
 
 const PLAN = window.PLAN_DATA;
-const KEY = "sheipados_v12";
-const OLD_KEYS = ["sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5","sheipados_v4"];
+const KEY = "sheipados_v13";
+const OLD_KEYS = ["sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5","sheipados_v4"];
 const tabs = [
   ["train","Treino","✅"],
   ["diet","Dieta","🍽️"],
@@ -70,7 +70,7 @@ function shell(content){
       </div>
     </header>
     <main class="content">${content}</main>
-    <nav class="nav">${tabs.map(t=>`<button class="${activeTab===t[0]?"active":""}" onclick="setTab('${t[0]}')"><span class="ico">${t[2]}</span><span>${t[1]}</span></button>`).join("")}</nav>
+    <div class="nav-shell"><nav class="nav" aria-label="Navegação">${tabs.map(t=>`<button type="button" class="${activeTab===t[0]?"active":""}" data-tab="${t[0]}"><span class="ico">${t[2]}</span><span>${t[1]}</span></button>`).join("")}</nav></div>
   </div>`;
 }
 
@@ -210,6 +210,26 @@ async function enableReminders(){if(!("Notification"in window))return alert("Sem
 function disableReminders(){user().settings.reminders=false;saveState();timers.forEach(clearTimeout);timers=[];render()}
 function testNotification(){showNotify("Sheipados","Teste de alerta funcionando.")}
 function scheduleReminders(){timers.forEach(clearTimeout);timers=[];if(!user().settings.reminders||!("Notification"in window)||Notification.permission!=="granted")return;const now=new Date();PLAN.schedule.forEach(s=>{if(s.weekly&&now.getDay()!==0)return;const [h,m]=s.hhmm.split(":").map(Number),target=new Date();target.setHours(h,m,0,0);const delay=target-now;if(delay>0&&delay<86400000)timers.push(setTimeout(()=>showNotify("Sheipados",`${s.time} • ${s.item}. ${s.note}`),delay))})}
+
+function bindNavTouch(){
+  const nav = document.querySelector(".nav");
+  if(!nav || nav.dataset.bound === "1") return;
+  nav.dataset.bound = "1";
+
+  const activate = (ev) => {
+    const btn = ev.target.closest("button[data-tab]");
+    if(!btn) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    const tab = btn.dataset.tab;
+    if(tab && tab !== activeTab) setTab(tab);
+  };
+
+  nav.addEventListener("pointerdown", activate, {capture:true});
+  nav.addEventListener("touchstart", activate, {capture:true, passive:false});
+  nav.addEventListener("click", activate, {capture:true});
+}
+
 function render(){
   if(!tabs.some(t=>t[0]===activeTab)) activeTab="train";
   let content="";
@@ -224,7 +244,7 @@ function render(){
     console.error(e);
   }
   document.getElementById("app").innerHTML=shell(content);
-  
+  bindNavTouch();
 }
 if("serviceWorker"in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
 render();scheduleReminders();

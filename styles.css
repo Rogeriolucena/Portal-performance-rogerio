@@ -158,3 +158,40 @@ details summary{cursor:pointer;color:#d6e6ff;font-weight:800;padding:10px 0}.alt
 .week-labels{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:7px}.week-labels span{text-align:center;color:var(--muted);font-size:13px;font-weight:800}.month-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.cal-cell{min-height:58px;border-radius:16px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.035);padding:6px 4px;display:flex;flex-direction:column;align-items:center;justify-content:space-between}.cal-cell.empty{background:transparent;border-color:transparent}.cal-cell.today{border-color:rgba(112,167,255,.65);box-shadow:0 0 0 1px rgba(112,167,255,.2) inset}.cal-day{font-size:13px;font-weight:850;color:var(--text);line-height:1}.cal-icons{display:flex;justify-content:center;align-items:center;gap:3px;min-height:28px}.cal-icon{width:25px;height:25px;border-radius:999px;display:inline-grid;place-items:center;font-size:13px;line-height:1;box-shadow:0 4px 10px rgba(0,0,0,.22)}.cal-icon.train{background:#234d88}.cal-icon.diet{background:#7b5b12}
 @media(max-width:720px){.grid.three,.grid.two,.form-grid,.calendar-grid{grid-template-columns:1fr}.card{padding:15px}h2{font-size:21px}}
 @media(max-width:420px){.calendar-card{padding:12px}.month-grid{gap:4px}.cal-cell{min-height:52px;border-radius:14px;padding:5px 2px}.cal-icon{width:22px;height:22px;font-size:12px}.cal-day{font-size:12px}.week-labels span{font-size:12px}}
+
+
+
+/* v13 - correção de toque no Chrome/iPhone */
+.nav-shell{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:calc(var(--nav-bottom) + env(safe-area-inset-bottom));
+  z-index:2147483647;
+  display:flex;
+  justify-content:center;
+  pointer-events:none;
+  padding:0 11px;
+}
+.nav{
+  position:relative!important;
+  left:auto!important;
+  bottom:auto!important;
+  transform:none!important;
+  width:min(760px,calc(100vw - 22px));
+  pointer-events:auto!important;
+  touch-action:manipulation;
+  -webkit-user-select:none;
+  user-select:none;
+}
+.nav button{
+  pointer-events:auto!important;
+  touch-action:manipulation;
+  -webkit-user-select:none;
+  user-select:none;
+  cursor:pointer;
+}
+.content{
+  position:relative;
+  z-index:1;
+}

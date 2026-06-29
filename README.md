@@ -17,3 +17,14 @@ Atualização:
 - Substitua todos os arquivos.
 - Abra com ?v=12 para furar cache:
   https://rogeriolucena.github.io/Portal-performance-rogerio/?v=12
+
+
+## v13 — Touch Fix
+
+Correção focada no Chrome/iPhone:
+- Mantém o menu flutuante.
+- Envolve o menu em `.nav-shell`.
+- Os botões deixam de depender só de `onclick`.
+- Navegação passa a capturar `pointerdown`, `touchstart` e `click`.
+- Usa `data-tab` para troca de abas.
+- Reduz chance de o conteúdo interceptar o toque.
