@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v40";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v41";
 const tabs=[["train","Treino",""],["diet","Dieta",""],["calendar","Calendário",""],["progress","Evolução",""],["more","Mais",""]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,calendarWeek:null,weekOverrideDate:null,weekOverride:null,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v39","sheipados_v38","sheipados_v37","sheipados_v36","sheipados_v35","sheipados_v34","sheipados_v33","sheipados_v32","sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v40","sheipados_v39","sheipados_v38","sheipados_v37","sheipados_v36","sheipados_v35","sheipados_v34","sheipados_v33","sheipados_v32","sheipados_v31","sheipados_v30","sheipados_v29","sheipados_v28","sheipados_v27","sheipados_v26","sheipados_v25","sheipados_v24","sheipados_v23","sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} const TRAINING_START_DATE="2026-06-29";
 
 function dateSerial(ds){
@@ -141,7 +141,7 @@ function isWorkoutDoneToday(){
 }
 function isDietDoneToday(){
   const log=todayLog();
-  return !!(log?.diet?.saved && log?.diet?.complete);
+  return !!(log?.diet?.saved);
 }
 function completedCard(type, title, subtitle, summaryHtml, editFn){
   return `<div class="card done-card"><div class="done-icon">✅</div><h2>${title}</h2><p class="ok">${subtitle}</p>${summaryHtml||""}<div class="actions"><button class="ghost" onclick="${editFn}">Editar check-in de hoje</button></div></div>`;
@@ -152,7 +152,9 @@ function workoutDoneSummary(log){
   return `<div class="done-summary"><span>Exercícios concluídos</span><strong>${done}/${total}</strong></div>${log?.workout?.checkInTime?`<p class="ok" style="font-size:13px">${checkinTimeText(log.workout)}</p>`:""}<p class="muted" style="font-size:12px">Amanhã o app libera automaticamente o próximo treino do dia.</p>`;
 }
 function dietDoneSummary(log){
-  return `<div class="done-summary"><span>Flags da dieta</span><strong>${log?.diet?.count||0}/${log?.diet?.total||0}</strong></div>${log?.diet?.checkInTime?`<p class="ok" style="font-size:13px">${checkinTimeText(log.diet)}</p>`:""}<p class="muted" style="font-size:12px">Amanhã o checklist da dieta será liberado novamente.</p>`;
+  const pct=log?.diet?.pct||0;
+  const msg=pct>=80?"Dia completo para Evolução.":"Abaixo de 80%, não conta como dia completo na Evolução.";
+  return `<div class="done-summary"><span>Refeições registradas</span><strong>${log?.diet?.count||0}/${log?.diet?.total||0} • ${pct}%</strong></div>${log?.diet?.checkInTime?`<p class="ok" style="font-size:13px">${checkinTimeText(log.diet)}</p>`:""}<p class="muted" style="font-size:12px">${msg}</p><p class="muted" style="font-size:12px">Amanhã o checklist da dieta será liberado novamente.</p>`;
 }
 function editWorkoutToday(){
   u().editingWorkoutDate=today();
@@ -223,10 +225,61 @@ function dietExtras(i){
   ];
   return groups[i] || [];
 }
+
+function dietDateKey(){return today()}
+function dietMealStore(){
+  u().dietMealCheckins=u().dietMealCheckins||{};
+  const d=dietDateKey();
+  u().dietMealCheckins[d]=u().dietMealCheckins[d]||{};
+  return u().dietMealCheckins[d];
+}
+function dietMealRegistered(i){return !!dietMealStore()[PLAN.meals[i].id]}
+function dietMealCount(){const store=dietMealStore();return PLAN.meals.filter(m=>!!store[m.id]).length}
+function dietMealTotal(){return PLAN.meals.length}
+function dietMealPct(){return Math.round((dietMealCount()/Math.max(1,dietMealTotal()))*100)}
+function dietProgressMiniHTML(){
+  const count=dietMealCount(), total=dietMealTotal(), pct=dietMealPct();
+  return `<div class="diet-mini-progress"><div class="diet-mini-head"><span>Progresso do dia</span><strong>${count}/${total} • ${pct}%</strong></div><div class="mini-progress-bar"><span style="width:${pct}%"></span></div><small>${pct>=80?"Meta mínima atingida para Evolução.":"Meta da Evolução: mínimo de 80% das refeições."}</small></div>`;
+}
+function markDietMealInputs(i,checked=true){
+  const meal=$(`meal-${i}`); if(meal) meal.checked=checked;
+  document.querySelectorAll(`[id^="extra-${i}-"]`).forEach(x=>x.checked=checked);
+}
+function registerDietMeal(i){
+  const meal=PLAN.meals[i];
+  const choiceEl=$(`meal-choice-${i}`);
+  const selected=choiceEl ? choiceEl.options[choiceEl.selectedIndex]?.text || choiceEl.value : (meal.qty||"");
+  markDietMealInputs(i,true);
+  const extras=dietExtras(i).map((x,j)=>({item:x.item,type:x.type,done:true}));
+  const checkInTime=nowTime(), checkInAt=nowISO();
+  dietMealStore()[meal.id]={id:meal.id,index:i,name:meal.name,time:meal.time,selected,protein:meal.protein,kcal:meal.kcal,extras,done:true,checkInTime,checkInAt};
+  localStorage.setItem(KEY,JSON.stringify(state));
+  renderDiet();
+}
+function unregisterDietMeal(i){
+  delete dietMealStore()[PLAN.meals[i].id];
+  localStorage.setItem(KEY,JSON.stringify(state));
+  renderDiet();
+}
+function registerAllDietMeals(){PLAN.meals.forEach((m,i)=>{ if(!dietMealRegistered(i)) registerDietMealSilent(i); }); localStorage.setItem(KEY,JSON.stringify(state)); renderDiet();}
+function unregisterAllDietMeals(){u().dietMealCheckins=u().dietMealCheckins||{}; u().dietMealCheckins[dietDateKey()]={}; localStorage.setItem(KEY,JSON.stringify(state)); renderDiet();}
+function registerDietMealSilent(i){
+  const meal=PLAN.meals[i];
+  const selected=`Base recomendada: ${meal.qty}`;
+  const extras=dietExtras(i).map((x,j)=>({item:x.item,type:x.type,done:true}));
+  const checkInTime=nowTime(), checkInAt=nowISO();
+  dietMealStore()[meal.id]={id:meal.id,index:i,name:meal.name,time:meal.time,selected,protein:meal.protein,kcal:meal.kcal,extras,done:true,checkInTime,checkInAt};
+}
+function dietRegisteredMeals(){const store=dietMealStore();return PLAN.meals.map((m,i)=>store[m.id]||null).filter(Boolean)}
+function dietMealsForDaily(){
+  const store=dietMealStore();
+  return PLAN.meals.map((m,i)=>({id:m.id,name:m.name,time:m.time,done:!!store[m.id],selected:store[m.id]?.selected||"",checkInTime:store[m.id]?.checkInTime||""}));
+}
+function dietMealCardStatus(i){const rec=dietMealStore()[PLAN.meals[i].id];return rec?`<p class="ok meal-registered">Registrada às ${rec.checkInTime}</p>`:""}
+
 function toggleDietAll(){
-  const flags=[...document.querySelectorAll(".diet-flag")];
-  const allMarked=flags.length>0 && flags.every(x=>x.checked);
-  flags.forEach(x=>x.checked=!allMarked);
+  const allRegistered=dietMealCount()===dietMealTotal();
+  if(allRegistered) unregisterAllDietMeals(); else registerAllDietMeals();
 }
 function dietChoiceOptions(m){
   const opts=[`Base recomendada: ${m.qty}`,...(m.alts||[])];
@@ -270,8 +323,8 @@ function collectDietFlags(){
   return {meals,extras,water,schedule,count,total,complete};
 }
 
-function renderDiet(){let existing=todayLog();if(isDietDoneToday()&&u().editingDietDate!==today()){$("diet").innerHTML=`${head("Hoje • Dieta","Check-in registrado.")}${completedCard("diet","Dieta concluída hoje","Dieta registrada no calendário de evolução.",dietDoneSummary(existing),"editDietToday()")}`;return}let p=prof();$("diet").innerHTML=`${head("Hoje • Dieta","Refeições, água e suplementos agrupados em um só checklist.")}<div class="grid three"><div class="card kpi"><div class="label">Proteína</div><div class="value">${p.proteinTarget||"—"}g</div><div class="hint">meta</div></div><div class="card kpi"><div class="label">Calorias</div><div class="value">${p.caloriesTrainingDay||"—"}</div><div class="hint">dia treino</div></div><div class="card kpi"><div class="label">Água</div><div class="value">${p.waterTarget||"—"}L</div><div class="hint">meta</div></div></div><div class="card"><h2>Checklist da dieta</h2><p class="muted" style="font-size:13px;margin-top:-4px">Marque a refeição realizada, escolha exatamente o que consumiu e confirme água/suplementos associados.</p><div class="actions"><button class="ghost" onclick="toggleDietAll()">Marcar/Desmarcar tudo</button></div><div class="list">${PLAN.meals.map((m,i)=>`<div class="check diet-card"><input type="checkbox" class="diet-flag" id="meal-${i}"><div class="diet-body"><strong>${m.time} • ${m.name}</strong><span class="selected-meal"><b>Selecionado:</b> <span id="meal-selected-${i}">Base recomendada: ${m.qty}</span></span><span>${m.protein}g proteína • ${m.kcal} kcal</span><div class="choice-row"><label>Opção realizada</label><select id="meal-choice-${i}" onchange="updateMealSelection(${i})">${dietChoiceOptions(m)}</select></div>${i===1?`<p class="muted meal-note">Se escolher ovos/pão/fruta, não precisa tomar whey junto. Whey só entra quando a opção escolhida tiver whey ou quando você usar para completar proteína.</p>`:""}${dietExtras(i).length?`<div class="mini-flags">${dietExtras(i).map((x,j)=>`<label class="mini-check ${x.type}"><input type="checkbox" class="diet-flag" id="extra-${i}-${j}"><span>${x.item}</span></label>`).join("")}</div>`:""}</div></div>`).join("")}</div><div style="margin-top:12px"><label>Nota rápida</label><textarea id="diet-note" placeholder="Ex.: almocei fora, bati água, apetite baixo..."></textarea></div><div class="actions"><button class="primary" onclick="saveDiet()">Registrar dieta</button></div><p class="muted" style="font-size:12px">O ícone de comida no progresso aparece quando todos os flags da dieta do dia forem marcados: refeições, água e suplementos/rotina prescrita.</p></div>`}
-function saveDiet(){markDietAll();let date=today(), flags=collectDietFlags(), checkInTime=nowTime(), checkInAt=nowISO();let existingIdx=u().dietLogs.findIndex(l=>l.date===date);let payload={id:existingIdx>=0?u().dietLogs[existingIdx].id:uid(),date,complete:true,meals:flags.meals.map(m=>({...m,done:true})),extras:flags.extras.map(e=>({...e,done:true})),water:flags.water.map(w=>({...w,done:true})),schedule:flags.schedule.map(s=>({...s,done:true})),note:$("diet-note").value,checkInTime,checkInAt};if(existingIdx>=0)u().dietLogs[existingIdx]=payload;else u().dietLogs.push(payload);u().editingDietDate=null;upsertDaily({date,meals:payload.meals,extras:payload.extras,water:payload.water,schedule:payload.schedule,diet:{saved:true,complete:true,count:flags.total,total:flags.total,checkInTime,checkInAt}});save("diet")}
+function renderDiet(){let existing=todayLog();if(isDietDoneToday()&&u().editingDietDate!==today()){$("diet").innerHTML=`${head("Hoje • Dieta","Check-in registrado.")}${completedCard("diet","Dieta finalizada hoje","Dieta registrada no calendário de evolução.",dietDoneSummary(existing),"editDietToday()")}`;return}let p=prof();$("diet").innerHTML=`${head("Hoje • Dieta","Registre cada refeição ao longo do dia e finalize no fim.")}<div class="grid three"><div class="card kpi"><div class="label">Proteína</div><div class="value">${p.proteinTarget||"—"}g</div><div class="hint">meta</div></div><div class="card kpi"><div class="label">Calorias</div><div class="value">${p.caloriesTrainingDay||"—"}</div><div class="hint">dia treino</div></div><div class="card kpi"><div class="label">Água</div><div class="value">${p.waterTarget||"—"}L</div><div class="hint">meta</div></div></div><div class="card"><h2>Checklist da dieta</h2><p class="muted" style="font-size:13px;margin-top:-4px">Registre cada refeição realizada. A Evolução considera o dia completo com pelo menos 80% das refeições registradas.</p>${dietProgressMiniHTML()}<div class="actions diet-actions-top"><button class="ghost" onclick="toggleDietAll()">Marcar/Desmarcar tudo</button></div><div class="list diet-list">${PLAN.meals.map((m,i)=>{const registered=dietMealRegistered(i);return`<div class="check diet-card ${registered?"registered":""}"><input type="checkbox" class="diet-flag" id="meal-${i}" ${registered?"checked":""}><div class="diet-body"><strong>${m.time} • ${m.name}</strong>${dietMealCardStatus(i)}<span class="selected-meal"><b>Selecionado:</b> <span id="meal-selected-${i}">${registered?dietMealStore()[m.id].selected:"Base recomendada: "+m.qty}</span></span><span>${m.protein}g proteína • ${m.kcal} kcal</span><div class="choice-row"><label>Opção realizada</label><select id="meal-choice-${i}" onchange="updateMealSelection(${i})" ${registered?"disabled":""}>${dietChoiceOptions(m)}</select></div>${i===1?`<p class="muted meal-note">Se escolher ovos/pão/fruta, não precisa tomar whey junto. Whey só entra quando a opção escolhida tiver whey ou quando você usar para completar proteína.</p>`:""}${dietExtras(i).length?`<div class="mini-flags">${dietExtras(i).map((x,j)=>`<label class="mini-check ${x.type}"><input type="checkbox" class="diet-flag" id="extra-${i}-${j}" ${registered?"checked":""} ${registered?"disabled":""}><span>${x.item}</span></label>`).join("")}</div>`:""}<div class="actions meal-actions">${registered?`<button class="ghost" onclick="unregisterDietMeal(${i})">Editar refeição</button>`:`<button class="primary" onclick="registerDietMeal(${i})">Registrar refeição</button>`}</div></div></div>`}).join("")}</div><div style="margin-top:12px"><label>Nota rápida</label><textarea id="diet-note" placeholder="Ex.: almocei fora, bati água, apetite baixo..."></textarea></div><div class="actions"><button class="primary" onclick="saveDiet()">Finalizar dia</button></div><p class="muted" style="font-size:12px">O ícone de comida no progresso aparece quando o dia for finalizado com 80% ou mais das refeições registradas.</p></div>`}
+function saveDiet(){let date=today(), pct=dietMealPct(), count=dietMealCount(), total=dietMealTotal(), complete=pct>=80, checkInTime=nowTime(), checkInAt=nowISO();if(count===0){alert("Registre pelo menos uma refeição antes de finalizar o dia.");return}let meals=dietMealsForDaily(), registered=dietRegisteredMeals();let existingIdx=u().dietLogs.findIndex(l=>l.date===date);let payload={id:existingIdx>=0?u().dietLogs[existingIdx].id:uid(),date,complete,meals,registeredMeals:registered,note:$("diet-note").value,count,total,pct,checkInTime,checkInAt};if(existingIdx>=0)u().dietLogs[existingIdx]=payload;else u().dietLogs.push(payload);u().editingDietDate=null;upsertDaily({date,meals,registeredMeals:registered,diet:{saved:true,complete,count,total,pct,checkInTime,checkInAt}});save("diet")}
 
 function weekShortLabel(phase){
   if(!phase) return "";
@@ -493,7 +546,7 @@ async function handleBioImageUpload(){
 
 function renderProgress(){$("progress").innerHTML=`${head("Evolução","Calendário mensal de constância, bioimpedância e histórico.")}<div class="grid three"><div class="card kpi"><div class="label">Peso</div><div class="value">${latestWeight()?latestWeight().toFixed(1):"—"} kg</div><div class="hint">última bio/medição</div></div><div class="card kpi"><div class="label">Progresso</div><div class="value">${pct()}%</div><div class="progress"><span style="width:${pct()}%"></span></div></div><div class="card kpi"><div class="label">Última medição</div><div class="value" style="font-size:18px">${lastBody()||"—"}</div><div class="hint">15 dias</div></div></div><div class="card"><h2>Calendário de progresso</h2>${progressCalendarHTML()}</div>${bioMeasurementCard()}${bioTrendSection()}<div class="card"><h2>Histórico</h2><div class="list">${history()}</div></div>`}
 
-function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10), bios=bioTrendEntries().slice(-6).reverse();let daily=rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length}${r.workout?.checkInTime?` às ${r.workout.checkInTime}`:""} • Dieta: ${r.diet?.complete?"completa":`${r.diet?.count??(r.meals||[]).filter(m=>m.done).length}/${r.diet?.total??(r.meals||[]).length}`}${r.diet?.checkInTime?` às ${r.diet.checkInTime}`:""}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`;let bio=bios.length?`<h3>Bioimpedâncias</h3>`+bios.map(b=>`<div class="history"><h3>${b.date} • ${b.filename||"PDF"}</h3><p>Peso: ${bioValue(b.weight,"kg")} • Gordura: ${bioValue(b.bodyFat,"%")} • Massa muscular: ${bioValue(b.muscleMass,"kg")}</p></div>`).join(""):"";return daily+bio}
+function history(){let rows=[...u().dailyLogs].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10), bios=bioTrendEntries().slice(-6).reverse();let daily=rows.length?rows.map(r=>`<div class="history"><h3>${r.date} • ${r.day||"-"}</h3><p>Exercícios: ${(r.exercises||[]).filter(e=>e.done).length}/${(r.exercises||[]).length}${r.workout?.checkInTime?` às ${r.workout.checkInTime}`:""} • Dieta: ${r.diet?.complete?"completa":`${r.diet?.count??(r.meals||[]).filter(m=>m.done).length}/${r.diet?.total??(r.meals||[]).length}`}${r.diet?.pct?` • ${r.diet.pct}%`:""}${r.diet?.checkInTime?` às ${r.diet.checkInTime}`:""}</p></div>`).join(""):`<p class="muted">Nenhum check-in.</p>`;let bio=bios.length?`<h3>Bioimpedâncias</h3>`+bios.map(b=>`<div class="history"><h3>${b.date} • ${b.filename||"PDF"}</h3><p>Peso: ${bioValue(b.weight,"kg")} • Gordura: ${bioValue(b.bodyFat,"%")} • Massa muscular: ${bioValue(b.muscleMass,"kg")}</p></div>`).join(""):"";return daily+bio}
 
 function renderMore(){$("more").innerHTML=`${head("Mais","Perfis, exames recomendados e backup.")}<div class="card"><h2>Perfis</h2><div class="form-grid"><div><label>Perfil ativo</label><select onchange="switchProfile(this.value)">${Object.entries(PLAN.profiles).map(([k,p])=>`<option value="${k}" ${state.profile===k?"selected":""}>${p.name}</option>`).join("")}</select></div><div><label>Treino detectado</label><input readonly value="${activeDay()}"></div></div></div><div class="card"><h2>Exames recomendados</h2><div class="list">${PLAN.exams.map(e=>`<div class="item"><strong>${e.group}</strong><span>${e.name} • ${e.frequency}</span></div>`).join("")}</div></div><div class="card"><h2>Backup</h2><div class="actions"><button class="primary" onclick="exportBackup()">Exportar JSON</button><button class="danger" onclick="resetAll()">Apagar tudo</button></div></div>`}
 function exportBackup(){let b=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=`sheipados_backup_${today()}.json`;a.click()}

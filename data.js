@@ -7353,5 +7353,5 @@ window.PLAN_DATA = {
       "frequency": "8–12 semanas"
     }
   ],
-  "version": "v40"
+  "version": "v41"
 };

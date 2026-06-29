@@ -135,3 +135,16 @@ Alterações:
   - Mais: controles/sliders.
 - Ícones são SVG inline, leves, sem dependência de imagens externas.
 - Mantida a estética escura/sóbria do app.
+
+
+## v41 — Dieta por refeição
+
+Alterações:
+- Corrigido espaçamento do botão Marcar/Desmarcar tudo.
+- Dieta agora funciona por registro de refeição.
+- Cada refeição tem botão “Registrar refeição”.
+- Refeição registrada fica marcada e bloqueada até editar.
+- Incluído progresso minimalista da dieta do dia.
+- Botão final agora é “Finalizar dia”.
+- Para a aba Evolução, o dia de dieta é considerado completo com 80% ou mais das refeições registradas.
+- Mantido botão de edição do dia após finalizar.
