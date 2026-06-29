@@ -392,3 +392,108 @@ details summary{cursor:pointer;color:#d6e6ff;font-weight:800;padding:10px 0}
   margin:8px 0 0!important;
   line-height:1.35!important;
 }
+
+
+
+/* v17 — correção do campo de data no iPhone/Chrome */
+.form-grid > div,
+.card,
+.choice-row,
+.diet-body{
+  min-width:0;
+}
+
+input,
+select,
+textarea{
+  max-width:100%;
+  min-width:0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="text"]{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  display:block;
+}
+
+input[type="date"]{
+  -webkit-appearance:none;
+  appearance:none;
+  text-align:left;
+  padding-left:14px;
+  padding-right:14px;
+  line-height:1.2;
+}
+
+@media(max-width:720px){
+  .form-grid{
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  .form-grid > div{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+}
+
+
+
+/* v18 — correção dos cards de semanas no calendário */
+.week-strip{
+  gap:10px;
+  padding:4px 0 14px;
+  scroll-padding-left:8px;
+}
+.week-strip button.week-chip,
+.week-strip .week-chip{
+  min-width:86px;
+  width:86px;
+  max-width:86px;
+  min-height:72px;
+  padding:10px 8px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:4px;
+  overflow:hidden;
+  white-space:normal;
+  line-height:1.05;
+}
+.week-chip .week-num{
+  display:block;
+  font-size:22px;
+  font-weight:950;
+  line-height:1;
+}
+.week-chip .week-label{
+  display:block;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:11px;
+  font-weight:850;
+  text-align:center;
+  line-height:1.1;
+}
+@media(max-width:420px){
+  .week-strip button.week-chip,
+  .week-strip .week-chip{
+    min-width:82px;
+    width:82px;
+    max-width:82px;
+    min-height:70px;
+  }
+  .week-chip .week-num{
+    font-size:21px;
+  }
+  .week-chip .week-label{
+    font-size:10.5px;
+  }
+}

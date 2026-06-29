@@ -42,3 +42,22 @@ Alterações:
 - No pós-treino/café, removido o flag “Whey + creatina”.
 - Mantido apenas “Creatina diária”.
 - Whey passa a ser entendido como parte da opção escolhida ou como complemento de proteína, não como obrigação extra quando a refeição escolhida for ovos/pão/fruta.
+
+
+## v17 — Correção do campo de data
+
+Correção visual:
+- Campo de data não deve mais deslocar para fora da caixa no iPhone/Chrome.
+- Adicionado `min-width:0` nos filhos do grid.
+- Forçado `input[type=date]` a respeitar largura máxima de 100%.
+- Ajustado grid de formulários no mobile para `minmax(0, 1fr)`.
+
+
+## v18 — Correção dos cards de semanas
+
+Correção visual:
+- Os cards das semanas no Calendário de Treinos agora têm largura fixa maior.
+- Textos longos foram abreviados:
+  - Intensificação → Intens.
+  - Consolidação → Consol.
+- O texto não deve mais sair da caixa nas semanas finais.
