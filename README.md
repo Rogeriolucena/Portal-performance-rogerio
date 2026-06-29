@@ -121,3 +121,17 @@ Alterações:
 - Histórico da aba Evolução mostra o horário de treino/dieta quando disponível.
 - Botão “Salvar treino” alterado para “Registrar treino”.
 - Botão “Salvar dieta” alterado para “Registrar dieta”.
+
+
+## v40 — Ícones minimalistas na barra flutuante
+
+Alterações:
+- Substituídos os emojis da barra flutuante por ícones SVG minimalistas.
+- Ícones incluídos:
+  - Treino: halter;
+  - Dieta: prato/talheres;
+  - Calendário: calendário;
+  - Evolução: gráfico de tendência;
+  - Mais: controles/sliders.
+- Ícones são SVG inline, leves, sem dependência de imagens externas.
+- Mantida a estética escura/sóbria do app.
