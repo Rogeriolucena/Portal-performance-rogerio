@@ -580,3 +580,21 @@ input#date{
 .card .pill + .notice{
   margin-top:12px;
 }
+
+
+
+/* v23 — estabilidade do carrossel de semanas */
+.week-strip{
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  -webkit-overflow-scrolling:touch;
+  scroll-behavior:auto!important;
+  overscroll-behavior-x:contain;
+  scrollbar-width:none;
+}
+.week-strip::-webkit-scrollbar{
+  display:none;
+}
+.week-chip{
+  flex:0 0 auto!important;
+}

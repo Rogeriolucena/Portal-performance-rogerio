@@ -108,3 +108,11 @@ Alterações:
   - Sexta: Posterior + glúteos + braços
   - Sábado/Domingo: cardio ou funcional
 - O app mostra o bloco atual no Treino e no Calendário.
+
+
+## v23 — Correção definitiva do scroll dos chips
+
+Correção:
+- Substituído `scrollIntoView()` por cálculo manual de `scrollLeft`.
+- O ajuste é repetido em múltiplos tempos após o redesenho, porque o Chrome/iPhone recalcula o layout depois do primeiro frame.
+- O chip selecionado deve permanecer visível/centralizado mesmo ao selecionar S10, S11 ou S12.

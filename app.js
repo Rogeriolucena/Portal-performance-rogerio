@@ -1,5 +1,5 @@
 
-const PLAN=window.PLAN_DATA, KEY="sheipados_v22";
+const PLAN=window.PLAN_DATA, KEY="sheipados_v23";
 const tabs=[["train","Treino","✅"],["diet","Dieta","🍽️"],["calendar","Calendário","📅"],["progress","Evolução","📈"],["more","Mais","⚙️"]];
 let timers=[];
 function today(){const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)}
@@ -7,7 +7,7 @@ function dayName(){const m=["Domingo","Segunda","Terça","Quarta","Quinta","Sext
 function uid(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())}
 function blankUser(){return{week:1,dayOverrideDate:null,dayOverride:null,dailyLogs:[],bodyLogs:[],workoutLogs:[],dietLogs:[],examPdfLogs:[],examPdfLogs:[],settings:{reminders:false}}}
 function blank(){return{profile:"rogerio",users:{rogerio:blankUser(),fernanda:blankUser()}}}
-let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
+let state=(()=>{try{let raw=localStorage.getItem(KEY); if(!raw){for(const k of ["sheipados_v22","sheipados_v21","sheipados_v20","sheipados_v19","sheipados_v18","sheipados_v17","sheipados_v16","sheipados_v15","sheipados_v14","sheipados_v13","sheipados_v12","sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5"]){raw=localStorage.getItem(k); if(raw) break;}} let p=raw?JSON.parse(raw):null; return p?{...blank(),...p,users:{rogerio:{...blankUser(),...(p.users?.rogerio||{})},fernanda:{...blankUser(),...(p.users?.fernanda||{})}}}:blank()}catch(e){return blank()}})();
 function u(){return state.users[state.profile]} function prof(){return PLAN.profiles[state.profile]} function currentWorkoutBlock(){
   const blocks=prof().workoutBlocks;
   if(!blocks) return {key:"A",name:"Bloco A",focus:"",workouts:prof().workouts};
@@ -26,11 +26,23 @@ function currentOpenTab(){
 }
 
 function scrollCalendarWeekIntoView(weekNumber){
-  requestAnimationFrame(()=>{
-    const chip=document.querySelector(`.week-chip[data-week="${weekNumber}"]`);
-    if(!chip) return;
-    chip.scrollIntoView({behavior:"smooth", inline:"center", block:"nearest"});
-  });
+  const apply = () => {
+    const strip=document.querySelector("#calendar .week-strip");
+    const chip=document.querySelector(`#calendar .week-chip[data-week="${weekNumber}"]`);
+    if(!strip || !chip) return;
+
+    const target = chip.offsetLeft - (strip.clientWidth / 2) + (chip.clientWidth / 2);
+    const max = Math.max(0, strip.scrollWidth - strip.clientWidth);
+    const left = Math.max(0, Math.min(target, max));
+
+    strip.scrollLeft = left;
+    if(strip.scrollTo) strip.scrollTo({left, behavior:"auto"});
+  };
+
+  requestAnimationFrame(apply);
+  setTimeout(apply, 80);
+  setTimeout(apply, 220);
+  setTimeout(apply, 450);
 }
 
 function setCalendarWeek(weekNumber){
