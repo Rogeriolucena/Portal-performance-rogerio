@@ -1,7 +1,7 @@
 
 const PLAN = window.PLAN_DATA;
-const KEY = "sheipados_v11";
-const OLD_KEYS = ["sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5","sheipados_v4"];
+const KEY = "sheipados_v12";
+const OLD_KEYS = ["sheipados_v11","sheipados_v10","sheipados_v9","sheipados_v8","sheipados_v7","sheipados_v6","sheipados_v5","sheipados_v4"];
 const tabs = [
   ["train","Treino","✅"],
   ["diet","Dieta","🍽️"],
@@ -9,6 +9,15 @@ const tabs = [
   ["progress","Evolução","📈"],
   ["more","Mais","⚙️"]
 ];
+
+function applyDisplayModeClass(){
+  const standalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+  document.body.classList.toggle("standalone", standalone);
+  document.body.classList.toggle("browser-mode", !standalone);
+}
+applyDisplayModeClass();
+window.matchMedia("(display-mode: standalone)").addEventListener?.("change", applyDisplayModeClass);
+
 let state = loadState();
 let activeTab = location.hash.replace("#","") || "train";
 let timers = [];
@@ -52,7 +61,7 @@ function shell(content){
     <header class="topbar">
       <div class="title-row">
         <div class="brand">
-          <div class="logo" aria-label="Sheipados"></div>
+          <img class="logo" src="./icon-192.png?v=12" alt="Sheipados" onerror="this.outerHTML='<div class=&quot;logo-fallback&quot; aria-label=&quot;Sheipados&quot;></div>'">
           <div><h1>${PLAN.project.name}</h1><div class="sub">${p.name} • ${p.goal||"Plano"}</div></div>
         </div>
         <select class="profile-select" onchange="switchProfile(this.value)">
@@ -60,8 +69,8 @@ function shell(content){
         </select>
       </div>
     </header>
-    <nav class="nav">${tabs.map(t=>`<button class="${activeTab===t[0]?"active":""}" onclick="setTab('${t[0]}')"><span class="ico">${t[2]}</span><span>${t[1]}</span></button>`).join("")}</nav>
     <main class="content">${content}</main>
+    <nav class="nav">${tabs.map(t=>`<button class="${activeTab===t[0]?"active":""}" onclick="setTab('${t[0]}')"><span class="ico">${t[2]}</span><span>${t[1]}</span></button>`).join("")}</nav>
   </div>`;
 }
 
