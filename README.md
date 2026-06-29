@@ -134,3 +134,14 @@ Alterações:
 - Correção definitiva do problema de scroll:
   - os chips agora ficam em grade fixa;
   - não há mais carrossel horizontal para voltar ao início.
+
+
+## v25 — Dieta, evolução e remoção de lembretes
+
+Alterações:
+- Todas as opções de refeições agora têm quantidades.
+- Medição quinzenal saiu da aba Dieta e foi para a aba Evolução.
+- Peso removido da aba Treino.
+- Checklist da dieta agora tem botão “Marcar/Desmarcar tudo”.
+- Botões/cards de lembretes removidos do app.
+- Salvamento da dieta agora registra apenas o checklist e a nota do dia.

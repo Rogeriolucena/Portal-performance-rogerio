@@ -629,3 +629,12 @@ input#date{
     min-height:50px!important;
   }
 }
+
+
+
+/* v25 — ajustes dieta/evolução */
+@media(max-width:720px){
+  .two{
+    grid-template-columns:1fr!important;
+  }
+}

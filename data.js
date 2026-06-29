@@ -1470,10 +1470,10 @@ window.PLAN_DATA = {
       "protein": 0,
       "kcal": 100,
       "alts": [
-        "1 banana + café",
-        "1 banana + mel",
-        "150 ml suco de uva",
-        "Jejum se render bem"
+        "1 banana média (~80–100 g) + café sem açúcar",
+        "1 banana média (~80–100 g) + mel 10 g",
+        "Suco de uva integral 150 ml",
+        "Jejum se render bem no treino"
       ]
     },
     {
@@ -1484,10 +1484,10 @@ window.PLAN_DATA = {
       "protein": 45,
       "kcal": 720,
       "alts": [
-        "Whey + aveia + banana",
-        "3 ovos + pão + fruta",
-        "Iogurte proteico + granola",
-        "Shake com leite + whey + aveia"
+        "Whey 40 g + aveia 100 g + 1 banana média + pasta de amendoim 15 g",
+        "3 ovos inteiros + pão integral 2 fatias + 1 fruta",
+        "Iogurte proteico 250 g + granola 50 g + 1 banana",
+        "Leite 300 ml + whey 40 g + aveia 80–100 g"
       ]
     },
     {
@@ -1498,10 +1498,10 @@ window.PLAN_DATA = {
       "protein": 30,
       "kcal": 430,
       "alts": [
-        "Sanduíche proteico",
-        "Iogurte + fruta + castanhas",
-        "Tapioca 70 g + 2 ovos",
-        "Pão + atum/frango"
+        "Sanduíche: pão integral 2 fatias + proteína magra 120 g + 1 fruta",
+        "Iogurte natural/proteico 250 g + 1 fruta + castanhas 20 g",
+        "Tapioca 70 g + 2 ovos inteiros",
+        "Pão 2 fatias + atum/frango 120 g"
       ]
     },
     {
@@ -1512,10 +1512,10 @@ window.PLAN_DATA = {
       "protein": 55,
       "kcal": 820,
       "alts": [
-        "PF arroz/feijão/carne",
-        "Macarrão 250 g + carne moída",
-        "Batata 300 g + carne",
-        "Restaurante: carbo + proteína + legumes"
+        "Arroz 200 g + feijão 150 g + carne 180–200 g + legumes/salada",
+        "Macarrão cozido 250 g + carne moída 180–200 g + salada",
+        "Batata inglesa/doce 300 g + carne 180–200 g + legumes",
+        "Restaurante: carbo 1 prato médio + proteína 180–200 g + legumes/salada"
       ]
     },
     {
@@ -1526,10 +1526,10 @@ window.PLAN_DATA = {
       "protein": 25,
       "kcal": 460,
       "alts": [
-        "Shake whey + banana + aveia",
-        "Iogurte + granola",
-        "Sanduíche proteico",
-        "Vitamina com leite + aveia"
+        "Whey 40 g + 1 banana + aveia 60–80 g",
+        "Iogurte 250 g + granola 50 g + 1 fruta",
+        "Sanduíche: pão integral 2 fatias + proteína magra 120 g",
+        "Leite 300 ml + aveia 60–80 g + 1 banana"
       ]
     },
     {
@@ -1540,10 +1540,10 @@ window.PLAN_DATA = {
       "protein": 45,
       "kcal": 680,
       "alts": [
-        "Arroz + feijão + filé",
-        "Omelete + arroz",
-        "Carne moída + batata",
-        "Restaurante: carbo + proteína"
+        "Arroz 180–200 g + feijão 100–150 g + filé/carne 180–200 g + legumes",
+        "Omelete 3 ovos + arroz 150–180 g + legumes",
+        "Carne moída 180–200 g + batata 250–300 g + legumes",
+        "Restaurante: carbo 1 prato médio + proteína 180–200 g + salada/legumes"
       ]
     }
   ],
@@ -1638,5 +1638,5 @@ window.PLAN_DATA = {
       "frequency": "8–12 semanas"
     }
   ],
-  "version": "v24"
+  "version": "v25"
 };
