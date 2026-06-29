@@ -32,3 +32,13 @@ Alterações:
   - refeições;
   - água;
   - suplementos/rotina prescrita.
+
+
+## v16 — Refeição dinâmica
+
+Alterações:
+- Ao alterar a opção realizada, o texto principal do card muda junto.
+- O texto deixa de ficar preso em “Base”.
+- No pós-treino/café, removido o flag “Whey + creatina”.
+- Mantido apenas “Creatina diária”.
+- Whey passa a ser entendido como parte da opção escolhida ou como complemento de proteína, não como obrigação extra quando a refeição escolhida for ovos/pão/fruta.

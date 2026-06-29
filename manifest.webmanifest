@@ -2,7 +2,7 @@
   "name": "Sheipados",
   "short_name": "Sheipados",
   "description": "Portal familiar de treino, dieta e performance.",
-  "start_url": "./index.html?v=15",
+  "start_url": "./index.html?v=16",
   "display": "standalone",
   "background_color": "#080d18",
   "theme_color": "#080d18",

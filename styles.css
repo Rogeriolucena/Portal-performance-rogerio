@@ -377,3 +377,18 @@ details summary{cursor:pointer;color:#d6e6ff;font-weight:800;padding:10px 0}
 .mini-check.supplement,.mini-check.medical{
   border-color:rgba(250,204,21,.16);
 }
+
+
+
+/* v16 — refeição selecionada dinâmica */
+.selected-meal{
+  color:#dbe8ff!important;
+}
+.selected-meal b{
+  color:#f2f6ff;
+}
+.meal-note{
+  font-size:12px!important;
+  margin:8px 0 0!important;
+  line-height:1.35!important;
+}
